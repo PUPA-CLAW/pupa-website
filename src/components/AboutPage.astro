@@ -137,22 +137,24 @@ const pupaIcons = [
       </div>
       <p class="story-p">{c.missionNote}</p>
       <h3 id="approach">{c.valuesTitle}</h3>
-      <p class="story-p values-intro">{c.valuesIntro}</p>
+      <div class="values-block">
+        <p class="values-intro">{c.valuesIntro}</p>
 
-      <div class="pupa-letters" aria-hidden="true">
-        {c.values.map((v, i) => (
-          <div class="letter-col" style={`color:${pupaColors[i]}`}>
-            <span class="letter-label">{v[0]}</span>
-            <span class="big-letter">{pupaLetters[i]}<span class="letter-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" set:html={pupaIcons[i]}></svg></span></span>
-          </div>
-        ))}
-        <span class="pupa-dot">.</span>
-      </div>
+        <div class="pupa-letters" aria-hidden="true">
+          {c.values.map((v, i) => (
+            <div class="letter-col" style={`color:${pupaColors[i]}`}>
+              <span class="letter-label">{v[0]}</span>
+              <span class="big-letter">{pupaLetters[i]}<span class="letter-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" set:html={pupaIcons[i]}></svg></span></span>
+            </div>
+          ))}
+          <span class="pupa-dot">.</span>
+        </div>
 
-      <div class="value-defs">
-        {c.values.map((v, i) => (
-          <p class="value-def"><b style={`color:${pupaColors[i]}`}>{v[0]}</b> — {v[1]} <span class="value-chip">{v[2]}</span></p>
-        ))}
+        <div class="value-defs">
+          {c.values.map((v, i) => (
+            <p class="value-def"><b style={`color:${pupaColors[i]}`}>{v[0]}</b> — {v[1]} <span class="value-chip">{v[2]}</span></p>
+          ))}
+        </div>
       </div>
     </div>
   </section>
@@ -206,25 +208,6 @@ const pupaIcons = [
 @media (max-width:960px){.values-grid{grid-template-columns:1fr 1fr}.mv-grid{grid-template-columns:1fr}.approach-grid{grid-template-columns:1fr}}
 
 /* P.U.P.A big-letter values treatment */
-.values-intro{max-width:64ch;margin-bottom:8px}
-.pupa-letters{display:flex;justify-content:center;align-items:flex-end;gap:10px;margin:40px 0 8px;flex-wrap:wrap}
-.letter-col{display:flex;flex-direction:column;align-items:center}
-.letter-label{font-family:'Inter',sans-serif;font-weight:700;font-size:1rem;margin-bottom:8px}
-.big-letter{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(4.5rem,13vw,8rem);line-height:.9;position:relative}
-.letter-icon{position:absolute;top:-6px;right:-16px;width:46px;height:46px;display:flex;align-items:center;justify-content:center;background:#fff;border-radius:50%;box-shadow:0 4px 14px rgba(11,68,65,.16)}
-.letter-icon svg{width:25px;height:25px}
-.pupa-dot{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(4.5rem,13vw,8rem);line-height:.9;color:var(--ink-soft);align-self:flex-end}
-.value-defs{margin-top:36px;display:grid;gap:16px;max-width:72ch}
-.value-def{color:var(--ink)}
-.value-def b{font-weight:700}
-@media (max-width:640px){
-  .pupa-letters{gap:6px}
-  .big-letter,.pupa-dot{font-size:clamp(3.5rem,20vw,5rem)}
-  .letter-icon{width:36px;height:36px;right:-10px}
-  .letter-icon svg{width:20px;height:20px}
-  .letter-label{font-size:.85rem}
-}
-
 /* Highlight strip */
 .hl-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:44px;padding-top:36px;border-top:1px solid var(--line)}
 .hl-item{display:flex;flex-direction:column;gap:4px;text-align:center}
@@ -236,21 +219,24 @@ const pupaIcons = [
 .mv-2{border-top-color:var(--teal-700)}
 .mv-3{border-top-color:var(--teal-900)}
 @media (max-width:640px){.hl-strip{grid-template-columns:1fr 1fr;gap:24px 16px}}
-</style>
-<style>
 
-/* P.U.P.A big-letter values treatment */
-.values-intro{max-width:64ch;margin-bottom:8px}
-.pupa-letters{display:flex;justify-content:center;align-items:flex-end;gap:10px;margin:40px 0 8px;flex-wrap:wrap}
+/* P.U.P.A big-letter values treatment — centered, balanced */
+.values-block{text-align:center;margin-top:8px}
+.values-intro{max-width:70ch;margin:0 auto 8px;color:var(--ink-soft)}
+.pupa-letters{display:flex;justify-content:center;align-items:flex-end;gap:12px;margin:36px 0 8px;flex-wrap:wrap}
 .letter-col{display:flex;flex-direction:column;align-items:center}
 .letter-label{font-family:'Inter',sans-serif;font-weight:700;font-size:1rem;margin-bottom:8px}
-.big-letter{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(4.5rem,13vw,8rem);line-height:.9;position:relative}
+.big-letter{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(4.5rem,12vw,7.5rem);line-height:.9;position:relative}
 .letter-icon{position:absolute;top:-6px;right:-16px;width:46px;height:46px;display:flex;align-items:center;justify-content:center;background:#fff;border-radius:50%;box-shadow:0 4px 14px rgba(11,68,65,.16)}
 .letter-icon svg{width:25px;height:25px}
-.pupa-dot{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(4.5rem,13vw,8rem);line-height:.9;color:var(--ink-soft);align-self:flex-end}
-.value-defs{margin-top:36px;display:grid;gap:16px;max-width:72ch}
-.value-def{color:var(--ink)}
+.pupa-dot{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(4.5rem,12vw,7.5rem);line-height:.9;color:var(--ink-soft);align-self:flex-end}
+/* definitions: balanced 2-column grid that fills the width */
+.value-defs{margin-top:40px;display:grid;grid-template-columns:1fr 1fr;gap:24px 40px;max-width:960px;margin-left:auto;margin-right:auto;text-align:left}
+.value-def{color:var(--ink);margin:0;padding-left:14px;border-left:3px solid var(--line)}
 .value-def b{font-weight:700}
+@media (max-width:760px){
+  .value-defs{grid-template-columns:1fr;gap:18px}
+}
 @media (max-width:640px){
   .pupa-letters{gap:6px}
   .big-letter,.pupa-dot{font-size:clamp(3.5rem,20vw,5rem)}

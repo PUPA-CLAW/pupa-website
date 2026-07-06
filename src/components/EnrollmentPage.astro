@@ -170,7 +170,6 @@ const faqSchema = {
 .steps-cta{margin-top:26px;margin-left:0}
 .steps-photo{position:sticky;top:100px}
 .steps-photo img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--radius-lg);box-shadow:0 16px 40px rgba(11,68,65,.16)}
-@media (max-width:960px){.steps-grid{grid-template-columns:1fr;gap:32px}.steps-photo{position:static;order:-1}.faq-grid{grid-template-columns:1fr;gap:24px}.faq-head{position:static}}
 .faq{background:linear-gradient(110deg,var(--sage),var(--peach));border-top:1px solid #EFE4D2;padding:72px 0}
 .faq-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:start}
 .faq-head{position:sticky;top:100px}
@@ -188,4 +187,12 @@ summary:hover{color:var(--teal-900)}
 .faq-icon::after{left:8px;top:0;width:2px;height:18px;transition:opacity .15s ease}
 details[open] .faq-icon::after{opacity:0}
 details p{padding:0 40px 20px 2px;color:var(--teal-900);opacity:.85}
+
+/* Responsive: collapse two-column layouts on tablet/mobile (placed last so it wins) */
+@media (max-width:960px){
+  .steps-grid{grid-template-columns:1fr;gap:32px}
+  .steps-photo{position:static;order:-1}
+  .faq-grid{grid-template-columns:1fr;gap:24px}
+  .faq-head{position:static}
+}
 </style>
