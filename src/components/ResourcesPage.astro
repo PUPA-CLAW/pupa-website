@@ -20,6 +20,8 @@ const content = {
       ['Milestones & moments', 'Celebrate participant achievements and community highlights as they happen.'],
       ['A shared space', 'A dedicated channel for families, supporters, and participants to remain united in our vision for the future.'],
     ],
+    joinTitle: 'Join our WhatsApp community',
+    joinBody: 'Tap the button to join instantly, or scan the QR code with your phone camera. You will be welcomed into a friendly space for PUPA news, updates, and community moments.',
     newsCta: 'Join the WhatsApp community',
     qrAlt: 'QR code to join the PUPA Community WhatsApp group',
     qrCaption: 'Or scan with your phone',
@@ -67,14 +69,28 @@ const c = content[lang];
       <p class="res-body">{c.newsBody}</p>
       <h3>{c.expectTitle}</h3>
       <div class="card-grid expect-grid">
-        {c.expect.map((e) => (
-          <div class="card"><h4>{e[0]}</h4><p>{e[1]}</p></div>
+        {c.expect.map((e, ei) => (
+          <div class="card icon-card">
+            <span class="mini-icon" aria-hidden="true">
+              {ei === 0
+                ? <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                : <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7.4-6.3-4.6L5.7 21 8 14 2 9.4h7.6z"/></svg>}
+            </span>
+            <h4>{e[0]}</h4><p>{e[1]}</p>
+          </div>
         ))}
       </div>
-      <div class="join-row">
-        <a class="btn btn-primary" href="https://chat.whatsapp.com/GY7IwyE2UXS5DoBup80S81" rel="noopener">{c.newsCta}</a>
+      <div class="community-card">
+        <div class="community-copy">
+          <h3>{c.joinTitle}</h3>
+          <p>{c.joinBody}</p>
+          <a class="btn btn-primary" href="https://chat.whatsapp.com/GY7IwyE2UXS5DoBup80S81" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true" style="margin-right:2px"><path d="M17.6 6.32A7.85 7.85 0 0 0 12 4a7.94 7.94 0 0 0-6.9 11.9L4 20l4.2-1.1A7.9 7.9 0 0 0 12 19.9a7.94 7.94 0 0 0 5.6-13.58zM12 18.5a6.6 6.6 0 0 1-3.36-.92l-.24-.14-2.5.65.67-2.43-.16-.25a6.59 6.59 0 1 1 12.2-3.51A6.6 6.6 0 0 1 12 18.5z"/></svg>
+            {c.newsCta}
+          </a>
+        </div>
         <figure class="qr-box">
-          <img src="/images/brand/wa-community-qr.png" alt={c.qrAlt} width="180" height="180" loading="lazy" />
+          <img src="/images/brand/wa-community-qr.png" alt={c.qrAlt} width="200" height="200" loading="lazy" />
           <figcaption>{c.qrCaption}</figcaption>
         </figure>
       </div>
@@ -113,4 +129,15 @@ const c = content[lang];
 .qr-box img{border:1px solid var(--line);border-radius:var(--radius);background:#fff}
 .qr-box figcaption{font-size:.85rem;color:var(--ink-soft);margin-top:6px}
 @media (max-width:960px){.expect-grid{grid-template-columns:1fr 1fr}}
+
+.community-card{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center;margin-top:20px;background:linear-gradient(120deg,var(--sage),var(--peach));border:1px solid #EFE4D2;border-radius:var(--radius-lg);padding:36px 40px}
+.community-copy h3{margin-bottom:10px}
+.community-copy p{color:var(--teal-900);opacity:.9;max-width:46ch;margin-bottom:22px}
+.qr-box{margin:0;text-align:center;flex:none}
+.qr-box img{border:1px solid rgba(15,107,102,.2);border-radius:16px;padding:12px;background:#fff;box-shadow:0 10px 28px rgba(11,68,65,.14);display:block}
+.qr-box figcaption{margin-top:10px;font-size:.9rem;color:var(--teal-900);font-weight:600}
+@media (max-width:760px){.community-card{grid-template-columns:1fr;text-align:center;justify-items:center;padding:32px 28px}.community-copy p{margin-left:auto;margin-right:auto}}
+
+.icon-card .mini-icon{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:12px;background:var(--teal-050);color:var(--teal-700);margin-bottom:12px}
+.icon-card .mini-icon svg{width:24px;height:24px}
 </style>

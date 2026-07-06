@@ -69,9 +69,18 @@ const c = content[lang];
     <div class="wrap">
       <h2>{c.waysTitle}</h2>
       <div class="card-grid ways-grid">
-        <div class="card"><h3>{c.bank}</h3><p>{c.bankDetail}</p></div>
-        <div class="card"><h3>{c.qris}</h3><p>{c.qrisDetail}</p></div>
-        <div class="card"><h3>{c.corp}</h3><p>{c.corpDetail}</p></div>
+        <div class="card give-card">
+          <span class="give-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></span>
+          <h3>{c.bank}</h3><p>{c.bankDetail}</p>
+        </div>
+        <div class="card give-card">
+          <span class="give-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3M21 21v.01M17 21h.01M21 17h.01"/></svg></span>
+          <h3>{c.qris}</h3><p>{c.qrisDetail}</p>
+        </div>
+        <div class="card give-card">
+          <span class="give-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-5h6v5"/><path d="M9 10h.01M15 10h.01"/></svg></span>
+          <h3>{c.corp}</h3><p>{c.corpDetail}</p>
+        </div>
       </div>
       <p class="confirm">{c.confirm}</p>
       <a class="btn btn-donate" href="https://wa.me/62818533698" rel="noopener">{c.confirmCta}</a>
@@ -87,4 +96,8 @@ const c = content[lang];
 .donate-ways{padding:40px 0 72px}
 .ways-grid{margin-top:20px}
 .confirm{color:var(--ink-soft);margin:26px 0 18px}
+
+.give-card{position:relative;padding-top:26px;border-top:3px solid var(--orange-500)}
+.give-icon{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:12px;background:var(--teal-050);color:var(--teal-700);margin-bottom:14px}
+.give-icon svg{width:24px;height:24px}
 </style>

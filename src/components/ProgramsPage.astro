@@ -146,6 +146,16 @@ const content = {
   },
 };
 const c = content[lang];
+
+// Small calm icons for the six development areas (by index), stroke teal
+const areaIcons = [
+  '<circle cx="12" cy="8" r="4"/><path d="M5 21v-1a7 7 0 0 1 14 0v1"/>',                                  // Basic living / self
+  '<path d="M3 10 12 3l9 7"/><path d="M5 9v11h14V9"/><path d="M9 20v-6h6v6"/>',                             // Home
+  '<circle cx="9" cy="8" r="3"/><circle cx="17" cy="10" r="2.5"/><path d="M3 20v-1a6 6 0 0 1 12 0v1"/><path d="M15 20v-1a4 4 0 0 1 6 0v1"/>', // Community
+  '<path d="M12 3a7 7 0 0 0-4 12.7V18h8v-2.3A7 7 0 0 0 12 3z"/><path d="M9 21h6"/>',                        // Cognitive (lightbulb)
+  '<path d="M6 3v18"/><path d="M6 4h9l-1.5 3L15 10H6"/>',                                                   // Independent (flag/goal)
+  '<path d="M4 7h16v13H4z"/><path d="M9 7V4h6v3"/><path d="M4 13h16"/>',                                    // Vocational (briefcase)
+];
 const sections = [
   { id: 'mandiri', d: c.mandiri, img: '/images/a6701241.jpg' },
   { id: 'karya', d: c.karya, img: '/images/a6701088.jpg' },
@@ -182,15 +192,18 @@ const extraImgs: Record<string, string> = {
           <>
             <h3>{s.d.areasTitle}</h3>
             <div class="card-grid areas">
-              {s.d.areas.map((a: string[]) => (
-                <div class="card"><h4>{a[0]}</h4><p>{a[1]}</p></div>
+              {s.d.areas.map((a: string[], ai: number) => (
+                <div class="card icon-card">
+                  <span class="mini-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" set:html={areaIcons[ai % areaIcons.length]}></svg></span>
+                  <h4>{a[0]}</h4><p>{a[1]}</p>
+                </div>
               ))}
             </div>
             <h3>{s.d.stagesTitle}</h3>
             <p>{s.d.stagesIntro}</p>
             <div class="card-grid">
               {s.d.stages.map((st: string[], n: number) => (
-                <div class="card"><span class="stage-badge">{n + 1}</span><h4>{st[0]}</h4><p>{st[1]}</p></div>
+                <div class="card num-card"><span class="stage-badge">{n + 1}</span><h4>{st[0]}</h4><p>{st[1]}</p></div>
               ))}
             </div>
           </>
@@ -255,11 +268,11 @@ const extraImgs: Record<string, string> = {
 .stage-badge{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:var(--orange-500);color:#2B1503;font-family:'Fraunces',serif;font-weight:700}
 .prog-intro{display:grid;grid-template-columns:1.2fr .8fr;gap:44px;align-items:center}
 .prog-photo{width:100%;aspect-ratio:8/7;box-shadow:0 14px 34px rgba(11,68,65,.12)}
-.extra-grid{grid-template-columns:repeat(4,1fr);align-items:stretch}
-.photo-card{padding:0;overflow:hidden;display:flex;flex-direction:column}
-.photo-card img{width:100%;aspect-ratio:16/10;object-fit:cover}
-.photo-card-body{padding:18px 20px 22px;display:flex;flex-direction:column;flex-grow:1}
-.yoga-ph{width:100%;aspect-ratio:16/10;background:radial-gradient(circle at 30% 40%, var(--peach) 0 18%, transparent 19%), radial-gradient(circle at 70% 60%, var(--sage) 0 22%, transparent 23%), var(--cream)}
+.extra-grid{grid-template-columns:repeat(2,1fr);gap:24px;grid-auto-rows:1fr}
+.photo-card{padding:0;overflow:hidden;display:flex;flex-direction:row}
+.photo-card img{width:44%;flex:none;aspect-ratio:auto;object-fit:cover}
+.photo-card-body{padding:22px 24px;display:flex;flex-direction:column;flex-grow:1;justify-content:center}
+.yoga-ph{width:44%;flex:none;background:radial-gradient(circle at 30% 35%, var(--peach) 0 26%, transparent 27%), radial-gradient(circle at 68% 62%, var(--sage) 0 30%, transparent 31%), var(--cream)}
 .journey-band{background:var(--cream);border-top:1px solid #EFE4D2;border-bottom:1px solid #EFE4D2;padding:80px 0}
 .journey-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
 .journey-title{font-size:clamp(2.2rem,5vw,3.6rem);color:var(--teal-700);line-height:1.08;position:relative;display:inline-block}
@@ -269,5 +282,13 @@ const extraImgs: Record<string, string> = {
 .prog-cta{padding:72px 0;text-align:left}
 .prog-cta p{color:var(--ink-soft);margin:14px 0 26px}
 .cta-row{display:flex;flex-wrap:wrap;gap:14px}
-@media (max-width:960px){.areas,.extra-grid{grid-template-columns:1fr}.prog-intro{grid-template-columns:1fr}}
+@media (max-width:960px){.areas,.extra-grid{grid-template-columns:1fr}.prog-intro{grid-template-columns:1fr}.photo-card{flex-direction:column}.photo-card img,.yoga-ph{width:100%;aspect-ratio:16/10}}
+
+/* Subtle card variety — calm icons + accent, ND-friendly */
+.icon-card{position:relative}
+.mini-icon{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:12px;background:var(--teal-050);color:var(--teal-700);margin-bottom:12px}
+.mini-icon svg{width:24px;height:24px}
+.num-card{position:relative;padding-left:24px}
+.num-card::before{content:"";position:absolute;left:0;top:18px;bottom:18px;width:4px;border-radius:4px;background:var(--orange-500)}
+.num-card .stage-badge{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:var(--teal-700);color:#fff;font-family:'Fraunces',serif;font-weight:700;font-size:.95rem;margin-bottom:10px}
 </style>
