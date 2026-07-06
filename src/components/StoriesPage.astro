@@ -1,0 +1,188 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import { routes, type Lang } from '../i18n/ui';
+
+interface Props { lang: Lang; }
+const { lang } = Astro.props;
+const p = (key: string) => (routes[key] ?? routes.home)[lang];
+
+const stories = (await getCollection('stories', (s) => s.data.lang === lang))
+  .sort((a, b) => +a.data.date - +b.data.date);
+const storyBase = p('stories').replace(/\/$/, '');
+
+const c = {
+  en: {
+    metaTitle: 'Our Stories — PUPA Center',
+    metaDescription: 'PUPA was founded from a simple question: what future awaits our neurodivergent children? Discover the story, purpose, and community behind PUPA Center.',
+    h1: 'Our stories',
+    purposeTitle: 'A future with purpose',
+    purposeIntro: 'PUPA was founded from a simple yet profound concern shared by many families of neurodivergent young adults:',
+    purposeQuestion: 'What kind of future awaits our children when we are no longer there to guide them?',
+    purposeBody: [
+      'For parents of individuals with autism and other neurodivergent conditions, this question goes beyond survival. It speaks to independence, dignity, and purpose — whether their children can grow into adults who live fulfilling lives, develop their strengths, and contribute meaningfully to the communities around them.',
+      'PUPA began as a response to these concerns and evolved through a journey of discovery. In a landscape where structured resources, proven curricula, and inclusive pathways were limited, PUPA chose a different approach: designing programs that build habits, life skills, and work readiness in ways that respect each individual\u2019s abilities, pace, and personal standard of success.',
+    ],
+    growTitle1: 'A space to grow,',
+    growTitle2: 'a place to belong',
+    growBody: 'Every story here is one of courage and capability. What started as a small initiative has grown into a comprehensive center for neuro-affirming support. We exist to unlock the potential within every individual, proving that with the right support, everyone can play a meaningful role in our society.',
+    accordions: [
+      ['Why PUPA?', 'The name PUPA, derived from Latin, means \u201ccocoon.\u201d It reflects our belief that meaningful growth happens within a safe, structured, and nurturing environment — one that protects, strengthens, and prepares individuals without rushing or forcing transformation. At PUPA, each individual is supported to grow in their own time and in their own way, until they are ready to step forward.'],
+      ['Our approach', 'PUPA\u2019s vision is to help shape a future where neurodivergent individuals are recognized for their potential, not defined by limitations — building a future where every individual has access to a supportive community, purposeful opportunities, and clear pathways to independence, so they do not merely adapt or survive, but thrive and contribute meaningfully to society.'],
+      ['Our community', 'PUPA Center is home to a vibrant, diverse group of thinkers and doers. We work with individuals and families looking for a neuro-affirming environment where differences are celebrated. Here, students don\u2019t just learn skills; they find a sense of belonging among peers and mentors who understand that every mind works differently.'],
+    ],
+    journeysTitle: 'Growth journeys',
+    journeysLede: 'Real journeys of PUPA Center participants — growth toward independence and meaningful work.',
+    startTitle: 'Start the adventure today',
+    startBody: 'Whether you are considering enrolling or simply want to know more, we would be glad to help you take the first step.',
+    startCta: 'Get in touch',
+  },
+  id: {
+    metaTitle: 'Cerita Kami — PUPA Center',
+    metaDescription: 'PUPA berangkat dari satu pertanyaan sederhana: apa masa depan anak neurodivergen kami? Kenali cerita, tujuan, dan komunitas di balik PUPA Center.',
+    h1: 'Cerita kami',
+    purposeTitle: 'Masa depan yang bermakna',
+    purposeIntro: 'PUPA berangkat dari sebuah kegelisahan yang sederhana, namun mendalam — kegelisahan yang dirasakan oleh banyak keluarga dengan anak neurodivergen dewasa muda, seperti:',
+    purposeQuestion: 'Apa masa depan anak kami ketika kami tidak lagi hadir untuk membimbing mereka?',
+    purposeBody: [
+      'Bagi orang tua individu dengan autisme dan keberagaman neurologis lainnya, pertanyaan ini melampaui sekadar bertahan hidup. Ia menyentuh hal-hal yang lebih mendasar: tentang apakah anak-anak mereka dapat tumbuh menjadi individu dewasa yang menjalani hidup secara bermakna, mengembangkan kekuatan yang dimiliki, serta berkontribusi bagi lingkungan dan komunitas yang inklusif.',
+      'PUPA lahir sebagai respons atas kegelisahan tersebut, dan terus bertumbuh melalui proses pembelajaran dan penemuan. Di tengah keterbatasan sumber daya yang terstruktur, kurikulum yang teruji, dan jalur inklusif, PUPA memilih melangkah dengan cara yang berbeda: merancang program yang menumbuhkan kebiasaan positif, keterampilan hidup, dan kesiapan kerja dengan menghargai kemampuan, ritme, serta standar keberhasilan personal setiap individu.',
+    ],
+    growTitle1: 'Ruang untuk bertumbuh,',
+    growTitle2: 'tempat untuk menjadi diri sendiri',
+    growBody: 'Setiap cerita di sini lahir dari keberanian dan kapasitas untuk bertumbuh. Berawal dari sebuah inisiatif kecil, PUPA berkembang menjadi pusat pendampingan yang komprehensif dengan pendekatan yang menghargai keberagaman neurologis. Kami hadir untuk membuka potensi dalam diri setiap individu, membuktikan bahwa dengan dukungan yang tepat, setiap orang mampu mengambil peran yang bermakna dalam masyarakat.',
+    accordions: [
+      ['Mengapa PUPA?', 'PUPA berasal dari bahasa Latin yang berarti \u201ckepompong.\u201d Nama ini mencerminkan keyakinan kami bahwa pertumbuhan yang bermakna lahir dan berkembang dari lingkungan yang aman dan terstruktur — lingkungan yang melindungi, menguatkan, serta mempersiapkan individu tanpa tergesa atau memaksakan perubahan. Di PUPA, setiap individu didampingi untuk bertumbuh sesuai waktu dan caranya sendiri, hingga mereka siap melangkah ke tahap berikutnya.'],
+      ['Pendekatan kami', 'Pendekatan PUPA berangkat dari keyakinan bahwa individu neurodivergen perlu dikenali melalui potensi yang dimiliki, bukan dibatasi oleh label atau keterbatasan. Kami membangun ruang dan sistem yang memungkinkan setiap individu terhubung dengan komunitas yang suportif, menemukan peluang yang bermakna, serta memiliki jalur yang jelas menuju kemandirian — sehingga mereka tidak hanya beradaptasi atau bertahan, tetapi dapat bertumbuh dan berkontribusi secara bermakna.'],
+      ['Komunitas kami', 'PUPA Center adalah rumah bagi komunitas yang beragam dan dinamis — para pemikir, pelaku, dan keluarga yang percaya pada potensi setiap individu. Kami bertumbuh bersama individu dan keluarga yang mencari lingkungan neuro-affirming, di mana perbedaan diterima dan dirayakan. Di sini, setiap individu tidak hanya mengembangkan keterampilan, tetapi juga menemukan rasa memiliki.'],
+    ],
+    journeysTitle: 'Kisah pertumbuhan',
+    journeysLede: 'Perjalanan nyata para peserta PUPA Center — bertumbuh menuju kemandirian dan pekerjaan yang bermakna.',
+    startTitle: 'Mulai perjalananmu hari ini',
+    startBody: 'Baik Anda sedang mempertimbangkan untuk mendaftar atau sekadar ingin tahu lebih lanjut, kami dengan senang hati membantu Anda melangkah pertama.',
+    startCta: 'Hubungi kami',
+  },
+}[lang];
+---
+<Layout lang={lang} routeKey="stories" title={c.metaTitle} description={c.metaDescription}>
+
+  <!-- A FUTURE WITH PURPOSE -->
+  <section class="purpose">
+    <div class="wrap purpose-grid">
+      <div class="purpose-head">
+        <h1>{c.purposeTitle}</h1>
+        <div class="brand-blobs" aria-hidden="true">
+          <span class="b1"></span><span class="b2"></span><span class="b3"></span>
+        </div>
+      </div>
+      <div class="purpose-body">
+        <p class="lede">{c.purposeIntro}</p>
+        <p class="pull"><span>{c.purposeQuestion}</span></p>
+        {c.purposeBody.map((par) => <p>{par}</p>)}
+      </div>
+    </div>
+  </section>
+
+  <!-- A SPACE TO GROW + ACCORDIONS -->
+  <section class="grow">
+    <div class="wrap grow-grid">
+      <div>
+        <h2 class="grow-title"><span class="u-orange">{c.growTitle1}</span><br /><span class="u-orange">{c.growTitle2}</span></h2>
+        <p class="grow-body">{c.growBody}</p>
+      </div>
+      <div class="grow-accordions">
+        {c.accordions.map((a, i) => (
+          <details open={i === 0}>
+            <summary><span>{a[0]}</span><span class="acc-icon" aria-hidden="true"></span></summary>
+            <div class="acc-body"><p>{a[1]}</p></div>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- GROWTH JOURNEYS (story cards) -->
+  <section class="journeys">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>{c.journeysTitle}</h2>
+        <p>{c.journeysLede}</p>
+      </div>
+      <div class="story-grid">
+        {stories.map((s) => (
+          <a class="story-card" href={`${storyBase}/${s.data.slug}/`}>
+            {s.data.image && <img src={s.data.image} alt="" loading="lazy" width="360" height="270" />}
+            <div class="story-card-body"><h3>{s.data.title}</h3></div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- START THE ADVENTURE -->
+  <section class="start">
+    <div class="wrap start-inner">
+      <h2>{c.startTitle}</h2>
+      <p>{c.startBody}</p>
+      <a class="btn btn-primary" href="https://wa.me/62818533698" rel="noopener">{c.startCta}</a>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+/* A FUTURE WITH PURPOSE */
+.purpose{background:var(--cream);padding:72px 0 64px}
+.purpose-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+.purpose-head{position:relative}
+.purpose-head h1{font-size:clamp(2.4rem,5vw,3.6rem);color:var(--teal-700);position:relative;display:inline-block}
+.purpose-head h1::after{content:"";display:block;width:64%;height:6px;border-radius:4px;background:var(--orange-500);margin-top:12px;transform:rotate(-1.4deg)}
+.brand-blobs{position:relative;height:80px;margin-top:28px}
+.brand-blobs span{position:absolute;border-radius:50%}
+.brand-blobs .b1{width:56px;height:56px;background:var(--orange-500);left:0;top:14px}
+.brand-blobs .b2{width:26px;height:26px;background:var(--orange-700);left:48px;top:0}
+.brand-blobs .b3{width:18px;height:18px;background:var(--teal-100);left:40px;top:52px}
+.purpose-body .lede{font-size:1.2rem;color:var(--teal-700);margin-bottom:22px}
+.pull{margin:8px 0 26px}
+.pull span{background:var(--orange-500);color:#fff;font-family:'Fraunces',serif;font-weight:600;font-size:1.35rem;line-height:1.9;padding:4px 14px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.purpose-body p{color:var(--ink-soft);margin-bottom:16px}
+
+/* A SPACE TO GROW */
+.grow{padding:72px 0;border-top:1px solid #EFE4D2}
+.grow-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:56px;align-items:start}
+.grow-title{font-size:clamp(2rem,4.4vw,3rem);color:var(--teal-700);line-height:1.12}
+.grow-title .u-orange{position:relative;display:inline}
+.grow-title .u-orange::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:5px;border-radius:3px;background:var(--orange-500);transform:rotate(-1deg)}
+.grow-body{margin-top:26px;color:var(--ink-soft)}
+.grow-accordions details{border-bottom:1px solid rgba(15,107,102,.2)}
+.grow-accordions details:first-child{border-top:1px solid rgba(15,107,102,.2)}
+.grow-accordions summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 2px;min-height:44px;font-family:'Fraunces',serif;font-weight:600;font-size:1.2rem;color:var(--teal-700)}
+.grow-accordions summary::-webkit-details-marker{display:none}
+.acc-icon{position:relative;width:18px;height:18px;flex:none}
+.acc-icon::before,.acc-icon::after{content:"";position:absolute;background:var(--teal-700);border-radius:2px}
+.acc-icon::before{left:0;top:8px;width:18px;height:2px}
+.acc-icon::after{left:8px;top:0;width:2px;height:18px;transition:opacity .15s ease}
+.grow-accordions details[open] .acc-icon::after{opacity:0}
+.acc-body{padding:0 2px 20px}
+.acc-body p{color:var(--ink-soft)}
+
+/* GROWTH JOURNEYS cards */
+.journeys{padding:72px 0;background:var(--cream);border-top:1px solid #EFE4D2}
+.story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:8px}
+.story-card{background:var(--surface);border:1px solid #EFE4D2;border-radius:var(--radius-lg);overflow:hidden;text-decoration:none;color:var(--ink);transition:transform .2s ease,box-shadow .2s ease}
+.story-card:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(11,68,65,.12)}
+.story-card img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.story-card-body{padding:18px 20px 22px}
+.story-card h3{font-size:1.15rem}
+
+/* START */
+.start{padding:72px 0}
+.start-inner{background:var(--teal-900);color:#fff;border-radius:var(--radius-lg);padding:56px 48px;text-align:center}
+.start-inner h2{color:#fff}
+.start-inner p{color:#C8DEDC;max-width:52ch;margin:14px auto 28px}
+
+@media (max-width:960px){
+  .purpose-grid,.grow-grid{grid-template-columns:1fr;gap:32px}
+  .story-grid{grid-template-columns:1fr}
+}
+</style>
