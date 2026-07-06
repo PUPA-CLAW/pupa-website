@@ -18,12 +18,11 @@ const content = {
     ],
     waysTitle: 'Ways to give',
     bank: 'Bank transfer',
-    bankDetail: 'Account name, bank, and account number will be listed here.',
+    bankDetail: 'For our bank transfer details, please reach out via WhatsApp and our team will share them with you.',
     qris: 'QRIS',
-    qrisDetail: 'Scan-to-give QRIS code will be displayed here.',
+    qrisDetail: 'To donate via QRIS, message us on WhatsApp and we will send you the scan-to-give code.',
     corp: 'Corporate giving & CSR',
     corpDetail: 'Email info@pupacenter.org to discuss partnership and CSR programs.',
-    flag: 'Payment details pending from PUPA team',
     confirm: 'After donating, you are welcome to confirm your gift via WhatsApp so we can thank you and share how it is used.',
     confirmCta: 'Confirm a donation on WhatsApp',
   },
@@ -39,12 +38,11 @@ const content = {
     ],
     waysTitle: 'Cara berdonasi',
     bank: 'Transfer bank',
-    bankDetail: 'Nama rekening, bank, dan nomor rekening akan dicantumkan di sini.',
+    bankDetail: 'Untuk detail transfer bank, silakan hubungi kami via WhatsApp dan tim kami akan membagikannya kepada Anda.',
     qris: 'QRIS',
-    qrisDetail: 'Kode QRIS untuk berdonasi akan ditampilkan di sini.',
+    qrisDetail: 'Untuk berdonasi via QRIS, hubungi kami via WhatsApp dan kami akan mengirimkan kode scan-to-give.',
     corp: 'Donasi perusahaan & CSR',
     corpDetail: 'Email info@pupacenter.org untuk membahas kemitraan dan program CSR.',
-    flag: 'Detail pembayaran menunggu dari tim PUPA',
     confirm: 'Setelah berdonasi, Anda dipersilakan mengonfirmasi donasi melalui WhatsApp agar kami dapat berterima kasih dan membagikan penggunaannya.',
     confirmCta: 'Konfirmasi donasi via WhatsApp',
   },
@@ -71,8 +69,8 @@ const c = content[lang];
     <div class="wrap">
       <h2>{c.waysTitle}</h2>
       <div class="card-grid ways-grid">
-        <div class="card"><h3>{c.bank}</h3><p>{c.bankDetail}</p><span class="placeholder-flag">{c.flag}</span></div>
-        <div class="card"><h3>{c.qris}</h3><p>{c.qrisDetail}</p><span class="placeholder-flag">{c.flag}</span></div>
+        <div class="card"><h3>{c.bank}</h3><p>{c.bankDetail}</p></div>
+        <div class="card"><h3>{c.qris}</h3><p>{c.qrisDetail}</p></div>
         <div class="card"><h3>{c.corp}</h3><p>{c.corpDetail}</p></div>
       </div>
       <p class="confirm">{c.confirm}</p>

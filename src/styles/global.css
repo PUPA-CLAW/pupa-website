@@ -86,20 +86,6 @@ img,svg{display:block;max-width:100%}
 .card .card-link:hover{text-decoration:underline}
 .card-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:var(--teal-100)}
 
-.placeholder-flag{
-  display:inline-block;margin-top:14px;font-size:.8rem;font-weight:600;color:var(--orange-700);
-  background:var(--orange-100);padding:4px 10px;border-radius:999px;
-}
-.photo-placeholder{
-  aspect-ratio:4/3;border-radius:var(--radius-lg);
-  background:
-    radial-gradient(circle at 20% 30%, var(--teal-100) 0 12%, transparent 13%),
-    radial-gradient(circle at 60% 70%, var(--orange-100) 0 16%, transparent 17%),
-    var(--teal-050);
-  border:1px dashed var(--teal-700);
-  display:flex;align-items:center;justify-content:center;text-align:center;
-  color:var(--teal-700);font-weight:600;font-size:.95rem;padding:24px;
-}
 
 @media (max-width:960px){
   .card-grid{grid-template-columns:1fr}

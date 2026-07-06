@@ -1,0 +1,136 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { type Lang } from '../i18n/ui';
+interface Props { lang: Lang; }
+const { lang } = Astro.props;
+
+const c = {
+  en: {
+    metaTitle: 'Accessibility — PUPA Center',
+    metaDescription: 'PUPA Center is committed to a website everyone can use. Learn about our accessibility features, assistive technology support, and how to get help.',
+    h1: 'Accessibility',
+    intro: 'PUPA Center is committed to making our website welcoming and usable for everyone, including neurodivergent visitors and people who use assistive technology. Accessibility is part of who we are, not an afterthought.',
+    toolTitle: 'The accessibility toolbar',
+    toolBody: 'Every page on this site has an accessibility button in the bottom-right corner. Open it to adjust the site to suit you:',
+    tools: [
+      ['Text size', 'Make the text larger or smaller, up to 160%.'],
+      ['High contrast', 'Switch to a strong black-on-white view that is easier to read.'],
+      ['Readable spacing', 'Add extra line spacing and space between words and paragraphs.'],
+      ['Highlight links', 'Make every link stand out clearly from the surrounding text.'],
+      ['Read aloud', 'Have the page read out to you using your browser\u2019s built-in voice.'],
+    ],
+    toolNote: 'Your choices are remembered on your device, so the site stays the way you set it each time you visit.',
+    designTitle: 'How we designed for accessibility',
+    designPoints: [
+      'Soft, comfortable contrast rather than harsh pure black on pure white, which can be tiring for some readers.',
+      'Clear, predictable navigation that stays the same on every page.',
+      'Plain, literal language, avoiding idioms and figures of speech where we can.',
+      'Large tap targets and generous spacing, so links and buttons are easy to select.',
+      'No automatic movement or flashing content, and animations are reduced if your device requests it.',
+      'Text that can be resized and reflowed without breaking the layout.',
+    ],
+    techTitle: 'Using assistive technology',
+    techBody: 'This site is built to work with common assistive technologies, including screen readers (such as VoiceOver, TalkBack, and NVDA) and full keyboard navigation. You can move through the site using the Tab key, and a \u201cskip to content\u201d link appears when you start tabbing. Your device\u2019s own accessibility settings \u2014 text size, zoom, contrast, and voice \u2014 will also work alongside this site.',
+    langTitle: 'Language',
+    langBody: 'This website is available in English and Indonesian. Use the language switch at the top of any page to change between them.',
+    helpTitle: 'Need help, or found a problem?',
+    helpBody: 'We want everyone to be able to use this site. If you have trouble accessing any part of it, or you have a suggestion to make it better, please get in touch \u2014 we would genuinely like to hear from you.',
+    helpCta: 'Message us on WhatsApp',
+    emailCta: 'Email info@pupacenter.org',
+  },
+  id: {
+    metaTitle: 'Aksesibilitas — PUPA Center',
+    metaDescription: 'PUPA Center berkomitmen menghadirkan situs yang dapat digunakan semua orang. Pelajari fitur aksesibilitas, dukungan teknologi bantu, dan cara mendapatkan bantuan.',
+    h1: 'Aksesibilitas',
+    intro: 'PUPA Center berkomitmen membuat situs kami ramah dan dapat digunakan oleh semua orang, termasuk pengunjung neurodivergen dan pengguna teknologi bantu. Aksesibilitas adalah bagian dari diri kami, bukan sekadar pelengkap.',
+    toolTitle: 'Bilah alat aksesibilitas',
+    toolBody: 'Setiap halaman di situs ini memiliki tombol aksesibilitas di pojok kanan bawah. Buka tombol tersebut untuk menyesuaikan situs sesuai kebutuhan Anda:',
+    tools: [
+      ['Ukuran teks', 'Perbesar atau perkecil teks, hingga 160%.'],
+      ['Kontras tinggi', 'Beralih ke tampilan hitam-putih yang tegas dan lebih mudah dibaca.'],
+      ['Spasi mudah dibaca', 'Tambahkan jarak antarbaris serta antar kata dan paragraf.'],
+      ['Sorot tautan', 'Buat setiap tautan tampak jelas dari teks di sekitarnya.'],
+      ['Bacakan halaman', 'Halaman dibacakan untuk Anda menggunakan suara bawaan peramban.'],
+    ],
+    toolNote: 'Pilihan Anda diingat di perangkat Anda, sehingga situs tetap sesuai pengaturan Anda setiap kali berkunjung.',
+    designTitle: 'Bagaimana kami merancang aksesibilitas',
+    designPoints: [
+      'Kontras yang lembut dan nyaman, bukan hitam pekat di atas putih terang yang dapat melelahkan sebagian pembaca.',
+      'Navigasi yang jelas dan konsisten di setiap halaman.',
+      'Bahasa yang sederhana dan lugas, menghindari idiom sebisa mungkin.',
+      'Area sentuh yang besar dan spasi yang lega, sehingga tautan dan tombol mudah dipilih.',
+      'Tanpa gerakan otomatis atau konten berkedip, dan animasi dikurangi jika perangkat Anda memintanya.',
+      'Teks yang dapat diperbesar dan menyesuaikan tanpa merusak tata letak.',
+    ],
+    techTitle: 'Menggunakan teknologi bantu',
+    techBody: 'Situs ini dibuat agar berfungsi dengan teknologi bantu umum, termasuk pembaca layar (seperti VoiceOver, TalkBack, dan NVDA) serta navigasi penuh menggunakan keyboard. Anda dapat menjelajah situs dengan tombol Tab, dan tautan \u201clangsung ke konten\u201d akan muncul saat Anda mulai menekan Tab. Pengaturan aksesibilitas perangkat Anda sendiri \u2014 ukuran teks, zoom, kontras, dan suara \u2014 juga akan berfungsi bersama situs ini.',
+    langTitle: 'Bahasa',
+    langBody: 'Situs ini tersedia dalam bahasa Inggris dan Indonesia. Gunakan tombol bahasa di bagian atas setiap halaman untuk beralih.',
+    helpTitle: 'Butuh bantuan, atau menemukan kendala?',
+    helpBody: 'Kami ingin semua orang dapat menggunakan situs ini. Jika Anda mengalami kesulitan mengakses bagian mana pun, atau memiliki saran untuk membuatnya lebih baik, silakan hubungi kami \u2014 kami sungguh ingin mendengar dari Anda.',
+    helpCta: 'Hubungi kami via WhatsApp',
+    emailCta: 'Email info@pupacenter.org',
+  },
+}[lang];
+const wa = 'https://wa.me/62818533698';
+---
+<Layout lang={lang} routeKey="accessibility" title={c.metaTitle} description={c.metaDescription}>
+  <section class="page-head">
+    <div class="wrap">
+      <h1>{c.h1}</h1>
+      <p class="lede">{c.intro}</p>
+    </div>
+  </section>
+
+  <section class="a11y-info">
+    <div class="wrap">
+      <h2>{c.toolTitle}</h2>
+      <p class="info-body">{c.toolBody}</p>
+      <ul class="feature-list">
+        {c.tools.map((tl) => (
+          <li><strong>{tl[0]}.</strong> {tl[1]}</li>
+        ))}
+      </ul>
+      <p class="info-note">{c.toolNote}</p>
+
+      <h2>{c.designTitle}</h2>
+      <ul class="check-list">
+        {c.designPoints.map((d) => <li>{d}</li>)}
+      </ul>
+
+      <h2>{c.techTitle}</h2>
+      <p class="info-body">{c.techBody}</p>
+
+      <h2>{c.langTitle}</h2>
+      <p class="info-body">{c.langBody}</p>
+
+      <div class="help-box">
+        <h2>{c.helpTitle}</h2>
+        <p>{c.helpBody}</p>
+        <div class="help-actions">
+          <a class="btn btn-primary" href={wa} rel="noopener">{c.helpCta}</a>
+          <a class="btn btn-secondary" href="mailto:info@pupacenter.org">{c.emailCta}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+.page-head{background:var(--cream);padding:64px 0 48px;border-bottom:1px solid #EFE4D2}
+.page-head .lede{font-size:1.15rem;color:var(--ink-soft);margin-top:18px;max-width:62ch}
+.a11y-info{padding:56px 0}
+.a11y-info h2{margin:40px 0 16px}
+.a11y-info h2:first-child{margin-top:0}
+.info-body{max-width:68ch;color:var(--ink-soft)}
+.info-note{max-width:68ch;color:var(--ink-soft);font-style:italic;margin-top:14px}
+.feature-list{list-style:none;max-width:68ch;display:grid;gap:12px;margin-top:8px}
+.feature-list li{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.feature-list strong{color:var(--teal-700)}
+.check-list{max-width:68ch;padding-left:22px;display:grid;gap:10px;color:var(--ink-soft)}
+.check-list li{padding-left:6px}
+.help-box{margin-top:44px;background:var(--cream);border:1px solid #EFE4D2;border-radius:var(--radius-lg);padding:36px}
+.help-box h2{margin-top:0}
+.help-box p{max-width:60ch;color:var(--ink-soft);margin-bottom:22px}
+.help-actions{display:flex;gap:14px;flex-wrap:wrap}
+</style>
