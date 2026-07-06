@@ -1,0 +1,32 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../../layouts/Layout.astro';
+const stories = (await getCollection('stories', (s) => s.data.lang === 'id')).sort((a, b) => +a.data.date - +b.data.date);
+---
+<Layout lang="id" routeKey="stories" title="Kisah Pertumbuhan — Cerita Peserta | PUPA Center" description="Kisah nyata pertumbuhan peserta PUPA Center: keberanian, kemampuan, dan langkah menuju kemandirian serta pekerjaan yang bermakna.">
+  <section class="page-head"><div class="wrap">
+    <h1>Kisah pertumbuhan</h1>
+    <p class="lede">Setiap kisah di sini adalah kisah keberanian dan kemampuan — perjalanan nyata peserta PUPA Center menuju kemandirian dan pekerjaan yang bermakna.</p>
+  </div></section>
+  <section class="listing"><div class="wrap">
+    <div class="story-grid">
+      {stories.map((s) => (
+        <a class="story-card" href={`/id/kisah/${s.data.slug}/`}>
+          {s.data.image && <img src={s.data.image} alt="" loading="lazy" />}
+          <h2>{s.data.title}</h2>
+        </a>
+      ))}
+    </div>
+  </div></section>
+</Layout>
+<style>
+.page-head{background:var(--cream);padding:64px 0 48px;border-bottom:1px solid var(--line)}
+.page-head .lede{font-size:1.15rem;color:var(--ink-soft);margin-top:18px}
+.listing{padding:56px 0}
+.story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.story-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-lg);overflow:hidden;text-decoration:none;color:var(--ink)}
+.story-card:hover h2{color:var(--teal-700)}
+.story-card img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.story-card h2{font-size:1.15rem;padding:18px 20px}
+@media (max-width:960px){.story-grid{grid-template-columns:1fr}}
+</style>

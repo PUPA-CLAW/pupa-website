@@ -1,0 +1,215 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { type Lang } from '../i18n/ui';
+
+interface Props { lang: Lang; }
+const { lang } = Astro.props;
+
+const content = {
+  en: {
+    metaTitle: 'About PUPA Center — Our Story, Mission & Values',
+    metaDescription: 'PUPA Center is a development center for neurodivergent young adults in Tangerang, Indonesia. Learn about our story, our neuro-affirming approach, and the values that guide our work.',
+    h1: 'About PUPA Center',
+    storyTitle: 'Our story',
+    story: [
+      'The name PUPA, derived from Latin, means cocoon. It reflects our belief that meaningful growth happens within a safe, structured, and nurturing environment — one that protects, strengthens, and prepares individuals without rushing or forcing transformation.',
+      'PUPA began as a response to the concerns of families, in a landscape where structured resources, proven curricula, and inclusive pathways for neurodivergent young adults were limited. PUPA chose a different approach: designing programs that build habits, life skills, and work readiness in ways that respect each individual\u2019s abilities, pace, and personal standard of success.',
+      'What started as a small initiative has grown into a comprehensive center for neuro-affirming support. We exist to unlock the potential within every individual, proving that with the right support, everyone can play a meaningful role in our society.',
+    ],
+    missionTitle: 'Mission, vision & motto',
+    mission: 'To empower neurodivergents through holistic, innovative and neuro-affirming approaches.',
+    vision: 'A future where neurodivergents live a life that matters.',
+    motto: 'Transform to shine',
+    missionNote: 'We exist to unlock the potential within every individual, proving that with the right support, everyone can play a meaningful role in our society.',
+    mvLabels: ['Our mission', 'Our vision', 'Our motto'],
+    valuesTitle: 'Our values (P.U.P.A)',
+    values: [
+      ['Purpose', 'I will be excellent and committed to continuous growth.', 'The way I want to learn'],
+      ['United', 'I will collaborate and value the contributions of all who are working together.', 'The way I want to be valued'],
+      ['Principled', 'I honor integrity, honesty and transparency.', 'The way I want to be trusted'],
+      ['Acceptance', 'I embrace diversity and treat everyone with kindness, respect and dignity.', 'The way I want to be embraced'],
+    ],
+    journeyTitle: 'Our journey',
+    journey: [
+      ['Foundation', 'Established as a foundation for information and public education in the field of autism.'],
+      ['School', 'PUPA developed into a school educating neurodivergent students.'],
+      ['Job Training Center', 'A job training center equipping neurodivergent youth and young adults to work and live independently.'],
+      ['PUPA Center', 'PUPA Center is established, with capacity development in life skills and work readiness.'],
+    ],
+    logoTitle: 'Why the butterfly?',
+    logoText: 'PUPA Center\u2019s butterfly logo represents our dream of transforming the mindset and abilities of individuals to be more mature. PUPA is committed to preparing neurodivergent individuals to transition into independent, functioning people who make an impact on themselves and on an inclusive society.',
+    approachTitle: 'Our approach',
+    approachIntro: 'At PUPA Center, we understand that independence and readiness for adult life do not happen overnight. They grow through time, trust, and meaningful daily experiences. Our support is a continuous and integrated process that prepares neurodivergent individuals for life in the community and, when ready, the world of work.',
+    approach: [
+      ['Individual-Centered Foundation', 'Our approach is individual-centered and grounded in real-life experiences. We begin by strengthening Life Skills as the foundation for independence in everyday life. Each participant is guided through an Individualized Education Plan (IEP) that reflects their personal needs, strengths, and goals.'],
+      ['Social Integration & Collaborative Growth', 'Alongside individual support, participants take part in structured group activities both at PUPA Center and in public settings. This allows them to practice social interaction, collaboration, and daily routines in a safe and supportive environment. We respect that every individual grows at a different pace, adjusting support to each person\u2019s abilities, comfort level, and rhythm of development.'],
+      ['Long-Term Readiness & Vision', 'Rather than focusing on fast results, PUPA focuses on long-term readiness and personal growth. We work closely with families and partners to ensure consistency and shared understanding. Guided by our vision, \u201cA future where neurodivergent individuals live a life that matters,\u201d we help each individual move forward with confidence, choice, and a strong foundation for adult life.'],
+    ],
+    teamTitle: 'Our team',
+    teamNote: 'Team profiles are being prepared for the new website. Names, roles, and photos will appear here.',
+    teamFlag: 'Content pending from PUPA team',
+  },
+  id: {
+    metaTitle: 'Tentang PUPA Center — Kisah, Misi & Nilai Kami',
+    metaDescription: 'PUPA Center adalah pusat pengembangan untuk anak muda neurodivergen di Tangerang, Indonesia. Kenali kisah kami, pendekatan neuro-affirming kami, dan nilai-nilai yang memandu kerja kami.',
+    h1: 'Tentang PUPA Center',
+    storyTitle: 'Kisah kami',
+    story: [
+      'Nama PUPA, yang berasal dari bahasa Latin, berarti kepompong. Nama ini mencerminkan keyakinan kami bahwa pertumbuhan yang bermakna terjadi dalam lingkungan yang aman, terstruktur, dan penuh dukungan — lingkungan yang melindungi, menguatkan, dan mempersiapkan individu tanpa terburu-buru atau memaksakan perubahan.',
+      'PUPA Center adalah organisasi yang berfokus pada pendampingan dan pengembangan individu neurodivergen. Kami berkomitmen menghadirkan layanan yang komprehensif bagi individu, keluarga, serta seluruh pihak pendukung dalam ekosistemnya. PUPA lahir sebagai jawaban atas kegelisahan keluarga, di tengah keterbatasan sumber daya terstruktur, kurikulum teruji, dan jalur inklusif bagi anak muda neurodivergen. PUPA memilih pendekatan yang berbeda: merancang program yang membangun kebiasaan, kecakapan hidup, dan kesiapan kerja dengan cara yang menghormati kemampuan, kecepatan, dan standar keberhasilan pribadi setiap individu.',
+      'Yang bermula sebagai inisiatif kecil kini telah bertumbuh menjadi pusat pendampingan neuro-affirming yang komprehensif. Kami hadir untuk membuka potensi dalam diri setiap individu, membuktikan bahwa dengan dukungan yang tepat, setiap orang dapat berperan secara bermakna dalam masyarakat.',
+    ],
+    missionTitle: 'Misi, visi & motto',
+    mission: 'Memberdayakan individu neurodivergen melalui pendekatan holistik dan inovatif yang selaras dengan keberagaman neurologis setiap individu.',
+    vision: 'Mewujudkan masa depan individu neurodivergen menjalani hidup yang bermakna.',
+    motto: 'Transform to shine',
+    missionNote: 'Kami mendampingi individu neurodivergen dewasa dengan komitmen pada martabat, inklusi, dan dampak jangka panjang. Lebih dari program, kami memberi ruang dan warna, dengan tujuan membangun kehidupan yang bermakna.',
+    mvLabels: ['Misi kami', 'Visi kami', 'Motto kami'],
+    valuesTitle: 'Nilai-nilai kami (P.U.P.A)',
+    values: [
+      ['Purpose', 'Berkomitmen untuk terus bertumbuh dan berkembang.', 'Cara saya ingin belajar'],
+      ['United', 'Berkolaborasi dan menghargai kontribusi semua pihak yang terlibat.', 'Cara saya ingin dihargai'],
+      ['Principled', 'Menjaga tinggi integritas, kejujuran, dan transparansi.', 'Cara saya ingin dipercayai'],
+      ['Acceptance', 'Merangkul keberagaman dan memperlakukan setiap individu dengan kebaikan, rasa hormat, dan martabat.', 'Cara saya ingin diterima'],
+    ],
+    journeyTitle: 'Perjalanan kami',
+    journey: [
+      ['Yayasan', 'Didirikan sebagai yayasan untuk informasi dan edukasi publik di bidang autisme.'],
+      ['Sekolah', 'PUPA berkembang menjadi sekolah yang mendidik siswa neurodivergen.'],
+      ['Pusat Pelatihan Kerja', 'Pusat pelatihan kerja yang membekali remaja dan dewasa muda neurodivergen untuk bekerja dan hidup mandiri.'],
+      ['PUPA Center', 'PUPA Center didirikan, dengan pengembangan kapasitas di bidang kecakapan hidup dan kesiapan kerja.'],
+    ],
+    logoTitle: 'Mengapa kupu-kupu?',
+    logoText: 'Logo kupu-kupu PUPA Center melambangkan impian kami untuk mentransformasi pola pikir dan kemampuan individu menjadi lebih matang. PUPA berkomitmen mempersiapkan individu neurodivergen untuk bertransisi menjadi pribadi yang mandiri dan berfungsi, yang memberi dampak bagi dirinya sendiri maupun bagi masyarakat yang inklusif.',
+    approachTitle: 'Pendekatan kami',
+    approachIntro: 'Pendampingan di PUPA Center dirancang sebagai proses yang terintegrasi, menuju kesiapan kerja dan berbaur inklusif di tengah masyarakat. PUPA meyakini bahwa proses tersebut tidak terbentuk secara instan, melainkan bertahap melalui interaksi bermakna. Pendekatan PUPA berpusat pada individu, berbasis pengalaman nyata, serta dibangun melalui transisi terstruktur dan berkelanjutan.',
+    approach: [
+      ['PUPA Berorientasi Pada Individu', 'Dengan pemahaman bahwa setiap individu adalah unik, PUPA Center menjadikan penguatan Life Skill sebagai dasar kemandirian dalam kehidupan bermasyarakat — dimulai dari penerapan Individualized Education Plan (IEP) yang disesuaikan dengan kebutuhan setiap individu, serta kemasan klasikal sebagai wujud praktik kolaborasi dalam desain kegiatan di PUPA dan area publik.'],
+      ['Integrasi Sosial & Pertumbuhan Kolaboratif', 'Melalui seluruh program PUPA, individu neurodivergen didampingi secara optimal sesuai kapasitas dan ritme masing-masing: pendampingan individual yang menghargai keunikan, pembelajaran berbasis pengalaman nyata, transisi yang terstruktur untuk membangun kemandirian tanpa mengabaikan rasa aman, serta kolaborasi dengan keluarga dan mitra guna memastikan kesinambungan pendampingan.'],
+      ['Kesiapan & Visi Jangka Panjang', 'Alih-alih mengejar hasil secara cepat, PUPA berfokus mempersiapkan penguatan unik setiap individu, selaras dengan visi PUPA — \u201cA future where neurodivergents live a life that matters\u201d — sehingga individu neurodivergen dapat melangkah maju dengan percaya diri dalam fondasi yang kuat menuju kehidupan dewasa.'],
+    ],
+    teamTitle: 'Tim kami',
+    teamNote: 'Profil tim sedang disiapkan untuk situs baru. Nama, peran, dan foto akan ditampilkan di sini.',
+    teamFlag: 'Menunggu konten dari tim PUPA',
+  },
+};
+const c = content[lang];
+---
+<Layout lang={lang} routeKey="about" title={c.metaTitle} description={c.metaDescription}>
+  <section class="page-head">
+    <div class="wrap">
+      <h1>{c.h1}</h1>
+    </div>
+  </section>
+
+  <section class="about-sec" id="story">
+    <div class="wrap story-wrap">
+      <div>
+        <h2>{c.storyTitle}</h2>
+        {c.story.map((par) => <p class="story-p">{par}</p>)}
+      </div>
+      <img class="blob about-photo" src="/images/pupa-group-9748.jpg" alt="" loading="lazy" width="480" height="420" />
+    </div>
+  </section>
+
+  <section class="group-band" aria-hidden="true">
+    <img src="/images/pupa-group-9696.jpg" alt="" loading="lazy" />
+  </section>
+
+  <section class="about-sec alt" id="mission">
+    <div class="wrap">
+      <h2>{c.missionTitle}</h2>
+      <div class="mv-grid">
+        <div class="mv-card"><p class="mv-label">{c.mvLabels[0]}</p><p class="mv-text">{c.mission}</p></div>
+        <div class="mv-card"><p class="mv-label">{c.mvLabels[1]}</p><p class="mv-text">{c.vision}</p></div>
+        <div class="mv-card"><p class="mv-label">{c.mvLabels[2]}</p><p class="mv-text motto">{c.motto}</p></div>
+      </div>
+      <p class="story-p">{c.missionNote}</p>
+      <h3 id="approach">{c.valuesTitle}</h3>
+      <div class="card-grid values-grid">
+        {c.values.map((v) => (
+          <div class="card value-card">
+            <h4>{v[0]}</h4>
+            <p>{v[1]}</p>
+            <span class="value-chip">{v[2]}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="about-sec" id="journey">
+    <div class="wrap">
+      <h2>{c.journeyTitle}</h2>
+      <ol class="journey">
+        {c.journey.map((j, i) => (
+          <li><span class="j-num" aria-hidden="true">{i + 1}</span><div><h3>{j[0]}</h3><p>{j[1]}</p></div></li>
+        ))}
+      </ol>
+      <h3>{c.logoTitle}</h3>
+      <p class="story-p">{c.logoText}</p>
+    </div>
+  </section>
+
+  <section class="about-sec alt" id="approach-detail">
+    <div class="wrap approach-grid">
+      <div>
+        <h2>{c.approachTitle}</h2>
+        <p class="story-p">{c.approachIntro}</p>
+      </div>
+      <div class="pillars">
+        {c.approach.map((a, i) => (
+          <details open={i === 0}>
+            <summary>{a[0]}</summary>
+            <p>{a[1]}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="about-sec" id="team">
+    <div class="wrap">
+      <h2>{c.teamTitle}</h2>
+      <p class="story-p">{c.teamNote}</p>
+      <span class="placeholder-flag">{c.teamFlag}</span>
+    </div>
+  </section>
+</Layout>
+
+<style>
+.page-head{background:var(--cream);padding:64px 0 48px;border-bottom:1px solid var(--line)}
+.about-sec{padding:56px 0}
+.story-wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.about-photo{width:100%;aspect-ratio:8/7;box-shadow:0 14px 34px rgba(11,68,65,.12)}
+.group-band img{width:100%;height:380px;object-fit:cover;display:block}
+@media (max-width:960px){.story-wrap{grid-template-columns:1fr}.group-band img{height:240px}}
+.about-sec.alt{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.story-p{margin:14px 0;color:var(--ink-soft)}
+.about-sec h3{margin:32px 0 8px}
+.mv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:20px 0 22px}
+.mv-card{background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-lg);padding:24px}
+.mv-label{font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--teal-700);margin-bottom:8px}
+.mv-text{font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:1.12rem;line-height:1.4}
+.mv-text.motto{color:var(--orange-700)}
+.value-card{position:relative}
+.value-card h4{color:var(--teal-700)}
+.value-chip{display:inline-block;margin-top:12px;font-size:.82rem;font-weight:700;color:#fff;background:var(--orange-500);padding:5px 12px;border-radius:6px}
+.approach-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:start}
+.pillars{display:grid;gap:12px}
+.pillars details{background:var(--bg);border:1px solid var(--line);border-radius:var(--radius)}
+.pillars summary{cursor:pointer;font-weight:700;color:var(--teal-700);padding:16px 20px;min-height:44px;list-style-position:inside}
+.pillars summary:hover{background:var(--teal-050);border-radius:var(--radius)}
+.pillars details[open] summary{border-bottom:1px solid var(--line)}
+.pillars details p{padding:16px 20px;color:var(--ink-soft)}
+.values-grid{grid-template-columns:repeat(4,1fr)}
+.values-grid h4{font-family:'Bricolage Grotesque',sans-serif;font-size:1.1rem}
+@media (max-width:960px){.values-grid{grid-template-columns:1fr 1fr}.mv-grid{grid-template-columns:1fr}.approach-grid{grid-template-columns:1fr}}
+</style>
+<style>
+.journey{list-style:none;margin:24px 0 32px;display:grid;gap:14px;max-width:720px}
+.journey li{display:flex;gap:16px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px}
+.j-num{flex:none;display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:var(--orange-100);color:var(--orange-700);font-family:'Bricolage Grotesque',sans-serif;font-weight:700}
+.journey h3{font-size:1.05rem;margin-bottom:2px}
+.journey p{font-size:1rem;color:var(--ink-soft)}
+</style>

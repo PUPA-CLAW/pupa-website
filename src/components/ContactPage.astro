@@ -1,0 +1,96 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { type Lang } from '../i18n/ui';
+
+interface Props { lang: Lang; }
+const { lang } = Astro.props;
+
+const waText = {
+  en: encodeURIComponent('Hello PUPA Center team, I would like to know more about your programs. Thank you.'),
+  id: encodeURIComponent('Halo tim PUPA Center, saya ingin mengetahui lebih lanjut mengenai program yang tersedia. Terima kasih.'),
+};
+const content = {
+  en: {
+    metaTitle: 'Contact PUPA Center — Visit Us in Alam Sutera, Tangerang',
+    metaDescription: 'Contact PUPA Center for enrollment and inquiries. WhatsApp, email, or visit us at Ruko Prominence, Alam Sutera, Tangerang. Open Monday–Friday, 9:00 AM–3:00 PM WIB.',
+    h1: 'Contact us',
+    intro: 'The fastest way to reach us is WhatsApp. We will reply within one working day.',
+    waBtn: 'Message us on WhatsApp',
+    emailLabel: 'Email',
+    visitTitle: 'Visit us',
+    address: ['Ruko Prominence Blok 38E No. 42-43', 'Jl. Sutera Barat Boulevard', 'Alam Sutera, Tangerang 15143', 'Indonesia'],
+    mapsBtn: 'Open in Google Maps',
+    hoursTitle: 'Activity hours',
+    hours: 'Monday to Friday, 9:00 AM – 3:00 PM (WIB)',
+    followTitle: 'Follow us',
+  },
+  id: {
+    metaTitle: 'Kontak PUPA Center — Kunjungi Kami di Alam Sutera, Tangerang',
+    metaDescription: 'Hubungi PUPA Center untuk pendaftaran dan pertanyaan. WhatsApp, email, atau kunjungi kami di Ruko Prominence, Alam Sutera, Tangerang. Buka Senin–Jumat, 09.00–15.00 WIB.',
+    h1: 'Hubungi kami',
+    intro: 'Cara tercepat menghubungi kami adalah melalui WhatsApp. Kami akan membalas dalam satu hari kerja.',
+    waBtn: 'Kirim pesan via WhatsApp',
+    emailLabel: 'Email',
+    visitTitle: 'Kunjungi kami',
+    address: ['Ruko Prominence Blok 38E No. 42-43', 'Jl. Sutera Barat Boulevard', 'Alam Sutera, Tangerang 15143', 'Indonesia'],
+    mapsBtn: 'Buka di Google Maps',
+    hoursTitle: 'Jam kegiatan',
+    hours: 'Senin sampai Jumat, pukul 09.00 – 15.00 WIB',
+    followTitle: 'Ikuti kami',
+  },
+};
+const c = content[lang];
+const wa = `https://wa.me/62818533698?text=${waText[lang]}`;
+---
+<Layout lang={lang} routeKey="contact" title={c.metaTitle} description={c.metaDescription}>
+  <section class="page-head">
+    <div class="wrap">
+      <h1>{c.h1}</h1>
+      <p class="lede">{c.intro}</p>
+      <a class="btn btn-primary" href={wa} rel="noopener">{c.waBtn}</a>
+    </div>
+  </section>
+
+  <section class="map-sec">
+    <div class="wrap">
+      <iframe
+        title="PUPA Center location map"
+        src="https://maps.google.com/maps?q=Ruko%20Prominence%20Blok%2038E%20Alam%20Sutera%20Tangerang&z=15&output=embed"
+        width="100%" height="380" style="border:0;border-radius:22px" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <section class="contact-grid-sec">
+    <div class="wrap card-grid contact-grid">
+      <div class="card">
+        <h2>{c.visitTitle}</h2>
+        <p>{c.address.map((line) => <>{line}<br /></>)}</p>
+        <a class="card-link" href="https://maps.app.goo.gl/tPCkDTf2Cf6pa3Dp7" rel="noopener">{c.mapsBtn} →</a>
+      </div>
+      <div class="card">
+        <h2>{c.hoursTitle}</h2>
+        <p>{c.hours}</p>
+        <h2 class="mt">{c.emailLabel}</h2>
+        <p><a href="mailto:info@pupacenter.org">info@pupacenter.org</a></p>
+      </div>
+      <div class="card">
+        <h2>{c.followTitle}</h2>
+        <p>
+          <a href="https://www.instagram.com/pupa.center" rel="noopener">Instagram — @pupa.center</a><br />
+          <a href="https://www.youtube.com/@PUPACenter" rel="noopener">YouTube — PUPA Center</a>
+        </p>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+.page-head{background:var(--cream);padding:64px 0;border-bottom:1px solid var(--line)}
+.page-head .lede{font-size:1.15rem;color:var(--ink-soft);margin:18px 0 26px}
+.map-sec{padding:48px 0 8px}
+.contact-grid-sec{padding:40px 0 64px}
+.contact-grid h2{font-size:1.15rem}
+.contact-grid .mt{margin-top:20px}
+.contact-grid a{min-height:auto}
+</style>
