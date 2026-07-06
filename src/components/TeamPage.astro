@@ -140,18 +140,18 @@ const team = [
 .page-head{background:var(--cream);padding:64px 0 48px;border-bottom:1px solid var(--line)}
 .page-head .lede{font-size:1.15rem;color:var(--ink-soft);margin-top:18px}
 .leaders{padding:64px 0}
-.leader-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:28px}
-.leader-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-lg);overflow:hidden}
+.leader-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:28px;align-items:stretch}
+.leader-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-lg);overflow:hidden;display:flex;flex-direction:column}
 .leader-card img{width:100%;aspect-ratio:4/5;object-fit:cover}
-.leader-info{padding:20px 22px 24px}
+.leader-info{padding:20px 22px 24px;display:flex;flex-direction:column;flex-grow:1}
 .leader-role{font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--teal-700)}
 .leader-info h3{margin:4px 0 10px}
 .leader-bio{font-size:.97rem;color:var(--ink-soft)}
 .photo-note{margin-top:22px;font-size:.9rem;color:var(--ink-soft)}
 .team-sec{background:var(--surface);border-top:1px solid var(--line);padding:64px 0}
-.team-grid{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:24px}
-.member{background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-lg);overflow:hidden;text-align:center}
+.team-grid{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:24px;align-items:stretch}
+.member{background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-lg);overflow:hidden;text-align:center;display:flex;flex-direction:column}
 .member img{width:100%;aspect-ratio:4/5;object-fit:cover}
-.member span{display:block;font-weight:600;font-size:.95rem;padding:12px 10px 14px}
+.member span{display:flex;align-items:center;justify-content:center;flex-grow:1;font-weight:600;font-size:.95rem;padding:12px 10px 14px}
 @media (max-width:960px){.leader-grid{grid-template-columns:1fr}.team-grid{grid-template-columns:1fr 1fr}}
 </style>

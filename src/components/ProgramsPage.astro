@@ -255,10 +255,10 @@ const extraImgs: Record<string, string> = {
 .stage-badge{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:var(--orange-500);color:#2B1503;font-family:'Fraunces',serif;font-weight:700}
 .prog-intro{display:grid;grid-template-columns:1.2fr .8fr;gap:44px;align-items:center}
 .prog-photo{width:100%;aspect-ratio:8/7;box-shadow:0 14px 34px rgba(11,68,65,.12)}
-.extra-grid{grid-template-columns:repeat(4,1fr)}
-.photo-card{padding:0;overflow:hidden}
+.extra-grid{grid-template-columns:repeat(4,1fr);align-items:stretch}
+.photo-card{padding:0;overflow:hidden;display:flex;flex-direction:column}
 .photo-card img{width:100%;aspect-ratio:16/10;object-fit:cover}
-.photo-card-body{padding:18px 20px 22px}
+.photo-card-body{padding:18px 20px 22px;display:flex;flex-direction:column;flex-grow:1}
 .yoga-ph{width:100%;aspect-ratio:16/10;background:radial-gradient(circle at 30% 40%, var(--peach) 0 18%, transparent 19%), radial-gradient(circle at 70% 60%, var(--sage) 0 22%, transparent 23%), var(--cream)}
 .journey-band{background:var(--cream);border-top:1px solid #EFE4D2;border-bottom:1px solid #EFE4D2;padding:80px 0}
 .journey-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
