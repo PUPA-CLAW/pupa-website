@@ -227,7 +227,11 @@ const extraImgs: Record<string, string> = {
       <div class="card-grid areas extra-grid">
         {c.extra.classes.map((cl, i) => (
           <div class="card photo-card">
-            {extraImgs[i] ? <img src={extraImgs[i]} alt="" loading="lazy" width="360" height="220" /> : <div class="yoga-ph" aria-hidden="true"></div>}
+            {extraImgs[i]
+              ? <img src={extraImgs[i]} alt="" loading="lazy" width="360" height="220" />
+              : <div class="yoga-ph" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2"/><path d="M12 8v6"/><path d="M5 21c2-3 4.5-4.5 7-4.5S17 18 19 21"/><path d="M4 12c3 1.5 5.5 2 8 2s5-.5 8-2"/></svg>
+                </div>}
             <div class="photo-card-body"><h4>{cl[0]}</h4><p>{cl[1]}</p></div>
           </div>
         ))}
@@ -270,9 +274,10 @@ const extraImgs: Record<string, string> = {
 .prog-photo{width:100%;aspect-ratio:8/7;box-shadow:0 14px 34px rgba(11,68,65,.12)}
 .extra-grid{grid-template-columns:repeat(2,1fr);gap:24px;grid-auto-rows:1fr}
 .photo-card{padding:0;overflow:hidden;display:flex;flex-direction:row}
-.photo-card img{width:44%;flex:none;aspect-ratio:auto;object-fit:cover}
+.photo-card img{width:40%;flex:none;aspect-ratio:auto;object-fit:cover}
 .photo-card-body{padding:22px 24px;display:flex;flex-direction:column;flex-grow:1;justify-content:center}
-.yoga-ph{width:44%;flex:none;background:radial-gradient(circle at 30% 35%, var(--peach) 0 26%, transparent 27%), radial-gradient(circle at 68% 62%, var(--sage) 0 30%, transparent 31%), var(--cream)}
+.yoga-ph{width:40%;flex:none;display:flex;align-items:center;justify-content:center;background:linear-gradient(150deg,var(--sage),var(--peach));color:var(--teal-700)}
+.yoga-ph svg{width:44px;height:44px;opacity:.75}
 .journey-band{background:var(--cream);border-top:1px solid #EFE4D2;border-bottom:1px solid #EFE4D2;padding:80px 0}
 .journey-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
 .journey-title{font-size:clamp(2.2rem,5vw,3.6rem);color:var(--teal-700);line-height:1.08;position:relative;display:inline-block}

@@ -22,7 +22,8 @@ const content = {
     motto: 'Transform to shine',
     missionNote: 'We exist to unlock the potential within every individual, proving that with the right support, everyone can play a meaningful role in our society.',
     mvLabels: ['Our mission', 'Our vision', 'Our motto'],
-    valuesTitle: 'Our values (P.U.P.A)',
+    valuesTitle: 'Our values',
+    valuesIntro: 'Our values guide the way we learn, connect, and grow. We chose P.U.P.A — the same letters as our name — because they reflect what we want for every participant, family, and team member.',
     values: [
       ['Purpose', 'I will be excellent and committed to continuous growth.', 'The way I want to learn'],
       ['United', 'I will collaborate and value the contributions of all who are working together.', 'The way I want to be valued'],
@@ -62,7 +63,8 @@ const content = {
     motto: 'Transform to shine',
     missionNote: 'Kami mendampingi individu neurodivergen dewasa dengan komitmen pada martabat, inklusi, dan dampak jangka panjang. Lebih dari program, kami memberi ruang dan warna, dengan tujuan membangun kehidupan yang bermakna.',
     mvLabels: ['Misi kami', 'Visi kami', 'Motto kami'],
-    valuesTitle: 'Nilai-nilai kami (P.U.P.A)',
+    valuesTitle: 'Nilai-nilai kami',
+    valuesIntro: 'Nilai-nilai kami memandu cara kami belajar, terhubung, dan bertumbuh. Kami memilih P.U.P.A — huruf yang sama dengan nama kami — karena mencerminkan harapan kami bagi setiap peserta, keluarga, dan anggota tim.',
     values: [
       ['Purpose', 'Berkomitmen untuk terus bertumbuh dan berkembang.', 'Cara saya ingin belajar'],
       ['United', 'Berkolaborasi dan menghargai kontribusi semua pihak yang terlibat.', 'Cara saya ingin dihargai'],
@@ -88,6 +90,20 @@ const content = {
   },
 };
 const c = content[lang];
+
+// P.U.P.A big-letter treatment metadata (shared across languages)
+const pupaLetters = ['P', 'U', 'P', 'A'];
+const pupaColors = ['var(--orange-500)', 'var(--teal-700)', 'var(--orange-700)', 'var(--teal-900)'];
+const pupaIcons = [
+  // Purpose — target
+  '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1" fill="currentColor"/>',
+  // United — people
+  '<circle cx="9" cy="8" r="3"/><circle cx="17" cy="10" r="2.5"/><path d="M3 19v-1a6 6 0 0 1 12 0v1"/><path d="M15 19v-1a4 4 0 0 1 6 0v1"/>',
+  // Principled — shield check
+  '<path d="M12 3l7 3v5c0 4-3 7-7 9-4-2-7-5-7-9V6z"/><path d="M9 12l2 2 4-4"/>',
+  // Acceptance — heart
+  '<path d="M12 21s-7-4.35-9.5-8.5C1 9 3 5.5 6.5 5.5c2 0 3.5 1.5 5.5 3.5 2-2 3.5-3.5 5.5-3.5C21 5.5 23 9 21.5 12.5 19 16.65 12 21 12 21z"/>',
+];
 ---
 <Layout lang={lang} routeKey="about" title={c.metaTitle} description={c.metaDescription}>
   <section class="page-head">
@@ -120,13 +136,21 @@ const c = content[lang];
       </div>
       <p class="story-p">{c.missionNote}</p>
       <h3 id="approach">{c.valuesTitle}</h3>
-      <div class="card-grid values-grid">
-        {c.values.map((v) => (
-          <div class="card value-card">
-            <h4>{v[0]}</h4>
-            <p>{v[1]}</p>
-            <span class="value-chip">{v[2]}</span>
+      <p class="story-p values-intro">{c.valuesIntro}</p>
+
+      <div class="pupa-letters" aria-hidden="true">
+        {c.values.map((v, i) => (
+          <div class="letter-col" style={`color:${pupaColors[i]}`}>
+            <span class="letter-label">{v[0]}</span>
+            <span class="big-letter">{pupaLetters[i]}<span class="letter-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" set:html={pupaIcons[i]}></svg></span></span>
           </div>
+        ))}
+        <span class="pupa-dot">.</span>
+      </div>
+
+      <div class="value-defs">
+        {c.values.map((v, i) => (
+          <p class="value-def"><b style={`color:${pupaColors[i]}`}>{v[0]}</b> — {v[1]} <span class="value-chip">{v[2]}</span></p>
         ))}
       </div>
     </div>
@@ -181,7 +205,7 @@ const c = content[lang];
 .mv-text.motto{color:var(--orange-700)}
 .value-card{position:relative}
 .value-card h4{color:var(--teal-700)}
-.value-chip{display:inline-block;margin-top:12px;font-size:.82rem;font-weight:700;color:#fff;background:var(--orange-500);padding:5px 12px;border-radius:6px}
+.value-chip{display:inline-block;font-size:.8rem;font-weight:600;color:var(--teal-900);background:var(--sage);padding:3px 12px;border-radius:999px;white-space:nowrap}
 .approach-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:start}
 .pillars{display:grid;gap:12px}
 .pillars details{background:var(--bg);border:1px solid var(--line);border-radius:var(--radius)}
@@ -189,9 +213,29 @@ const c = content[lang];
 .pillars summary:hover{background:var(--teal-050);border-radius:var(--radius)}
 .pillars details[open] summary{border-bottom:1px solid var(--line)}
 .pillars details p{padding:16px 20px;color:var(--ink-soft)}
-.values-grid{grid-template-columns:repeat(4,1fr)}
-.values-grid h4{font-family:'Fraunces',serif;font-size:1.1rem}
+
+
 @media (max-width:960px){.values-grid{grid-template-columns:1fr 1fr}.mv-grid{grid-template-columns:1fr}.approach-grid{grid-template-columns:1fr}}
+
+/* P.U.P.A big-letter values treatment */
+.values-intro{max-width:64ch;margin-bottom:8px}
+.pupa-letters{display:flex;justify-content:center;align-items:flex-end;gap:10px;margin:40px 0 8px;flex-wrap:wrap}
+.letter-col{display:flex;flex-direction:column;align-items:center}
+.letter-label{font-family:'Inter',sans-serif;font-weight:700;font-size:1rem;margin-bottom:8px}
+.big-letter{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(4.5rem,13vw,8rem);line-height:.9;position:relative}
+.letter-icon{position:absolute;top:-6px;right:-16px;width:46px;height:46px;display:flex;align-items:center;justify-content:center;background:#fff;border-radius:50%;box-shadow:0 4px 14px rgba(11,68,65,.16)}
+.letter-icon svg{width:25px;height:25px}
+.pupa-dot{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(4.5rem,13vw,8rem);line-height:.9;color:var(--ink-soft);align-self:flex-end}
+.value-defs{margin-top:36px;display:grid;gap:16px;max-width:72ch}
+.value-def{color:var(--ink)}
+.value-def b{font-weight:700}
+@media (max-width:640px){
+  .pupa-letters{gap:6px}
+  .big-letter,.pupa-dot{font-size:clamp(3.5rem,20vw,5rem)}
+  .letter-icon{width:36px;height:36px;right:-10px}
+  .letter-icon svg{width:20px;height:20px}
+  .letter-label{font-size:.85rem}
+}
 </style>
 <style>
 .journey{list-style:none;margin:24px 0 32px;display:grid;gap:14px;max-width:720px}
@@ -199,4 +243,24 @@ const c = content[lang];
 .j-num{flex:none;display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:var(--orange-100);color:var(--orange-700);font-family:'Fraunces',serif;font-weight:700}
 .journey h3{font-size:1.05rem;margin-bottom:2px}
 .journey p{font-size:1rem;color:var(--ink-soft)}
+
+/* P.U.P.A big-letter values treatment */
+.values-intro{max-width:64ch;margin-bottom:8px}
+.pupa-letters{display:flex;justify-content:center;align-items:flex-end;gap:10px;margin:40px 0 8px;flex-wrap:wrap}
+.letter-col{display:flex;flex-direction:column;align-items:center}
+.letter-label{font-family:'Inter',sans-serif;font-weight:700;font-size:1rem;margin-bottom:8px}
+.big-letter{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(4.5rem,13vw,8rem);line-height:.9;position:relative}
+.letter-icon{position:absolute;top:-6px;right:-16px;width:46px;height:46px;display:flex;align-items:center;justify-content:center;background:#fff;border-radius:50%;box-shadow:0 4px 14px rgba(11,68,65,.16)}
+.letter-icon svg{width:25px;height:25px}
+.pupa-dot{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(4.5rem,13vw,8rem);line-height:.9;color:var(--ink-soft);align-self:flex-end}
+.value-defs{margin-top:36px;display:grid;gap:16px;max-width:72ch}
+.value-def{color:var(--ink)}
+.value-def b{font-weight:700}
+@media (max-width:640px){
+  .pupa-letters{gap:6px}
+  .big-letter,.pupa-dot{font-size:clamp(3.5rem,20vw,5rem)}
+  .letter-icon{width:36px;height:36px;right:-10px}
+  .letter-icon svg{width:20px;height:20px}
+  .letter-label{font-size:.85rem}
+}
 </style>

@@ -57,6 +57,18 @@ const content = {
   },
 };
 const c = content[lang];
+
+// Four distinct icons matching each "what to expect" item
+const expectIcons = [
+  // Program updates — megaphone / announcement
+  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11v2a1 1 0 0 0 1 1h2l4 4V6L6 10H4a1 1 0 0 0-1 1z"/><path d="M14 8a4 4 0 0 1 0 8"/><path d="M17.5 5a8 8 0 0 1 0 14"/></svg>',
+  // Upcoming events — calendar
+  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>',
+  // Milestones & moments — award / trophy
+  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12v4a6 6 0 0 1-12 0z"/><path d="M6 6H4a2 2 0 0 0 0 4h2M18 6h2a2 2 0 0 1 0 4h-2"/><path d="M9 18h6M10 14v4M14 14v4M8 21h8"/></svg>',
+  // A shared space — community / people
+  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20v-1a6 6 0 0 1 12 0v1"/><path d="M15 20v-1a4 4 0 0 1 6 0v1"/></svg>',
+];
 ---
 <Layout lang={lang} routeKey="resources" title={c.metaTitle} description={c.metaDescription}>
   <section class="page-head">
@@ -71,11 +83,7 @@ const c = content[lang];
       <div class="card-grid expect-grid">
         {c.expect.map((e, ei) => (
           <div class="card icon-card">
-            <span class="mini-icon" aria-hidden="true">
-              {ei === 0
-                ? <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
-                : <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7.4-6.3-4.6L5.7 21 8 14 2 9.4h7.6z"/></svg>}
-            </span>
+            <span class="mini-icon" aria-hidden="true" set:html={expectIcons[ei % expectIcons.length]}></span>
             <h4>{e[0]}</h4><p>{e[1]}</p>
           </div>
         ))}
@@ -85,7 +93,7 @@ const c = content[lang];
           <h3>{c.joinTitle}</h3>
           <p>{c.joinBody}</p>
           <a class="btn btn-primary" href="https://chat.whatsapp.com/GY7IwyE2UXS5DoBup80S81" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true" style="margin-right:2px"><path d="M17.6 6.32A7.85 7.85 0 0 0 12 4a7.94 7.94 0 0 0-6.9 11.9L4 20l4.2-1.1A7.9 7.9 0 0 0 12 19.9a7.94 7.94 0 0 0 5.6-13.58zM12 18.5a6.6 6.6 0 0 1-3.36-.92l-.24-.14-2.5.65.67-2.43-.16-.25a6.59 6.59 0 1 1 12.2-3.51A6.6 6.6 0 0 1 12 18.5z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true" style="margin-right:2px"><path d="M17.6 6.32A7.85 7.85 0 0 0 12 4a7.94 7.94 0 0 0-6.9 11.9L4 20l4.2-1.1A7.9 7.9 0 0 0 12 19.9a7.94 7.94 0 0 0 5.6-13.58zM12 18.5a6.6 6.6 0 0 1-3.36-.92l-.24-.14-2.5.65.67-2.43-.16-.25a6.59 6.59 0 1 1 12.2-3.51A6.6 6.6 0 0 1 12 18.5zm3.62-4.94c-.2-.1-1.17-.58-1.35-.64s-.31-.1-.44.1-.51.64-.62.77-.23.15-.43.05a5.4 5.4 0 0 1-1.59-.98 6 6 0 0 1-1.1-1.37c-.11-.2 0-.3.09-.4l.3-.35a1.36 1.36 0 0 0 .2-.33.37.37 0 0 0 0-.35c-.05-.1-.44-1.07-.6-1.46s-.32-.34-.44-.34h-.38a.72.72 0 0 0-.52.24 2.19 2.19 0 0 0-.69 1.63A3.82 3.82 0 0 0 8.1 12a8.7 8.7 0 0 0 3.32 2.93c.46.2.82.32 1.1.41a2.66 2.66 0 0 0 1.22.08 2 2 0 0 0 1.31-.92 1.63 1.63 0 0 0 .11-.92c-.04-.09-.17-.14-.37-.24z"/></svg>
             {c.newsCta}
           </a>
         </div>
