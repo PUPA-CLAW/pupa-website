@@ -75,7 +75,6 @@ const content = {
     ctaTitle: 'Interested in enrolling?',
     ctaBody: 'Our enrollment process is designed to ensure the right fit for every participant. It starts with a conversation.',
     ctaEnroll: 'See how enrollment works',
-    ctaWa: 'Ask us on WhatsApp',
   },
   id: {
     metaTitle: 'Program Kami — Mandiri, Karya & Access | PUPA Center',
@@ -144,7 +143,6 @@ const content = {
     ctaTitle: 'Tertarik untuk mendaftar?',
     ctaBody: 'Proses pendaftaran kami dirancang untuk memastikan kecocokan yang tepat bagi setiap peserta. Semuanya dimulai dari percakapan.',
     ctaEnroll: 'Lihat cara pendaftaran',
-    ctaWa: 'Tanya kami via WhatsApp',
   },
 };
 const c = content[lang];
@@ -239,10 +237,7 @@ const extraImgs: Record<string, string> = {
     <div class="wrap">
       <h2>{c.ctaTitle}</h2>
       <p>{c.ctaBody}</p>
-      <div class="cta-row">
-        <a class="btn btn-primary" href={p('enrollment')}>{c.ctaEnroll}</a>
-        <a class="btn btn-secondary" href={wa} rel="noopener">{c.ctaWa}</a>
-      </div>
+      <a class="btn btn-primary" href={p('enrollment')}>{c.ctaEnroll}</a>
     </div>
   </section>
 </Layout>

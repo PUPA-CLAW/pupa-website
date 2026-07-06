@@ -35,7 +35,6 @@ const c = {
     langBody: 'This website is available in English and Indonesian. Use the language switch at the top of any page to change between them.',
     helpTitle: 'Need help, or found a problem?',
     helpBody: 'We want everyone to be able to use this site. If you have trouble accessing any part of it, or you have a suggestion to make it better, please get in touch \u2014 we would genuinely like to hear from you.',
-    helpCta: 'Message us on WhatsApp',
     emailCta: 'Email info@pupacenter.org',
   },
   id: {
@@ -68,7 +67,6 @@ const c = {
     langBody: 'Situs ini tersedia dalam bahasa Inggris dan Indonesia. Gunakan tombol bahasa di bagian atas setiap halaman untuk beralih.',
     helpTitle: 'Butuh bantuan, atau menemukan kendala?',
     helpBody: 'Kami ingin semua orang dapat menggunakan situs ini. Jika Anda mengalami kesulitan mengakses bagian mana pun, atau memiliki saran untuk membuatnya lebih baik, silakan hubungi kami \u2014 kami sungguh ingin mendengar dari Anda.',
-    helpCta: 'Hubungi kami via WhatsApp',
     emailCta: 'Email info@pupacenter.org',
   },
 }[lang];
@@ -108,8 +106,7 @@ const wa = 'https://wa.me/62818533698';
         <h2>{c.helpTitle}</h2>
         <p>{c.helpBody}</p>
         <div class="help-actions">
-          <a class="btn btn-primary" href={wa} rel="noopener">{c.helpCta}</a>
-          <a class="btn btn-secondary" href="mailto:info@pupacenter.org">{c.emailCta}</a>
+          <a class="btn btn-primary" href="mailto:info@pupacenter.org">{c.emailCta}</a>
         </div>
       </div>
     </div>

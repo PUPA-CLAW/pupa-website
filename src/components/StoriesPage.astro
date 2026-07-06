@@ -33,9 +33,6 @@ const c = {
     ],
     journeysTitle: 'Growth journeys',
     journeysLede: 'Real journeys of PUPA Center participants — growth toward independence and meaningful work.',
-    startTitle: 'Start the adventure today',
-    startBody: 'Whether you are considering enrolling or simply want to know more, we would be glad to help you take the first step.',
-    startCta: 'Get in touch',
   },
   id: {
     metaTitle: 'Cerita Kami — PUPA Center',
@@ -58,9 +55,6 @@ const c = {
     ],
     journeysTitle: 'Kisah pertumbuhan',
     journeysLede: 'Perjalanan nyata para peserta PUPA Center — bertumbuh menuju kemandirian dan pekerjaan yang bermakna.',
-    startTitle: 'Mulai perjalananmu hari ini',
-    startBody: 'Baik Anda sedang mempertimbangkan untuk mendaftar atau sekadar ingin tahu lebih lanjut, kami dengan senang hati membantu Anda melangkah pertama.',
-    startCta: 'Hubungi kami',
   },
 }[lang];
 ---
@@ -119,15 +113,6 @@ const c = {
     </div>
   </section>
 
-  <!-- START THE ADVENTURE -->
-  <section class="start">
-    <div class="wrap start-inner">
-      <h2>{c.startTitle}</h2>
-      <p>{c.startBody}</p>
-      <a class="btn btn-primary" href="https://wa.me/62818533698" rel="noopener">{c.startCta}</a>
-    </div>
-  </section>
-
 </Layout>
 
 <style>
@@ -176,10 +161,6 @@ const c = {
 .story-card h3{font-size:1.15rem}
 
 /* START */
-.start{padding:72px 0}
-.start-inner{background:var(--teal-900);color:#fff;border-radius:var(--radius-lg);padding:56px 48px;text-align:center}
-.start-inner h2{color:#fff}
-.start-inner p{color:#C8DEDC;max-width:52ch;margin:14px auto 28px}
 
 @media (max-width:960px){
   .purpose-grid,.grow-grid{grid-template-columns:1fr;gap:32px}
