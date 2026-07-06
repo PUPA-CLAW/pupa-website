@@ -12,33 +12,33 @@ const waText = {
 const content = {
   en: {
     metaTitle: 'Contact PUPA Center — Visit Us in Alam Sutera, Tangerang',
-    metaDescription: 'Contact PUPA Center for enrollment and inquiries. WhatsApp, email, or visit us at Ruko Prominence, Alam Sutera, Tangerang. Open Monday–Friday, 9:00 AM–3:00 PM WIB.',
+    metaDescription: 'Contact PUPA Center for enrollment and inquiries. WhatsApp, email, or visit us at Ruko Prominence, Alam Sutera, Tangerang. Open Monday–Friday.',
     h1: 'Contact us',
-    intro: 'The fastest way to reach us is WhatsApp. We will reply within one working day.',
+    intro: 'We would love to hear from you — whether you are considering enrolling, have a question, or simply want to know more. Reach us whichever way suits you best.',
     waBtn: 'Message us on WhatsApp',
-    phoneTitle: 'Phone & WhatsApp',
-    emailLabel: 'Email',
+    waNote: 'Usually the fastest way to reach us. We reply within one working day.',
+    phoneTitle: 'Phone',
+    emailTitle: 'Email',
     visitTitle: 'Visit us',
-    address: ['Ruko Prominence Blok 38E No. 42-43', 'Jl. Sutera Barat Boulevard', 'Alam Sutera, Tangerang 15143', 'Indonesia'],
-    mapsBtn: 'Open in Google Maps',
     hoursTitle: 'Office hours',
     hours: 'Monday to Friday, 8:30 AM – 4:30 PM (WIB)',
-    followTitle: 'Follow us',
+    address: ['Ruko Prominence Blok 38E No. 42-43', 'Jl. Sutera Barat Boulevard', 'Alam Sutera, Tangerang 15143', 'Indonesia'],
+    mapsBtn: 'Open in Google Maps',
   },
   id: {
     metaTitle: 'Kontak PUPA Center — Kunjungi Kami di Alam Sutera, Tangerang',
-    metaDescription: 'Hubungi PUPA Center untuk pendaftaran dan pertanyaan. WhatsApp, email, atau kunjungi kami di Ruko Prominence, Alam Sutera, Tangerang. Buka Senin–Jumat, 09.00–15.00 WIB.',
+    metaDescription: 'Hubungi PUPA Center untuk pendaftaran dan pertanyaan. WhatsApp, email, atau kunjungi kami di Ruko Prominence, Alam Sutera, Tangerang. Buka Senin–Jumat.',
     h1: 'Hubungi kami',
-    intro: 'Cara tercepat menghubungi kami adalah melalui WhatsApp. Kami akan membalas dalam satu hari kerja.',
+    intro: 'Kami senang mendengar dari Anda — baik Anda sedang mempertimbangkan untuk mendaftar, memiliki pertanyaan, atau sekadar ingin tahu lebih lanjut. Hubungi kami dengan cara yang paling nyaman bagi Anda.',
     waBtn: 'Kirim pesan via WhatsApp',
-    phoneTitle: 'Telepon & WhatsApp',
-    emailLabel: 'Email',
+    waNote: 'Biasanya cara tercepat menghubungi kami. Kami membalas dalam satu hari kerja.',
+    phoneTitle: 'Telepon',
+    emailTitle: 'Email',
     visitTitle: 'Kunjungi kami',
-    address: ['Ruko Prominence Blok 38E No. 42-43', 'Jl. Sutera Barat Boulevard', 'Alam Sutera, Tangerang 15143', 'Indonesia'],
-    mapsBtn: 'Buka di Google Maps',
     hoursTitle: 'Jam operasional',
     hours: 'Senin sampai Jumat, pukul 08.30 – 16.30 WIB',
-    followTitle: 'Ikuti kami',
+    address: ['Ruko Prominence Blok 38E No. 42-43', 'Jl. Sutera Barat Boulevard', 'Alam Sutera, Tangerang 15143', 'Indonesia'],
+    mapsBtn: 'Buka di Google Maps',
   },
 };
 const c = content[lang];
@@ -49,67 +49,105 @@ const wa = `https://wa.me/62818533698?text=${waText[lang]}`;
     <div class="wrap">
       <h1>{c.h1}</h1>
       <p class="lede">{c.intro}</p>
-      <a class="btn btn-primary" href={wa} rel="noopener">{c.waBtn}</a>
     </div>
   </section>
 
-  <section class="map-sec">
-    <div class="wrap">
-      <iframe
-        title="PUPA Center location map"
-        src="https://maps.google.com/maps?q=Ruko%20Prominence%20Blok%2038E%20Alam%20Sutera%20Tangerang&z=15&output=embed"
-        width="100%" height="380" style="border:0;border-radius:22px" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-  </section>
-
-  <section class="contact-grid-sec">
-    <div class="wrap">
-      <div class="card-grid contact-grid">
-        <div class="card contact-card">
-          <div class="c-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#0F6B66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+  <section class="contact-main">
+    <div class="wrap contact-layout">
+      <!-- LEFT: the three contact methods, each with ONE action -->
+      <div class="methods">
+        <a class="method method-wa" href={wa} rel="noopener">
+          <div class="m-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A7.85 7.85 0 0 0 12 4a7.94 7.94 0 0 0-6.9 11.9L4 20l4.2-1.1A7.9 7.9 0 0 0 12 19.9a7.94 7.94 0 0 0 5.6-13.58zM12 18.5a6.6 6.6 0 0 1-3.36-.92l-.24-.14-2.5.65.67-2.43-.16-.25a6.59 6.59 0 1 1 12.2-3.51A6.6 6.6 0 0 1 12 18.5zm3.62-4.94c-.2-.1-1.17-.58-1.35-.64s-.31-.1-.44.1-.51.64-.62.77-.23.15-.43.05a5.4 5.4 0 0 1-1.59-.98 6 6 0 0 1-1.1-1.37c-.11-.2 0-.3.09-.4l.3-.35a1.36 1.36 0 0 0 .2-.33.37.37 0 0 0 0-.35c-.05-.1-.44-1.07-.6-1.46s-.32-.34-.44-.34h-.38a.72.72 0 0 0-.52.24 2.19 2.19 0 0 0-.69 1.63A3.82 3.82 0 0 0 8.1 12a8.7 8.7 0 0 0 3.32 2.93c.46.2.82.32 1.1.41a2.66 2.66 0 0 0 1.22.08 2 2 0 0 0 1.31-.92 1.63 1.63 0 0 0 .11-.92c-.04-.09-.17-.14-.37-.24z"/></svg>
           </div>
-          <h2>{c.phoneTitle}</h2>
-          <p><a href="tel:+62818533698">+62 818 533 698</a></p>
-          <a class="card-link" href={wa} rel="noopener">{c.waBtn} →</a>
-        </div>
-
-        <div class="card contact-card">
-          <div class="c-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#0F6B66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          <div class="m-body">
+            <span class="m-title">{c.waBtn}</span>
+            <span class="m-detail">{c.waNote}</span>
           </div>
-          <h2>{c.emailLabel}</h2>
-          <p><a href="mailto:info@pupacenter.org">info@pupacenter.org</a></p>
-          <h2 class="mt">{c.hoursTitle}</h2>
-          <p>{c.hours}</p>
-        </div>
+          <span class="m-arrow" aria-hidden="true">→</span>
+        </a>
 
-        <div class="card contact-card">
-          <div class="c-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#0F6B66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <a class="method" href="tel:+62818533698">
+          <div class="m-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           </div>
-          <h2>{c.visitTitle}</h2>
-          <p>{c.address.map((line) => <>{line}<br /></>)}</p>
-          <a class="card-link" href="https://maps.app.goo.gl/tPCkDTf2Cf6pa3Dp7" rel="noopener">{c.mapsBtn} →</a>
+          <div class="m-body">
+            <span class="m-title">{c.phoneTitle}</span>
+            <span class="m-detail">+62 818 533 698</span>
+          </div>
+          <span class="m-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a class="method" href="mailto:info@pupacenter.org">
+          <div class="m-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </div>
+          <div class="m-body">
+            <span class="m-title">{c.emailTitle}</span>
+            <span class="m-detail">info@pupacenter.org</span>
+          </div>
+          <span class="m-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <div class="hours-box">
+          <span class="hours-label">{c.hoursTitle}</span>
+          <span class="hours-val">{c.hours}</span>
         </div>
+      </div>
+
+      <!-- RIGHT: address + map -->
+      <div class="visit">
+        <h2>{c.visitTitle}</h2>
+        <address class="addr">{c.address.map((line) => <>{line}<br /></>)}</address>
+        <div class="map-wrap">
+          <iframe
+            title="PUPA Center location map"
+            src="https://maps.google.com/maps?q=Ruko%20Prominence%20Blok%2038E%20Alam%20Sutera%20Tangerang&z=15&output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <a class="addr-link" href="https://maps.app.goo.gl/tPCkDTf2Cf6pa3Dp7" rel="noopener">{c.mapsBtn} →</a>
       </div>
     </div>
   </section>
 </Layout>
 
 <style>
-.page-head{background:var(--cream);padding:64px 0;border-bottom:1px solid var(--line)}
-.page-head .lede{font-size:1.15rem;color:var(--ink-soft);margin:18px 0 26px}
-.map-sec{padding:48px 0 8px}
-.contact-grid-sec{padding:40px 0 64px}
-.contact-card{align-items:flex-start}
-.c-icon{width:52px;height:52px;border-radius:14px;background:var(--teal-100);display:flex;align-items:center;justify-content:center;margin-bottom:14px}
-.c-icon svg{width:26px;height:26px}
-.contact-card h2{font-size:1.1rem}
-.contact-card .mt{margin-top:20px}
-.contact-card a{min-height:auto}
-.contact-grid h2{font-size:1.15rem}
-.contact-grid .mt{margin-top:20px}
-.contact-grid a{min-height:auto}
+.page-head{background:var(--cream);padding:64px 0 48px;border-bottom:1px solid #EFE4D2}
+.page-head .lede{font-size:1.15rem;color:var(--ink-soft);margin-top:18px;max-width:60ch}
+.contact-main{padding:56px 0}
+.contact-layout{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+
+/* Contact methods as clean tappable rows */
+.methods{display:grid;gap:14px}
+.method{display:flex;align-items:center;gap:16px;padding:20px 22px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-lg);text-decoration:none;color:var(--ink);transition:border-color .2s ease,transform .2s ease,box-shadow .2s ease}
+.method:hover{border-color:var(--teal-700);transform:translateY(-2px);box-shadow:0 10px 26px rgba(11,68,65,.1)}
+.m-icon{flex:none;width:52px;height:52px;border-radius:14px;background:var(--teal-100);color:var(--teal-700);display:flex;align-items:center;justify-content:center}
+.m-icon svg{width:26px;height:26px}
+.m-body{display:flex;flex-direction:column;gap:3px;flex-grow:1}
+.m-title{font-family:'Fraunces',serif;font-weight:600;font-size:1.15rem;color:var(--teal-700)}
+.m-detail{color:var(--ink-soft);font-size:.98rem}
+.m-arrow{color:var(--teal-700);font-size:1.2rem;font-weight:700;flex:none}
+/* WhatsApp method gets the accent treatment as the primary channel */
+.method-wa{background:var(--teal-900);border-color:var(--teal-900)}
+.method-wa .m-icon{background:rgba(255,255,255,.12);color:#fff}
+.method-wa .m-title{color:#fff}
+.method-wa .m-detail{color:#C8DEDC}
+.method-wa .m-arrow{color:var(--orange-500)}
+.method-wa:hover{background:#0a3a37;border-color:#0a3a37}
+
+.hours-box{display:flex;flex-direction:column;gap:4px;padding:20px 22px;background:var(--cream);border:1px solid #EFE4D2;border-radius:var(--radius-lg);margin-top:2px}
+.hours-label{font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--teal-700)}
+.hours-val{color:var(--ink-soft)}
+
+/* Visit + map */
+.visit h2{margin-bottom:14px}
+.addr{font-style:normal;color:var(--ink-soft);line-height:1.7;margin-bottom:18px}
+.map-wrap{border-radius:var(--radius-lg);overflow:hidden;box-shadow:0 10px 30px rgba(11,68,65,.12)}
+.map-wrap iframe{width:100%;height:340px;border:0;display:block}
+.addr-link{display:inline-flex;align-items:center;min-height:44px;margin-top:16px;font-weight:600;text-decoration:none;color:var(--teal-700)}
+.addr-link:hover{text-decoration:underline}
+
+@media (max-width:900px){
+  .contact-layout{grid-template-columns:1fr;gap:36px}
+}
 </style>
