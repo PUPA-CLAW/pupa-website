@@ -1,0 +1,117 @@
+---
+import { useTranslations, routes, type Lang } from '../i18n/ui';
+interface Props { lang: Lang; routeKey: string; }
+const { lang, routeKey } = Astro.props;
+const t = useTranslations(lang);
+const other: Lang = lang === 'en' ? 'id' : 'en';
+const route = routes[routeKey] ?? routes.home;
+const p = (key: string) => (routes[key] ?? routes.home)[lang];
+
+const menu = [
+  { label: t('nav.about'), href: p('about'), children: [
+    { label: t('nav.about.story'), href: p('about') + '#story' },
+    { label: t('nav.about.mission'), href: p('about') + '#mission' },
+    { label: t('nav.about.team'), href: p('team') },
+    { label: t('nav.about.board'), href: p('board') },
+    { label: t('nav.about.approach'), href: p('about') + '#approach' },
+  ]},
+  { label: t('nav.programs'), href: p('programs'), children: [
+    { label: t('nav.programs.overview'), href: p('programs') },
+    { label: t('nav.programs.mandiri'), href: p('programs') + '#mandiri' },
+    { label: t('nav.programs.karya'), href: p('programs') + '#karya' },
+    { label: t('nav.programs.access'), href: p('programs') + '#access' },
+    { label: t('nav.programs.extracurriculars'), href: p('programs') + '#extracurriculars' },
+  ]},
+  { label: t('nav.enrollment'), href: p('enrollment'), children: [
+    { label: t('nav.enrollment.how'), href: p('enrollment') },
+    { label: t('nav.enrollment.faq'), href: p('enrollment') + '#faq' },
+    { label: t('nav.enrollment.visit'), href: p('contact') },
+  ]},
+  { label: t('nav.involved'), href: p('getInvolved'), children: [
+    { label: t('nav.involved.volunteer'), href: p('getInvolved') + '#volunteer' },
+    { label: t('nav.involved.careers'), href: p('getInvolved') + '#careers' },
+    { label: t('nav.involved.partner'), href: p('getInvolved') + '#partner' },
+  ]},
+  { label: t('nav.resources'), href: p('resources'), children: [
+    { label: t('nav.resources.news'), href: p('resources') + '#news' },
+    { label: t('nav.resources.parents'), href: p('blog') },
+    { label: t('nav.resources.stories'), href: p('stories') },
+    { label: t('nav.resources.impact'), href: p('resources') + '#impact' },
+  ]},
+  { label: t('nav.contact'), href: p('contact'), children: [] },
+];
+---
+<header class="site-header">
+  <div class="wrap topbar">
+    <a class="logo" href={routes.home[lang]} aria-label="PUPA Center — home">
+      <img class="logo-img" src="/images/brand/pupa-logo.png" alt="PUPA — Transform to Shine" width="80" height="48" />
+    </a>
+
+    <button class="menu-btn" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
+      <span class="menu-btn-label">Menu</span>
+    </button>
+
+    <nav class="primary" id="site-nav" aria-label={t('a11y.mainnav')}>
+      <ul>
+        {menu.map((item) => (
+          <li class={item.children.length ? 'has-children' : ''}>
+            <a href={item.href}>{item.label}{item.children.length > 0 && <span class="caret" aria-hidden="true">▾</span>}</a>
+            {item.children.length > 0 && (
+              <ul class="dropdown">
+                {item.children.map((c) => <li><a href={c.href}>{c.label}</a></li>)}
+              </ul>
+            )}
+          </li>
+        ))}
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang-toggle" aria-label="Language / Bahasa">
+        <a href={route.en} aria-current={lang === 'en' ? 'true' : undefined} lang="en">EN</a>
+        <a href={route.id} aria-current={lang === 'id' ? 'true' : undefined} lang="id">ID</a>
+      </div>
+      <a class="btn btn-donate" href={routes.donate[lang]}>{t('nav.donate')}</a>
+    </div>
+  </div>
+</header>
+
+<style>
+.site-header{background:var(--surface);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+.topbar{display:flex;align-items:center;gap:16px;min-height:76px;flex-wrap:wrap}
+.logo{display:flex;align-items:center;text-decoration:none;min-height:44px}
+.logo-img{height:48px;width:auto}
+nav.primary{margin-left:auto}
+nav.primary > ul{display:flex;list-style:none;gap:2px}
+nav.primary a{display:flex;align-items:center;min-height:44px;padding:10px 13px;font-size:1rem;font-weight:500;color:var(--ink);text-decoration:none;border-radius:10px}
+nav.primary a:hover, nav.primary li:focus-within > a{background:var(--teal-050)}
+nav.primary li{position:relative}
+.caret{margin-left:6px;font-size:.7em;color:var(--ink-soft)}
+.dropdown{position:absolute;top:100%;left:0;min-width:240px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:8px;list-style:none;display:none}
+nav.primary li:hover > .dropdown, nav.primary li:focus-within > .dropdown{display:block}
+.dropdown a{width:100%;border-radius:10px}
+.header-actions{display:flex;align-items:center;gap:10px}
+.lang-toggle{display:flex;border:1.5px solid var(--line);border-radius:999px;overflow:hidden}
+.lang-toggle a{display:flex;align-items:center;justify-content:center;min-width:44px;min-height:40px;padding:0 12px;font-size:.9rem;font-weight:600;text-decoration:none;color:var(--ink-soft)}
+.lang-toggle a[aria-current="true"]{background:var(--teal-700);color:#fff}
+.menu-btn{display:none;margin-left:auto;min-height:44px;min-width:44px;padding:8px 16px;font:inherit;font-weight:600;background:var(--teal-050);color:var(--teal-700);border:1.5px solid var(--teal-100);border-radius:10px;cursor:pointer}
+
+@media (max-width:1020px){
+  .menu-btn{display:inline-flex;align-items:center;justify-content:center}
+  nav.primary{display:none;width:100%;margin-left:0}
+  nav.primary.open{display:block}
+  nav.primary > ul{flex-direction:column;padding-bottom:12px}
+  .dropdown{position:static;display:block;border:none;box-shadow:none;padding-left:16px}
+  .header-actions{margin-left:auto}
+}
+</style>
+
+<script>
+  // Mobile menu toggle — simple, predictable, no animation.
+  const btn = document.querySelector('[data-menu-toggle]');
+  const nav = document.getElementById('site-nav');
+  btn?.addEventListener('click', () => {
+    const open = nav?.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+</script>

@@ -1,0 +1,126 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { type Lang } from '../i18n/ui';
+
+interface Props { lang: Lang; }
+const { lang } = Astro.props;
+
+// Board members. Order: Patron, Founder, then advisors.
+const members = [
+  {
+    slug: 'fonda', name: 'Fonda',
+    role: { en: 'Patron (Pembina)', id: 'Pembina' },
+    bio: {
+      en: 'Ibu Fonda has stood behind PUPA Center since day one. Her belief in this work runs deep — she grew up with a neurodivergent sister, and that shaped how she sees the people PUPA serves. She believes everyone deserves a chance, dignity, and a future worth working toward. As Patron, she is the quiet, steady presence who keeps the foundation close to its purpose, through the wins and the setbacks alike.',
+      id: 'Ibu Fonda telah mendampingi PUPA Center sejak hari pertama. Keyakinannya pada misi ini begitu dalam — ia tumbuh bersama saudara perempuannya yang neurodivergen, dan pengalaman itu membentuk cara pandangnya terhadap mereka yang dilayani PUPA. Ia percaya bahwa setiap orang berhak atas kesempatan, martabat, dan masa depan yang layak diperjuangkan. Sebagai Pembina, ia hadir sebagai sosok yang tenang dan teguh, yang menjaga yayasan ini tetap setia pada tujuannya — di masa keberhasilan maupun di saat-saat sulit.',
+    },
+  },
+  {
+    slug: 'robert', name: 'Robert Erizo Kusnadi',
+    role: { en: 'Vice Patron (Wakil Pembina)', id: 'Wakil Pembina' },
+    linkedin: 'https://www.linkedin.com/in/robert-erizo-kusnadi-4a199860/',
+    bio: {
+      en: 'Currently taking a deeper dive into the disability world, Robert is pursuing a PhD in Special Education & Disability Policy at Virginia Commonwealth University, where he is also a college instructor for disability undergraduate courses. He holds a bachelor\u2019s degree in Theology and Business Administration from Oral Roberts University and a master\u2019s in Industrial & Organizational Psychology from the University of Oklahoma. He looks forward to leveraging his extensive entrepreneurial experience and academic pursuits for the flourishing of people with disabilities.',
+      id: 'Saat ini sedang mendalami dunia disabilitas, Robert menempuh studi S3 dalam bidang Pendidikan Luar Biasa (PLB) dan Kebijakan Disabilitas di Virginia Commonwealth University, tempat ia juga menjadi pengajar untuk mata kuliah disabilitas jenjang sarjana. Ia meraih gelar Sarjana (S1) dalam bidang Teologi dan Administrasi Bisnis di Oral Roberts University, serta Magister (S2) dalam bidang Psikologi Industri dan Organisasi di University of Oklahoma. Ia berharap dapat memanfaatkan pengalaman kewirausahaan dan studi akademiknya bagi kemajuan penyandang disabilitas.',
+    },
+  },
+  {
+    slug: 'atikah', name: 'Atikah Bagawan, Ph.D.',
+    role: { en: 'Supervisor (Pengawas)', id: 'Pengawas' },
+    bio: {
+      en: 'Atikah wears many hats — as a sister to an individual with autism, an educator, and a researcher — and each role has shaped her passion for creating more inclusive opportunities for individuals with diverse needs and the people who support them. She earned her bachelor\u2019s and master\u2019s degrees in Special Education from New Mexico State University, along with a graduate certificate in Autism Spectrum Disorder, and completed her PhD in Human Development and Family Studies at Michigan State University. Her experiences have reinforced her belief that meaningful change happens when research, education, and lived experience come together to improve the lives of individuals with disabilities.',
+      id: 'Atikah memiliki banyak peran — sebagai saudara kandung dari individu dengan autisme, pendidik, dan peneliti — dan setiap peran tersebut membentuk semangatnya untuk menciptakan kesempatan yang lebih inklusif bagi individu dengan kebutuhan yang beragam serta orang-orang yang mendampingi mereka. Ia menyelesaikan pendidikan sarjana dan magister di bidang Pendidikan Luar Biasa di New Mexico State University, sekaligus memperoleh sertifikat pascasarjana dalam Autism Spectrum Disorder, dan melanjutkan studi doktoral di bidang Human Development and Family Studies di Michigan State University. Perjalanannya semakin menguatkan keyakinan bahwa perubahan yang bermakna terjadi ketika penelitian, pendidikan, dan pengalaman hidup saling melengkapi untuk meningkatkan kualitas hidup penyandang disabilitas.',
+    },
+  },
+  {
+    slug: 'joni', name: 'Joni',
+    role: { en: 'Chair (Ketua Umum)', id: 'Ketua Umum' },
+    bio: {
+      en: 'Joni started PUPA Center more than ten years ago, back when it was just a monthly gathering for parents to lean on one another. He had seen what happens when neurodivergent young people finish school: the support falls away, and families are left wondering what comes next. PUPA grew out of his refusal to accept that. Today it is a place where neurodivergent young adults build real skills, real independence, and a genuine shot at work.',
+      id: 'Joni mendirikan PUPA Center lebih dari sepuluh tahun lalu, saat tempat ini masih berupa pertemuan bulanan bagi para orang tua untuk saling menguatkan. Ia menyaksikan sendiri apa yang terjadi ketika anak muda neurodivergen selesai sekolah: dukungan perlahan menghilang, dan keluarga kebingungan harus melangkah ke mana. PUPA lahir karena ia tak mau menerima keadaan itu begitu saja. Kini, PUPA menjadi tempat bagi dewasa muda neurodivergen untuk membangun keterampilan, kemandirian, dan peluang kerja yang nyata.',
+    },
+  },
+  {
+    slug: 'uli', name: 'Uli Talina',
+    role: { en: 'Treasurer (Bendahara)', id: 'Bendahara' },
+    bio: {
+      en: 'Uli Talina is a Finance and Tax Consultant born in Bandung, Indonesia. She earned a degree in Accountancy from Saint Louis University, Philippines, and currently assists the foundation with its accounting and tax affairs. She previously worked as an auditor with Ernst & Young (EY), and as a consultant has worked with several companies across a variety of projects.',
+      id: 'Uli Talina adalah Konsultan Keuangan dan Pajak yang lahir di Bandung, Indonesia. Ia meraih gelar di bidang Akuntansi dari Saint Louis University, Filipina, dan saat ini membantu yayasan dalam urusan akuntansi dan perpajakan. Sebelumnya ia bekerja sebagai auditor di Ernst & Young (EY), dan sebagai konsultan telah menangani berbagai proyek di sejumlah perusahaan.',
+    },
+  },
+  {
+    slug: 'lulu', name: 'Lulu Gunawan',
+    role: { en: 'Secretary (Sekretaris)', id: 'Sekretaris' },
+    bio: {
+      en: 'With nearly 20 years of dedicated experience in education, Lulu is honored to be part of PUPA and to contribute to the wellness of the community. A proud mother of two, she is deeply passionate about building positive relationships with families to support every student\u2019s maximal learning. She holds a bachelor\u2019s degree in Industrial Engineering and Management from Oklahoma State University and a master\u2019s in Curriculum, Instruction, and Assessment from Walden University.',
+      id: 'Dengan pengalaman selama hampir 20 tahun di dunia pendidikan, Lulu merasa terhormat dapat menjadi bagian dari PUPA dan berkontribusi bagi kesejahteraan komunitas. Sebagai seorang ibu dari dua anak, ia memiliki keantusiasan dalam membangun hubungan positif dengan para keluarga untuk mendukung pembelajaran maksimal setiap siswa. Ia memegang gelar Sarjana (S1) Teknik Industri dan Manajemen dari Oklahoma State University dan Magister Pendidikan (S2) dalam Kurikulum, Instruksi, dan Asesmen dari Walden University.',
+    },
+  },
+
+];
+
+const content = {
+  en: {
+    metaTitle: 'Board & Advisors — PUPA Center',
+    metaDescription: 'Meet the patron, founder, and advisors who guide PUPA Center — educators, researchers, and professionals committed to neurodivergent young adults in Indonesia.',
+    h1: 'Board & advisors',
+    intro: 'PUPA Center is guided by its foundation board — a patron, vice patron, supervisor, chair, treasurer, and secretary who bring together lived experience, education, research, and professional expertise, all committed to a future where neurodivergent young adults live a life that matters.',
+  },
+  id: {
+    metaTitle: 'Pembina & Penasihat — PUPA Center',
+    metaDescription: 'Kenali pembina, pendiri, dan para penasihat yang memandu PUPA Center — pendidik, peneliti, dan profesional yang berkomitmen bagi anak muda neurodivergen di Indonesia.',
+    h1: 'Pembina & penasihat',
+    intro: 'PUPA Center dipandu oleh pengurus yayasan — pembina, wakil pembina, pengawas, ketua umum, bendahara, dan sekretaris yang memadukan pengalaman hidup, pendidikan, penelitian, dan keahlian profesional, semuanya berkomitmen pada masa depan di mana anak muda neurodivergen menjalani hidup yang bermakna.',
+  },
+};
+const c = content[lang];
+---
+<Layout lang={lang} routeKey="board" title={c.metaTitle} description={c.metaDescription}>
+  <section class="page-head">
+    <div class="wrap">
+      <h1>{c.h1}</h1>
+      <p class="lede">{c.intro}</p>
+    </div>
+  </section>
+
+  <section class="board">
+    <div class="wrap">
+      {members.map((m, i) => (
+        <article class={`board-row ${i % 2 ? 'reverse' : ''}`}>
+          <div class="board-photo">
+            <img class={i % 2 ? 'blob-alt' : 'blob'} src={`/images/board/${m.slug}.jpg`} alt={`${m.name}, ${m.role[lang]} at PUPA Center`} loading="lazy" width="360" height="450" />
+          </div>
+          <div class="board-info">
+            <p class="board-role">{m.role[lang]}</p>
+            <h2>{m.name}</h2>
+            <p class="board-bio">{m.bio[lang]}</p>
+            {m.linkedin && <a class="board-link" href={m.linkedin} rel="noopener">LinkedIn →</a>}
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+</Layout>
+
+<style>
+.page-head{background:var(--cream);padding:64px 0 48px;border-bottom:1px solid #EFE4D2}
+.page-head .lede{font-size:1.15rem;color:var(--ink-soft);margin-top:18px;max-width:60ch}
+.board{padding:64px 0}
+.board-row{display:grid;grid-template-columns:.72fr 1.28fr;gap:44px;align-items:center;padding:36px 0;border-bottom:1px solid var(--line)}
+.board-row:last-child{border-bottom:none}
+.board-row.reverse{grid-template-columns:1.28fr .72fr}
+.board-row.reverse .board-photo{order:2}
+.board-photo img{width:100%;max-width:340px;aspect-ratio:4/5;object-fit:cover;box-shadow:0 14px 34px rgba(11,68,65,.14)}
+.board-row:not(.reverse) .board-photo{justify-self:start}
+.board-row.reverse .board-photo{justify-self:end}
+.board-role{font-size:.82rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--teal-700)}
+.board-info h2{margin:6px 0 14px;font-size:1.7rem}
+.board-bio{color:var(--ink-soft)}
+.board-link{display:inline-flex;align-items:center;min-height:44px;margin-top:14px;font-weight:600;text-decoration:none}
+.board-link:hover{text-decoration:underline}
+@media (max-width:820px){
+  .board-row,.board-row.reverse{grid-template-columns:1fr;gap:24px;text-align:left}
+  .board-row.reverse .board-photo{order:0;justify-self:start}
+  .board-photo img{max-width:260px}
+}
+</style>
