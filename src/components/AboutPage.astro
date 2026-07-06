@@ -11,6 +11,12 @@ const content = {
     metaDescription: 'PUPA Center is a development center for neurodivergent young adults in Tangerang, Indonesia. Learn about our story, our neuro-affirming approach, and the values that guide our work.',
     h1: 'About PUPA Center',
     storyTitle: 'Our story',
+    highlights: [
+      ['16–25', 'Ages we support'],
+      ['3', 'Core programs'],
+      ['5 days', 'Every week, Mon–Fri'],
+      ['Alam Sutera', 'Tangerang, Indonesia'],
+    ],
     story: [
       'The name PUPA, derived from Latin, means cocoon. It reflects our belief that meaningful growth happens within a safe, structured, and nurturing environment — one that protects, strengthens, and prepares individuals without rushing or forcing transformation.',
       'PUPA began as a response to the concerns of families, in a landscape where structured resources, proven curricula, and inclusive pathways for neurodivergent young adults were limited. PUPA chose a different approach: designing programs that build habits, life skills, and work readiness in ways that respect each individual\u2019s abilities, pace, and personal standard of success.',
@@ -30,15 +36,6 @@ const content = {
       ['Principled', 'I honor integrity, honesty and transparency.', 'The way I want to be trusted'],
       ['Acceptance', 'I embrace diversity and treat everyone with kindness, respect and dignity.', 'The way I want to be embraced'],
     ],
-    journeyTitle: 'Our journey',
-    journey: [
-      ['Foundation', 'Established as a foundation for information and public education in the field of autism.'],
-      ['School', 'PUPA developed into a school educating neurodivergent students.'],
-      ['Job Training Center', 'A job training center equipping neurodivergent youth and young adults to work and live independently.'],
-      ['PUPA Center', 'PUPA Center is established, with capacity development in life skills and work readiness.'],
-    ],
-    logoTitle: 'Why the butterfly?',
-    logoText: 'PUPA Center\u2019s butterfly logo represents our dream of transforming the mindset and abilities of individuals to be more mature. PUPA is committed to preparing neurodivergent individuals to transition into independent, functioning people who make an impact on themselves and on an inclusive society.',
     approachTitle: 'Our approach',
     approachIntro: 'At PUPA Center, we understand that independence and readiness for adult life do not happen overnight. They grow through time, trust, and meaningful daily experiences. Our support is a continuous and integrated process that prepares neurodivergent individuals for life in the community and, when ready, the world of work.',
     approach: [
@@ -52,6 +49,12 @@ const content = {
     metaDescription: 'PUPA Center adalah pusat pengembangan untuk anak muda neurodivergen di Tangerang, Indonesia. Kenali kisah kami, pendekatan neuro-affirming kami, dan nilai-nilai yang memandu kerja kami.',
     h1: 'Tentang PUPA Center',
     storyTitle: 'Kisah kami',
+    highlights: [
+      ['16–25', 'Usia yang kami dampingi'],
+      ['3', 'Program inti'],
+      ['5 hari', 'Setiap minggu, Sen–Jum'],
+      ['Alam Sutera', 'Tangerang, Indonesia'],
+    ],
     story: [
       'Nama PUPA, yang berasal dari bahasa Latin, berarti kepompong. Nama ini mencerminkan keyakinan kami bahwa pertumbuhan yang bermakna terjadi dalam lingkungan yang aman, terstruktur, dan penuh dukungan — lingkungan yang melindungi, menguatkan, dan mempersiapkan individu tanpa terburu-buru atau memaksakan perubahan.',
       'PUPA Center adalah organisasi yang berfokus pada pendampingan dan pengembangan individu neurodivergen. Kami berkomitmen menghadirkan layanan yang komprehensif bagi individu, keluarga, serta seluruh pihak pendukung dalam ekosistemnya. PUPA lahir sebagai jawaban atas kegelisahan keluarga, di tengah keterbatasan sumber daya terstruktur, kurikulum teruji, dan jalur inklusif bagi anak muda neurodivergen. PUPA memilih pendekatan yang berbeda: merancang program yang membangun kebiasaan, kecakapan hidup, dan kesiapan kerja dengan cara yang menghormati kemampuan, kecepatan, dan standar keberhasilan pribadi setiap individu.',
@@ -71,15 +74,6 @@ const content = {
       ['Principled', 'Menjaga tinggi integritas, kejujuran, dan transparansi.', 'Cara saya ingin dipercayai'],
       ['Acceptance', 'Merangkul keberagaman dan memperlakukan setiap individu dengan kebaikan, rasa hormat, dan martabat.', 'Cara saya ingin diterima'],
     ],
-    journeyTitle: 'Perjalanan kami',
-    journey: [
-      ['Yayasan', 'Didirikan sebagai yayasan untuk informasi dan edukasi publik di bidang autisme.'],
-      ['Sekolah', 'PUPA berkembang menjadi sekolah yang mendidik siswa neurodivergen.'],
-      ['Pusat Pelatihan Kerja', 'Pusat pelatihan kerja yang membekali remaja dan dewasa muda neurodivergen untuk bekerja dan hidup mandiri.'],
-      ['PUPA Center', 'PUPA Center didirikan, dengan pengembangan kapasitas di bidang kecakapan hidup dan kesiapan kerja.'],
-    ],
-    logoTitle: 'Mengapa kupu-kupu?',
-    logoText: 'Logo kupu-kupu PUPA Center melambangkan impian kami untuk mentransformasi pola pikir dan kemampuan individu menjadi lebih matang. PUPA berkomitmen mempersiapkan individu neurodivergen untuk bertransisi menjadi pribadi yang mandiri dan berfungsi, yang memberi dampak bagi dirinya sendiri maupun bagi masyarakat yang inklusif.',
     approachTitle: 'Pendekatan kami',
     approachIntro: 'Pendampingan di PUPA Center dirancang sebagai proses yang terintegrasi, menuju kesiapan kerja dan berbaur inklusif di tengah masyarakat. PUPA meyakini bahwa proses tersebut tidak terbentuk secara instan, melainkan bertahap melalui interaksi bermakna. Pendekatan PUPA berpusat pada individu, berbasis pengalaman nyata, serta dibangun melalui transisi terstruktur dan berkelanjutan.',
     approach: [
@@ -120,6 +114,13 @@ const pupaIcons = [
       </div>
       <img class="blob about-photo" src="/images/pupa-group-9748.jpg" alt="" loading="lazy" width="480" height="420" />
     </div>
+    <div class="wrap">
+      <div class="hl-strip">
+        {c.highlights.map((h) => (
+          <div class="hl-item"><span class="hl-num">{h[0]}</span><span class="hl-label">{h[1]}</span></div>
+        ))}
+      </div>
+    </div>
   </section>
 
   <section class="group-band" aria-hidden="true">
@@ -130,9 +131,9 @@ const pupaIcons = [
     <div class="wrap">
       <h2>{c.missionTitle}</h2>
       <div class="mv-grid">
-        <div class="mv-card"><p class="mv-label">{c.mvLabels[0]}</p><p class="mv-text">{c.mission}</p></div>
-        <div class="mv-card"><p class="mv-label">{c.mvLabels[1]}</p><p class="mv-text">{c.vision}</p></div>
-        <div class="mv-card"><p class="mv-label">{c.mvLabels[2]}</p><p class="mv-text motto">{c.motto}</p></div>
+        <div class="mv-card mv-1"><p class="mv-label">{c.mvLabels[0]}</p><p class="mv-text">{c.mission}</p></div>
+        <div class="mv-card mv-2"><p class="mv-label">{c.mvLabels[1]}</p><p class="mv-text">{c.vision}</p></div>
+        <div class="mv-card mv-3"><p class="mv-label">{c.mvLabels[2]}</p><p class="mv-text motto">{c.motto}</p></div>
       </div>
       <p class="story-p">{c.missionNote}</p>
       <h3 id="approach">{c.valuesTitle}</h3>
@@ -153,19 +154,6 @@ const pupaIcons = [
           <p class="value-def"><b style={`color:${pupaColors[i]}`}>{v[0]}</b> — {v[1]} <span class="value-chip">{v[2]}</span></p>
         ))}
       </div>
-    </div>
-  </section>
-
-  <section class="about-sec" id="journey">
-    <div class="wrap">
-      <h2>{c.journeyTitle}</h2>
-      <ol class="journey">
-        {c.journey.map((j, i) => (
-          <li><span class="j-num" aria-hidden="true">{i + 1}</span><div><h3>{j[0]}</h3><p>{j[1]}</p></div></li>
-        ))}
-      </ol>
-      <h3>{c.logoTitle}</h3>
-      <p class="story-p">{c.logoText}</p>
     </div>
   </section>
 
@@ -236,13 +224,20 @@ const pupaIcons = [
   .letter-icon svg{width:20px;height:20px}
   .letter-label{font-size:.85rem}
 }
+
+/* Highlight strip */
+.hl-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:44px;padding-top:36px;border-top:1px solid var(--line)}
+.hl-item{display:flex;flex-direction:column;gap:4px;text-align:center}
+.hl-num{font-family:'Fraunces',serif;font-weight:700;font-size:1.9rem;color:var(--teal-700);line-height:1.1}
+.hl-label{font-size:.92rem;color:var(--ink-soft)}
+/* Mission/vision/motto distinct top accents */
+.mv-card{border-top:3px solid transparent}
+.mv-1{border-top-color:var(--orange-500)}
+.mv-2{border-top-color:var(--teal-700)}
+.mv-3{border-top-color:var(--teal-900)}
+@media (max-width:640px){.hl-strip{grid-template-columns:1fr 1fr;gap:24px 16px}}
 </style>
 <style>
-.journey{list-style:none;margin:24px 0 32px;display:grid;gap:14px;max-width:720px}
-.journey li{display:flex;gap:16px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px}
-.j-num{flex:none;display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:var(--orange-100);color:var(--orange-700);font-family:'Fraunces',serif;font-weight:700}
-.journey h3{font-size:1.05rem;margin-bottom:2px}
-.journey p{font-size:1rem;color:var(--ink-soft)}
 
 /* P.U.P.A big-letter values treatment */
 .values-intro{max-width:64ch;margin-bottom:8px}
@@ -263,4 +258,16 @@ const pupaIcons = [
   .letter-icon svg{width:20px;height:20px}
   .letter-label{font-size:.85rem}
 }
+
+/* Highlight strip */
+.hl-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:44px;padding-top:36px;border-top:1px solid var(--line)}
+.hl-item{display:flex;flex-direction:column;gap:4px;text-align:center}
+.hl-num{font-family:'Fraunces',serif;font-weight:700;font-size:1.9rem;color:var(--teal-700);line-height:1.1}
+.hl-label{font-size:.92rem;color:var(--ink-soft)}
+/* Mission/vision/motto distinct top accents */
+.mv-card{border-top:3px solid transparent}
+.mv-1{border-top-color:var(--orange-500)}
+.mv-2{border-top-color:var(--teal-700)}
+.mv-3{border-top-color:var(--teal-900)}
+@media (max-width:640px){.hl-strip{grid-template-columns:1fr 1fr;gap:24px 16px}}
 </style>
