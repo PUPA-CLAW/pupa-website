@@ -26,7 +26,7 @@ export const home: Record<Lang, any> = {
     stages: [
       { tag: 'Stage 1 · Life skills', name: 'Mandiri', body: 'Daily living skills: self-care, cooking, money handling, using transport, and communication for everyday situations.', link: 'Learn about Mandiri', anchor: '#mandiri' },
       { tag: 'Stage 2 · Work readiness', name: 'Karya', body: 'Vocational training and workplace habits: following instructions, working in a team, and practicing real production tasks.', link: 'Learn about Karya', anchor: '#karya' },
-      { tag: 'Stage 3 · Employment & community', name: 'Access', body: 'Supported internships, job placement with partner companies, and ongoing coaching in the workplace and community.', link: 'Learn about Access', anchor: '#access' },
+      { tag: 'Stage 3 · Employment', name: 'Access', body: 'Supported internships, job placement with partner companies, and ongoing coaching in the workplace and community.', link: 'Learn about Access', anchor: '#access' },
     ],
     pathNotePrefix: 'Alongside the main journey, ',
     pathNoteLink: 'extracurricular classes',
@@ -76,7 +76,7 @@ export const home: Record<Lang, any> = {
     stages: [
       { tag: 'Tahap 1 · Kecakapan hidup', name: 'Mandiri', body: 'Keterampilan hidup sehari-hari: merawat diri, memasak, mengelola uang, menggunakan transportasi, dan berkomunikasi dalam situasi sehari-hari.', link: 'Pelajari Mandiri', anchor: '#mandiri' },
       { tag: 'Tahap 2 · Kesiapan kerja', name: 'Karya', body: 'Pelatihan vokasional dan kebiasaan kerja: mengikuti instruksi, bekerja dalam tim, dan berlatih tugas produksi yang nyata.', link: 'Pelajari Karya', anchor: '#karya' },
-      { tag: 'Tahap 3 · Pekerjaan & komunitas', name: 'Access', body: 'Magang dengan pendampingan, penempatan kerja di perusahaan mitra, dan pembinaan berkelanjutan di tempat kerja dan komunitas.', link: 'Pelajari Access', anchor: '#access' },
+      { tag: 'Tahap 3 · Pekerjaan', name: 'Access', body: 'Magang dengan pendampingan, penempatan kerja di perusahaan mitra, dan pembinaan berkelanjutan di tempat kerja dan komunitas.', link: 'Pelajari Access', anchor: '#access' },
     ],
     pathNotePrefix: 'Di samping perjalanan utama, ',
     pathNoteLink: 'kelas ekstrakurikuler',
