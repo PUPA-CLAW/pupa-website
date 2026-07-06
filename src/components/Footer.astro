@@ -1,0 +1,75 @@
+---
+import { useTranslations, routes, type Lang } from '../i18n/ui';
+interface Props { lang: Lang; }
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+const p = (key: string) => (routes[key] ?? routes.home)[lang];
+const year = new Date().getFullYear();
+---
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img class="foot-logo" src="/images/brand/pupa-logo-white.png" alt="PUPA" width="62" height="80" />
+        <span class="brand-name">{t('site.name')}</span>
+        <p class="tagline">Transform to Shine</p>
+        <p>{t('footer.blurb')}</p>
+        <ul>
+          <li><a href="https://wa.me/62818533698" rel="noopener">{t('footer.whatsapp')}</a></li>
+          <li><a href="mailto:info@pupacenter.org">info@pupacenter.org</a></li>
+          <li><a href="https://www.instagram.com/pupa.center" rel="noopener">Instagram — @pupa.center</a></li>
+          <li><a href="https://www.youtube.com/@PUPACenter" rel="noopener">YouTube — PUPA Center</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>{t('footer.programs')}</h3>
+        <ul>
+          <li><a href={p('programs')}>{t('nav.programs.overview')}</a></li>
+          <li><a href={p('programs') + '#mandiri'}>Mandiri</a></li>
+          <li><a href={p('programs') + '#karya'}>Karya</a></li>
+          <li><a href={p('programs') + '#access'}>Access</a></li>
+          <li><a href={p('programs') + '#extracurriculars'}>{t('nav.programs.extracurriculars')}</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>{t('footer.about')}</h3>
+        <ul>
+          <li><a href={p('about')}>{t('nav.about.story')}</a></li>
+          <li><a href={p('about') + '#mission'}>{t('nav.about.mission')}</a></li>
+          <li><a href={p('about') + '#team'}>{t('nav.about.team')}</a></li>
+          <li><a href={p('resources') + '#news'}>{t('nav.resources.news')}</a></li>
+          <li><a href={p('stories')}>{t('nav.resources.stories')}</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>{t('footer.action')}</h3>
+        <ul>
+          <li><a href={p('donate')}>{t('nav.donate')}</a></li>
+          <li><a href={p('getInvolved') + '#volunteer'}>{t('nav.involved.volunteer')}</a></li>
+          <li><a href={p('getInvolved') + '#partner'}>{t('nav.involved.partner')}</a></li>
+          <li><a href={p('enrollment')}>{t('nav.enrollment.how')}</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© {year} Yayasan PUPA Center. {t('footer.rights')}</p>
+      <p><a href={routes.privacy[lang]}>{t('footer.privacy')}</a></p>
+    </div>
+  </div>
+</footer>
+
+<style>
+.site-footer{background:var(--teal-900);color:#C8DEDC;padding:64px 0 40px;font-size:1rem;margin-top:0}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:36px;margin-bottom:44px}
+.brand-name{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:1.25rem;color:#fff;display:block;margin-top:12px}
+.foot-logo{height:80px;width:auto;opacity:.95}
+.tagline{font-size:.9rem;letter-spacing:.06em;color:#9BC4C0;margin-top:2px!important}
+.foot-brand p{margin:14px 0;max-width:34ch}
+h3{color:#fff;font-size:1rem;font-family:'Figtree',sans-serif;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:16px}
+ul{list-style:none}
+li a{display:inline-flex;align-items:center;min-height:40px;color:#C8DEDC;text-decoration:none}
+li a:hover{color:#fff;text-decoration:underline}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.15);padding-top:24px;display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;font-size:.9rem}
+.foot-bottom a{color:#C8DEDC}
+@media (max-width:960px){.foot-grid{grid-template-columns:1fr 1fr}}
+</style>

@@ -1,0 +1,122 @@
+// All shared interface text in both languages.
+// Staff can edit Indonesian translations here — one file, side by side.
+
+export const languages = { en: 'EN', id: 'ID' } as const;
+export type Lang = keyof typeof languages;
+
+export const ui = {
+  en: {
+    'site.name': 'PUPA Center',
+    'site.tagline': 'Life skills & work readiness',
+    'nav.about': 'About',
+    'nav.about.story': 'Our story',
+    'nav.about.mission': 'Mission, vision & values',
+    'nav.about.team': 'Our team',
+    'nav.about.board': 'Board & advisors',
+    'nav.about.approach': 'Our approach',
+    'nav.programs': 'Programs',
+    'nav.programs.overview': 'Programs overview',
+    'nav.programs.mandiri': 'Mandiri — life skills',
+    'nav.programs.karya': 'Karya — work readiness',
+    'nav.programs.access': 'Access — employment & community',
+    'nav.programs.extracurriculars': 'Extracurriculars',
+    'nav.enrollment': 'Enrollment',
+    'nav.enrollment.how': 'How to enroll',
+    'nav.enrollment.faq': 'Frequently asked questions',
+    'nav.enrollment.visit': 'Book a visit',
+    'nav.involved': 'Get involved',
+    'nav.involved.volunteer': 'Volunteer',
+    'nav.involved.careers': 'Careers',
+    'nav.involved.partner': 'Partner with us',
+    'nav.resources': 'Resources',
+    'nav.resources.news': 'News & updates',
+    'nav.resources.stories': 'Growth journeys',
+    'nav.resources.parents': 'Resources for parents',
+    'nav.resources.impact': 'Impact & reports',
+    'nav.contact': 'Contact',
+    'nav.donate': 'Donate',
+    'footer.blurb':
+      'Life skills and work readiness for neurodivergent young adults. Alam Sutera, Tangerang, Indonesia.',
+    'footer.whatsapp': 'WhatsApp us',
+    'footer.programs': 'Programs',
+    'footer.about': 'About',
+    'footer.action': 'Take action',
+    'footer.rights': 'All rights reserved.',
+    'footer.privacy': 'Privacy policy',
+    'a11y.skip': 'Skip to main content',
+    'a11y.mainnav': 'Main navigation',
+    'stub.title': 'Page under construction',
+    'stub.body':
+      'This page is part of the new PUPA Center website and its content is being prepared. The final version will include everything from the current site, reviewed and updated.',
+    'stub.back': 'Back to homepage',
+  },
+  id: {
+    'site.name': 'PUPA Center',
+    'site.tagline': 'Kecakapan hidup & kesiapan kerja',
+    'nav.about': 'Tentang',
+    'nav.about.story': 'Kisah kami',
+    'nav.about.mission': 'Misi, visi & nilai',
+    'nav.about.team': 'Tim kami',
+    'nav.about.board': 'Pembina & penasihat',
+    'nav.about.approach': 'Pendekatan kami',
+    'nav.programs': 'Program',
+    'nav.programs.overview': 'Ikhtisar program',
+    'nav.programs.mandiri': 'Mandiri — kecakapan hidup',
+    'nav.programs.karya': 'Karya — kesiapan kerja',
+    'nav.programs.access': 'Access — pekerjaan & komunitas',
+    'nav.programs.extracurriculars': 'Ekstrakurikuler',
+    'nav.enrollment': 'Pendaftaran',
+    'nav.enrollment.how': 'Cara mendaftar',
+    'nav.enrollment.faq': 'Pertanyaan yang sering diajukan',
+    'nav.enrollment.visit': 'Jadwalkan kunjungan',
+    'nav.involved': 'Ikut terlibat',
+    'nav.involved.volunteer': 'Menjadi relawan',
+    'nav.involved.careers': 'Karier',
+    'nav.involved.partner': 'Bermitra dengan kami',
+    'nav.resources': 'Sumber daya',
+    'nav.resources.news': 'Berita & kabar terbaru',
+    'nav.resources.stories': 'Kisah pertumbuhan',
+    'nav.resources.parents': 'Sumber daya untuk orang tua',
+    'nav.resources.impact': 'Dampak & laporan',
+    'nav.contact': 'Kontak',
+    'nav.donate': 'Donasi',
+    'footer.blurb':
+      'Kecakapan hidup dan kesiapan kerja untuk anak muda neurodivergen. Alam Sutera, Tangerang, Indonesia.',
+    'footer.whatsapp': 'Hubungi kami via WhatsApp',
+    'footer.programs': 'Program',
+    'footer.about': 'Tentang',
+    'footer.action': 'Ambil tindakan',
+    'footer.rights': 'Hak cipta dilindungi.',
+    'footer.privacy': 'Kebijakan privasi',
+    'a11y.skip': 'Langsung ke konten utama',
+    'a11y.mainnav': 'Navigasi utama',
+    'stub.title': 'Halaman sedang disiapkan',
+    'stub.body':
+      'Halaman ini adalah bagian dari situs baru PUPA Center dan kontennya sedang disiapkan. Versi final akan memuat semua informasi dari situs saat ini, yang telah ditinjau dan diperbarui.',
+    'stub.back': 'Kembali ke beranda',
+  },
+} as const;
+
+export function useTranslations(lang: Lang) {
+  return function t(key: keyof (typeof ui)['en']): string {
+    return ui[lang][key] ?? ui.en[key];
+  };
+}
+
+// Route map: every page's path in both languages.
+// Used by the language toggle so EN<->ID always lands on the SAME page.
+export const routes: Record<string, { en: string; id: string }> = {
+  home:            { en: '/',                        id: '/id/' },
+  about:           { en: '/about/',                  id: '/id/tentang/' },
+  team:            { en: '/about/team/',             id: '/id/tentang/tim/' },
+  board:           { en: '/about/board/',            id: '/id/tentang/pembina/' },
+  programs:        { en: '/programs/',               id: '/id/program/' },
+  enrollment:      { en: '/enrollment/',             id: '/id/pendaftaran/' },
+  getInvolved:     { en: '/get-involved/',           id: '/id/ikut-terlibat/' },
+  resources:       { en: '/resources/',              id: '/id/sumber-daya/' },
+  contact:         { en: '/contact/',                id: '/id/kontak/' },
+  donate:          { en: '/donate/',                 id: '/id/donasi/' },
+  blog:            { en: '/blog/',                   id: '/id/sumber-daya/' },
+  stories:         { en: '/growth-journeys/',        id: '/id/kisah/' },
+  privacy:         { en: '/privacy/',                id: '/privacy/' },
+};
