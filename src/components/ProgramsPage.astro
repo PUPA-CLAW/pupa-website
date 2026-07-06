@@ -236,7 +236,7 @@ const extraImgs: Record<string, string> = {
           </div>
         ))}
       </div>
-      <p>{c.extra.note}</p>
+      <p class="extra-note">{c.extra.note}</p>
     </div>
   </section>
 
@@ -296,4 +296,6 @@ const extraImgs: Record<string, string> = {
 .num-card{position:relative;padding-left:24px}
 .num-card::before{content:"";position:absolute;left:0;top:18px;bottom:18px;width:4px;border-radius:4px;background:var(--orange-500)}
 .num-card .stage-badge{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:var(--teal-700);color:#fff;font-family:'Fraunces',serif;font-weight:700;font-size:.95rem;margin-bottom:10px}
+
+.extra-note{max-width:70ch;margin:32px auto 0;text-align:center;color:var(--ink-soft);font-size:1.08rem}
 </style>
