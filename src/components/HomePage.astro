@@ -67,12 +67,18 @@ const storyImgs = ['/images/afm-9305.jpg', '/images/afm-9263.jpg', '/images/afm-
       </div>
       <div class="hero-photo">
         <img class="blob" src="/images/a6701896.jpg" alt={alts.hero} width="640" height="560" fetchpriority="high" />
-        <svg class="butterfly" viewBox="0 0 100 90" aria-hidden="true">
-          <ellipse cx="34" cy="34" rx="26" ry="18" fill="#EE8A2E" transform="rotate(-28 34 34)"/>
-          <ellipse cx="66" cy="34" rx="26" ry="18" fill="#EE8A2E" opacity=".85" transform="rotate(28 66 34)"/>
-          <ellipse cx="38" cy="60" rx="17" ry="11" fill="#0F6B66" transform="rotate(-20 38 60)"/>
-          <ellipse cx="62" cy="60" rx="17" ry="11" fill="#0F6B66" opacity=".85" transform="rotate(20 62 60)"/>
-          <rect x="46.5" y="22" width="7" height="48" rx="3.5" fill="#0B4441"/>
+        <svg class="butterfly" viewBox="0 0 100 100" aria-hidden="true">
+          <!-- upper wings (orange) -->
+          <path d="M50 42 C40 20, 14 16, 10 30 C6 44, 26 50, 50 50 Z" fill="#E07B2A"/>
+          <path d="M50 42 C60 20, 86 16, 90 30 C94 44, 74 50, 50 50 Z" fill="#E07B2A" opacity=".9"/>
+          <!-- lower wings (teal) -->
+          <path d="M50 50 C40 58, 20 62, 20 76 C20 88, 40 84, 50 62 Z" fill="#0F6B66"/>
+          <path d="M50 50 C60 58, 80 62, 80 76 C80 88, 60 84, 50 62 Z" fill="#0F6B66" opacity=".9"/>
+          <!-- body -->
+          <path d="M50 30 C52 30, 53 33, 53 40 L52 66 C52 70, 48 70, 48 66 L47 40 C47 33, 48 30, 50 30 Z" fill="#0B4441"/>
+          <!-- antennae -->
+          <path d="M50 32 C46 24, 42 22, 40 20" stroke="#0B4441" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <path d="M50 32 C54 24, 58 22, 60 20" stroke="#0B4441" stroke-width="2" fill="none" stroke-linecap="round"/>
         </svg>
       </div>
     </div>
@@ -257,8 +263,8 @@ const storyImgs = ['/images/afm-9305.jpg', '/images/afm-9263.jpg', '/images/afm-
 .story-photos img:nth-child(1){width:62%;left:0;top:0;aspect-ratio:1;}
 .story-photos img:nth-child(2){width:46%;right:0;top:34%;aspect-ratio:1;}
 .story-photos img:nth-child(3){width:38%;left:14%;bottom:0;aspect-ratio:1;}
-blockquote{font-family:'Fraunces',serif;font-size:1.45rem;font-weight:600;line-height:1.45;border:none}
-blockquote footer{font-family:'Inter',sans-serif;font-size:1rem;font-weight:500;color:var(--ink-soft);margin-top:18px}
+blockquote{font-family:'Fraunces',serif;font-size:1.25rem;font-weight:500;line-height:1.55;border:none;letter-spacing:-0.005em;margin-top:16px}
+blockquote footer{font-family:'Inter',sans-serif;font-size:.95rem;font-weight:500;color:var(--ink-soft);margin-top:16px}
 .story-cta{margin-top:28px}
 
 /* DONATE */

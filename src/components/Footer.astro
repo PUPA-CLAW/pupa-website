@@ -39,8 +39,8 @@ const wa = 'https://wa.me/62818533698';
         <ul>
           <li><a href={p('about')}>{t('nav.about.story')}</a></li>
           <li><a href={p('about') + '#mission'}>{t('nav.about.mission')}</a></li>
-          <li><a href={p('team')}>{t('nav.about.team')}</a></li>
           <li><a href={p('board')}>{t('nav.about.board')}</a></li>
+          <li><a href={p('team')}>{t('nav.about.team')}</a></li>
           <li><a href={p('stories')}>{t('nav.resources.stories')}</a></li>
         </ul>
       </div>
@@ -99,9 +99,9 @@ const wa = 'https://wa.me/62818533698';
 
 /* Contact CTA row */
 .foot-cta{border-top:1px solid rgba(255,255,255,.12);padding:36px 0}
-.cta-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:44px;align-items:center}
+.cta-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:44px;align-items:center}
 .cta-copy h2{color:#fff;font-size:1.05rem;font-weight:700;margin-bottom:8px}
-.cta-copy p{color:#C8DEDC;max-width:46ch;font-size:.92rem}
+.cta-copy p{color:#C8DEDC;max-width:none;font-size:.92rem;text-wrap:normal}
 .cta-actions{display:flex;align-items:center;gap:16px;flex-wrap:wrap;justify-content:flex-end}
 .cta-pill{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);color:#fff;padding:15px 24px;border-radius:999px;text-decoration:none;font-weight:600;min-height:44px;transition:background .2s ease,border-color .2s ease}
 .cta-pill:hover{background:rgba(255,255,255,.14)}
