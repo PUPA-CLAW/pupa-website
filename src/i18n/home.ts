@@ -12,7 +12,6 @@ export const home: Record<Lang, any> = {
       'PUPA Center is a learning center where autistic and other neurodivergent young adults build daily living skills, work skills, and real connections to jobs and community.',
     ctaVisit: 'Book a visit on WhatsApp',
     ctaPrograms: 'Explore our programs',
-    heroNote: 'Visits are free. We will reply within one working day.',
     doorwaysTitle: 'How can we help you today?',
     doorwaysLede: 'Choose the path that fits you. Each one takes you straight to the information you need.',
     doorways: [
@@ -62,7 +61,6 @@ export const home: Record<Lang, any> = {
       'Program PUPA Center dirancang untuk pengembangan diri individu neurodivergen dewasa — mendampingi transisi dari sekolah atau pendidikan formal menuju penguatan keterampilan hidup (Life Skill) dan kesiapan kerja (Work Readiness), sebagai langkah menjalani kehidupan yang lebih mandiri baik dalam keseharian maupun di dunia kerja.',
     ctaVisit: 'Jadwalkan kunjungan via WhatsApp',
     ctaPrograms: 'Lihat program kami',
-    heroNote: 'Kunjungan gratis. Kami akan membalas dalam satu hari kerja.',
     doorwaysTitle: 'Apa yang bisa kami bantu hari ini?',
     doorwaysLede: 'Pilih jalur yang sesuai untuk Anda. Setiap jalur langsung menuju informasi yang Anda butuhkan.',
     doorways: [
