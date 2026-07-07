@@ -244,10 +244,11 @@ const storyImgs = ['/images/afm-9305.jpg', '/images/afm-9263.jpg', '/images/afm-
 
 /* AT A GLANCE */
 .impact{padding:72px 0;background:var(--cream)}
-.impact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:8px}
-.stat{background:var(--surface);border:1px solid #EFE4D2;border-radius:var(--radius-lg);padding:28px}
+.impact-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:8px}
+.stat{background:var(--surface);border:1px solid #EFE4D2;border-radius:var(--radius-lg);padding:32px 28px 28px;position:relative;overflow:hidden}
+.stat::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--teal-700)}
 .stat .num{font-family:'Varela Round',serif;font-size:2.6rem;font-weight:700;color:var(--teal-700);line-height:1.1}
-.stat .label{color:var(--ink-soft);font-size:1rem;margin-top:6px}
+.stat .label{color:var(--ink-soft);font-size:1rem;margin-top:4px}
 
 /* FULL-BLEED BANNER */
 .banner{position:relative}

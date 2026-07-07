@@ -34,7 +34,7 @@ export const home: Record<Lang, any> = {
     impactLede: 'A structured pathway for neurodivergent young adults in Tangerang.',
     stats: [
       { num: '16–25', label: 'The age range of young adults we support' },
-      { num: '3', label: 'Core programs — Mandiri, Karya, and Access — forming one journey' },
+      { num: '3 Core', label: 'Programs — Mandiri, Karya, and Access — forming one journey' },
       { num: '5 days', label: 'Of structured activities every week, Monday to Friday' },
     ],
     storyTitle: 'Growth Journeys',
@@ -83,7 +83,7 @@ export const home: Record<Lang, any> = {
     impactLede: 'Jalur yang terstruktur bagi anak muda neurodivergen di Tangerang.',
     stats: [
       { num: '16–25', label: 'Rentang usia anak muda yang kami dampingi' },
-      { num: '3', label: 'Program inti — Mandiri, Karya, dan Access — dalam satu perjalanan' },
+      { num: '3 Program', label: 'Inti — Mandiri, Karya, dan Access — dalam satu perjalanan' },
       { num: '5 hari', label: 'Kegiatan terstruktur setiap minggu, Senin sampai Jumat' },
     ],
     storyTitle: 'Kisah pertumbuhan',
