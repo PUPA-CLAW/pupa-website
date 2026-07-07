@@ -7,19 +7,19 @@ export const home: Record<Lang, any> = {
     metaDescription:
       'PUPA Center helps neurodivergent young adults in Tangerang build life skills, work readiness, and community access through the Mandiri, Karya, and Access programs.',
     eyebrow: 'Alam Sutera, Tangerang · Indonesia',
-    heroTitle: 'A future where neurodivergent young adults live a life that matters.',
+    heroTitle: 'A Future Where Neurodivergent Young Adults Live a Life That Matters.',
     heroLede:
       'PUPA Center is a learning center where autistic and other neurodivergent young adults build daily living skills, work skills, and real connections to jobs and community.',
     ctaVisit: 'Book a visit on WhatsApp',
     ctaPrograms: 'Explore our programs',
-    doorwaysTitle: 'How can we help you today?',
+    doorwaysTitle: 'How Can We Help You Today?',
     doorwaysLede: 'Choose the path that fits you. Each one takes you straight to the information you need.',
     doorways: [
       { title: 'For families', body: 'Learn how our programs work, what a typical day looks like, and how to enroll your young adult. Start with a free visit to our center.', link: 'See how enrollment works', routeKey: 'enrollment' },
       { title: 'For donors & partners', body: 'Your support funds scholarships, training materials, and job placements. See where donations go and how companies can partner with us.', link: 'See ways to give', routeKey: 'donate' },
       { title: 'For volunteers', body: 'Share your skills as a class mentor, workshop leader, or event helper. We will match your time and experience to a role that fits.', link: 'See volunteer roles', routeKey: 'getInvolved' },
     ],
-    programsTitle: 'One journey, three stages',
+    programsTitle: 'One Journey, Three Stages',
     programsLede:
       'Our programs are a sequence. Learners build independence first, then work skills, then step into jobs and community life. Each learner moves at their own pace.',
     stages: [
@@ -30,23 +30,23 @@ export const home: Record<Lang, any> = {
     pathNotePrefix: 'Alongside the main journey, ',
     pathNoteLink: 'extracurricular classes',
     pathNoteSuffix: ' — art, music, sport, and social clubs — help learners explore interests and build friendships.',
-    impactTitle: 'PUPA at a glance',
+    impactTitle: 'PUPA at a Glance',
     impactLede: 'A structured pathway for neurodivergent young adults in Tangerang.',
     stats: [
       { num: '16–25', label: 'The age range of young adults we support' },
       { num: '3', label: 'Core programs — Mandiri, Karya, and Access — forming one journey' },
       { num: '5 days', label: 'Of structured activities every week, Monday to Friday' },
     ],
-    storyTitle: 'Growth journeys',
+    storyTitle: 'Growth Journeys',
     storyQuote: '“Kyle was invited to continue with the company as a contract worker — and after graduating from PUPA Center, he remains employed there today.”',
     storyAttribution: '— From Kyle\u2019s growth journey',
     storyCta: 'Read more growth journeys',
     bannerQuote: 'Recognized for their potential, not defined by limitations.',
-    donateTitle: 'Help a young adult reach independence',
+    donateTitle: 'Help a Young Adult Reach Independence',
     donateLede:
       'Donations fund program scholarships, training materials, and job coaching. Every contribution goes directly to learner support, and we publish how funds are used.',
     donateCta: 'Donate now',
-    waysTitle: 'Ways to give',
+    waysTitle: 'Ways to Give',
     ways: [
       { strong: 'Corporate partnership', rest: ' — email us to discuss CSR programs' },
     ],
