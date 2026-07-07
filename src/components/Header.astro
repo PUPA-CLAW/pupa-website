@@ -80,7 +80,7 @@ const menu = [
 .site-header{background:var(--surface);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
 .topbar{display:flex;align-items:center;gap:16px;min-height:76px;flex-wrap:wrap}
 .logo{display:flex;align-items:center;text-decoration:none;min-height:44px}
-.logo-img{height:52px;width:auto}
+.logo-img{height:68px;width:auto}
 nav.primary{margin-left:auto}
 nav.primary > ul{display:flex;list-style:none;gap:2px}
 nav.primary a{display:flex;align-items:center;min-height:44px;padding:10px 13px;font-size:1rem;font-weight:500;color:var(--ink);text-decoration:none;border-radius:10px}
@@ -98,11 +98,23 @@ nav.primary li:hover > .dropdown, nav.primary li:focus-within > .dropdown{displa
 
 @media (max-width:1020px){
   .menu-btn{display:inline-flex;align-items:center;justify-content:center}
-  nav.primary{display:none;width:100%;margin-left:0}
+  nav.primary{display:none;width:100%;margin-left:0;order:4}
   nav.primary.open{display:block}
   nav.primary > ul{flex-direction:column;padding-bottom:12px}
   .dropdown{position:static;display:block;border:none;box-shadow:none;padding-left:16px}
-  .header-actions{margin-left:auto}
+  .header-actions{margin-left:auto;order:2}
+  .menu-btn{order:3}
+}
+@media (max-width:560px){
+  .logo-img{height:58px}
+  .topbar{gap:8px}
+  .logo{margin-right:auto}
+  .menu-btn{order:2;margin-left:0;padding:8px 14px}
+  /* Move language toggle below, into the menu flow, so top row is just logo + menu */
+  .header-actions{order:5;width:100%;margin-left:0;justify-content:flex-start;padding-top:4px}
+  .header-actions{display:none}
+  nav.primary.open ~ .header-actions,
+  .topbar:has(nav.primary.open) .header-actions{display:flex}
 }
 </style>
 
