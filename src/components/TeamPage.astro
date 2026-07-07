@@ -43,14 +43,30 @@ const leaders = [
     photo: '/images/team/adlina-attahiroh.jpg',
     alt: { en: 'Adlina Attahiroh, Head of Staff', id: 'Adlina Attahiroh, Kepala Staf' },
     role: { en: 'Head of Staff', id: 'Kepala Staf' },
-    bio: { en: '', id: '' },
+    bio: {
+      en: 'Overseeing day-to-day operations and team coordination, Adlina ensures that PUPA Center\u2019s programs run smoothly and effectively. She supports staff development, internal communication, and operational alignment to create a supportive environment for both the team and participants.',
+      id: 'Penanggung jawab operasional harian dan koordinasi tim, Adlina Attahiroh memastikan program-program PUPA Center berjalan lancar dan efektif. Berperan dalam mendukung pengembangan staf, memperkuat komunikasi internal, serta menjaga keselarasan operasional guna menciptakan lingkungan kerja yang suportif bagi tim dan individu neurodivergen yang tergabung.',
+    },
   },
   {
     name: 'Margaretha Tanumijaya',
     photo: '/images/team/margaretha-tanumijaya.jpg',
     alt: { en: 'Margaretha Tanumijaya, General Affairs', id: 'Margaretha Tanumijaya, General Affairs' },
-    role: { en: 'General Affairs', id: 'General Affairs' },
-    bio: { en: '', id: '' },
+    role: { en: 'General Affairs', id: 'Manajemen Operasional' },
+    bio: {
+      en: 'Managing administrative and operational needs, Margaretha supports the day-to-day functions that keep PUPA Center running smoothly. She ensures systems, facilities, and internal processes are well-organized to support both the team and program activities.',
+      id: 'Penanggung jawab administratif dan operasional, Margaretha Tanumijaya mendukung kelancaran fungsi harian PUPA Center. Memastikan sistem, fasilitas, serta proses internal terkelola dengan baik guna menunjang kinerja tim dan keberlangsungan kegiatan program.',
+    },
+  },
+  {
+    name: 'Jhonson Gultom',
+    photo: '/images/team/jhonson-gultom.jpg',
+    alt: { en: 'Jhonson Gultom, Partnerships & Outreach', id: 'Jhonson Gultom, Kemitraan & Jangkauan' },
+    role: { en: 'Partnerships & Outreach', id: 'Kemitraan & Jangkauan' },
+    bio: {
+      en: 'Building bridges between PUPA Center and the wider community, Jojo leads partnerships and outreach efforts that expand opportunities for neurodivergent individuals. He cultivates relationships with organizations, families, and partners who share PUPA\u2019s vision of inclusive growth.',
+      id: 'Membangun jembatan antara PUPA Center dan masyarakat luas, Jojo memimpin upaya kemitraan dan jangkauan yang memperluas peluang bagi individu neurodivergen. Ia menjalin hubungan dengan organisasi, keluarga, dan mitra yang berbagi visi PUPA tentang pertumbuhan yang inklusif.',
+    },
   },
 ];
 
@@ -109,7 +125,8 @@ const team = [
       <div class="leader-grid">
         {leaders.map((l) => (
           <article class="leader-card">
-            <img src={l.photo} alt={l.alt[lang]} loading="lazy" width="360" height="440" />
+            <img src={l.photo} alt={l.alt[lang]} loading="lazy" width="360" height="440"
+                 onerror="this.style.display='none';this.parentElement.classList.add('no-photo')" />
             <div class="leader-info">
               <p class="leader-role">{l.role[lang]}</p>
               <h3>{l.name}</h3>
@@ -142,6 +159,7 @@ const team = [
 .leaders{padding:64px 0}
 .leader-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:28px;align-items:stretch}
 .leader-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-lg);overflow:hidden;display:flex;flex-direction:column}
+.leader-card.no-photo::before{content:"";display:block;aspect-ratio:360/440;background:linear-gradient(150deg,var(--sage),var(--peach))}
 .leader-card img{width:100%;aspect-ratio:4/5;object-fit:cover}
 .leader-info{padding:20px 22px 24px;display:flex;flex-direction:column;flex-grow:1}
 .leader-role{font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--teal-700)}
