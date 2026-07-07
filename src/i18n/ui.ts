@@ -33,7 +33,6 @@ export const ui = {
     'nav.resources.news': 'News & updates',
     'nav.resources.stories': 'Growth journeys',
     'nav.resources.parents': 'Resources for parents',
-    'nav.resources.impact': 'Impact & reports',
     'nav.contact': 'Contact',
     'nav.donate': 'Donate',
     'footer.blurb':
@@ -89,7 +88,6 @@ export const ui = {
     'nav.resources.news': 'Berita & kabar terbaru',
     'nav.resources.stories': 'Kisah pertumbuhan',
     'nav.resources.parents': 'Sumber daya untuk orang tua',
-    'nav.resources.impact': 'Dampak & laporan',
     'nav.contact': 'Kontak',
     'nav.donate': 'Donasi',
     'footer.blurb':
