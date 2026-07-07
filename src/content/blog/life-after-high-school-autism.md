@@ -1,6 +1,6 @@
 ---
 title: "What Happens After High School for Autistic Young Adults?"
-date: 2019-05-28
+date: 2026-07-15
 lang: en
 slug: "life-after-high-school-autism"
 image: "/images/img-0559-1.jpg"

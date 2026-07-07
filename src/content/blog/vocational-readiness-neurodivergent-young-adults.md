@@ -1,6 +1,6 @@
 ---
 title: "Vocational Readiness for Neurodivergent Young Adults"
-date: 2019-05-28
+date: 2026-06-15
 lang: en
 slug: "vocational-readiness-neurodivergent-young-adults"
 image: "/images/dji-20260112112138-0105-d-pa2.jpg"

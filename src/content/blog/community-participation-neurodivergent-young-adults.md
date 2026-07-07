@@ -1,6 +1,6 @@
 ---
 title: "Preparing Neurodivergent Young Adults for Community Participation"
-date: 2026-05-14
+date: 2026-05-15
 lang: en
 slug: "community-participation-neurodivergent-young-adults"
 image: "/images/afm-9647.jpg"

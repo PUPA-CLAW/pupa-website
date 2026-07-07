@@ -1,6 +1,6 @@
 ---
 title: "Supporting the Transition to Adulthood for Neurodivergent Young Adults in Indonesia"
-date: 2026-05-14
+date: 2026-08-15
 lang: en
 slug: "neurodivergent-adulthood-transition-indonesia"
 image: "/images/pupa-group-9707.jpg"
@@ -9,7 +9,7 @@ description: "The transition to adulthood can be a challenging period for many f
 
 The transition to adulthood can be a challenging period for many families of autistic and neurodivergent young adults in Indonesia. After formal education ends, parents often begin searching for opportunities that can support independence, community participation, and long-term development.
 
-While awareness surrounding neurodiversity continues growing in Indonesia, structured adult-transition pathways are still developing. Many families experience uncertainty when trying to identify suitable programs, vocational opportunities, or supportive environments [after high school.](/blog/autistic-young-adults-after-high-school)
+While awareness surrounding neurodiversity continues growing in Indonesia, structured adult-transition pathways are still developing. Many families experience uncertainty when trying to identify suitable programs, vocational opportunities, or supportive environments [after high school.](/blog/life-after-high-school-autism)
 
 Adulthood preparation involves much more than employment. It also includes communication, emotional regulation, daily living skills, social participation, confidence, and the ability to navigate real-world situations.
 

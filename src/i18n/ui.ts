@@ -84,10 +84,10 @@ export const ui = {
     'nav.involved.volunteer': 'Menjadi relawan',
     'nav.involved.careers': 'Karier',
     'nav.involved.partner': 'Bermitra dengan kami',
-    'nav.resources': 'Sumber daya',
+    'nav.resources': 'Artikel & Panduan',
     'nav.resources.news': 'Berita & kabar terbaru',
     'nav.resources.stories': 'Kisah pertumbuhan',
-    'nav.resources.parents': 'Sumber daya untuk orang tua',
+    'nav.resources.parents': 'Artikel untuk orang tua',
     'nav.contact': 'Kontak',
     'nav.donate': 'Donasi',
     'footer.blurb':
@@ -138,7 +138,7 @@ export const routes: Record<string, { en: string; id: string }> = {
   resources:       { en: '/resources/',              id: '/id/sumber-daya/' },
   contact:         { en: '/contact/',                id: '/id/kontak/' },
   donate:          { en: '/donate/',                 id: '/id/donasi/' },
-  blog:            { en: '/blog/',                   id: '/id/sumber-daya/' },
+  blog:            { en: '/blog/',                   id: '/id/artikel/' },
   stories:         { en: '/growth-journeys/',        id: '/id/kisah/' },
   privacy:         { en: '/privacy/',                id: '/privacy/' },
 };
