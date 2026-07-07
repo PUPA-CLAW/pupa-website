@@ -151,7 +151,11 @@ const pupaIcons = [
 
         <div class="value-defs">
           {c.values.map((v, i) => (
-            <p class="value-def"><b style={`color:${pupaColors[i]}`}>{v[0]}</b> — {v[1]} <span class="value-chip">{v[2]}</span></p>
+            <div class="value-def" style={`--accent:${pupaColors[i]}`}>
+              <h4 class="vd-name" style={`color:${pupaColors[i]}`}>{v[0]}</h4>
+              <p class="vd-text">{v[1]}</p>
+              <span class="value-chip">{v[2]}</span>
+            </div>
           ))}
         </div>
       </div>
@@ -194,7 +198,7 @@ const pupaIcons = [
 .mv-text.motto{color:var(--orange-700)}
 .value-card{position:relative}
 .value-card h4{color:var(--teal-700)}
-.value-chip{display:inline-block;font-size:.8rem;font-weight:600;color:var(--teal-900);background:var(--sage);padding:3px 12px;border-radius:999px;white-space:nowrap}
+.value-chip{align-self:flex-start;display:inline-block;font-size:.8rem;font-weight:600;color:var(--teal-900);background:var(--sage);padding:4px 14px;border-radius:999px}
 .approach-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:start}
 .pillars{display:grid;gap:12px}
 .pillars details{background:var(--bg);border:1px solid var(--line);border-radius:var(--radius)}
@@ -232,9 +236,10 @@ const pupaIcons = [
 .letter-icon svg{width:25px;height:25px}
 .pupa-dot{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(4.5rem,12vw,7.5rem);line-height:.9;color:var(--ink-soft);align-self:flex-end}
 /* definitions: balanced 2-column grid that fills the width */
-.value-defs{margin-top:40px;display:grid;grid-template-columns:1fr 1fr;gap:24px 40px;max-width:960px;margin-left:auto;margin-right:auto;text-align:left}
-.value-def{color:var(--ink);margin:0;padding-left:14px;border-left:3px solid var(--line)}
-.value-def b{font-weight:700}
+.value-defs{margin-top:40px;display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:920px;margin-left:auto;margin-right:auto;text-align:left;grid-auto-rows:1fr}
+.value-def{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:14px;padding:22px 24px;height:100%}
+.vd-name{font-family:'Fraunces',serif;font-weight:700;font-size:1.15rem;margin:0 0 8px}
+.vd-text{color:var(--ink);margin:0 0 16px;flex-grow:1}
 @media (max-width:760px){
   .value-defs{grid-template-columns:1fr;gap:18px}
 }
