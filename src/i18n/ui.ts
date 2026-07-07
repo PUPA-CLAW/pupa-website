@@ -15,7 +15,7 @@ export const ui = {
     'nav.about.board': 'Our Board',
     'nav.about.approach': 'Our Approach',
     'nav.programs': 'Programs',
-    'nav.programs.overview': 'Programs overview',
+    'nav.programs.overview': 'Programs Overview',
     'nav.programs.mandiri': 'Mandiri — Life Skills',
     'nav.programs.karya': 'Karya — Work Readiness',
     'nav.programs.access': 'Access — Employment & Community',

@@ -15,9 +15,9 @@ export const home: Record<Lang, any> = {
     doorwaysTitle: 'How Can We Help You Today?',
     doorwaysLede: 'Choose the path that fits you. Each one takes you straight to the information you need.',
     doorways: [
-      { title: 'For families', body: 'Learn how our programs work, what a typical day looks like, and how to enroll your young adult. Start with a free visit to our center.', link: 'See how enrollment works', routeKey: 'enrollment' },
-      { title: 'For donors & partners', body: 'Your support funds scholarships, training materials, and job placements. See where donations go and how companies can partner with us.', link: 'See ways to give', routeKey: 'donate' },
-      { title: 'For volunteers', body: 'Share your skills as a class mentor, workshop leader, or event helper. We will match your time and experience to a role that fits.', link: 'See volunteer roles', routeKey: 'getInvolved' },
+      { title: 'For Families', body: 'Learn how our programs work, what a typical day looks like, and how to enroll your young adult. Start with a free visit to our center.', link: 'See how enrollment works', routeKey: 'enrollment' },
+      { title: 'For Donors & Partners', body: 'Your support funds scholarships, training materials, and job placements. See where donations go and how companies can partner with us.', link: 'See ways to give', routeKey: 'donate' },
+      { title: 'For Volunteers', body: 'Share your skills as a class mentor, workshop leader, or event helper. We will match your time and experience to a role that fits.', link: 'See volunteer roles', routeKey: 'getInvolved' },
     ],
     programsTitle: 'One Journey, Three Stages',
     programsLede:
