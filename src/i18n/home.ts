@@ -29,7 +29,7 @@ export const home: Record<Lang, any> = {
     ],
     pathNotePrefix: 'Alongside the main journey, ',
     pathNoteLink: 'extracurricular classes',
-    pathNoteSuffix: ' — art, music, sport, and social clubs — help learners explore interests and build friendships.',
+    pathNoteSuffix: ' — art, dance, sport, and social clubs — help learners explore interests and build friendships.',
     impactTitle: 'PUPA at a Glance',
     impactLede: 'A structured pathway for neurodivergent young adults in Tangerang.',
     stats: [
@@ -78,7 +78,7 @@ export const home: Record<Lang, any> = {
     ],
     pathNotePrefix: 'Di samping perjalanan utama, ',
     pathNoteLink: 'kelas ekstrakurikuler',
-    pathNoteSuffix: ' — seni, musik, olahraga, dan klub sosial — membantu peserta menggali minat dan membangun persahabatan.',
+    pathNoteSuffix: ' — seni, tari, olahraga, dan klub sosial — membantu peserta menggali minat dan membangun persahabatan.',
     impactTitle: 'PUPA secara sekilas',
     impactLede: 'Jalur yang terstruktur bagi anak muda neurodivergen di Tangerang.',
     stats: [
