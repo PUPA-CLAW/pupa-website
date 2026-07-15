@@ -1,0 +1,175 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { type Lang } from '../i18n/ui';
+
+interface Props { lang: Lang; }
+const { lang } = Astro.props;
+
+// Photos served locally from /public/images/.
+
+const leaders = [
+  {
+    name: 'Joni Fonda',
+    photo: '/images/team/joni-fonda.jpg',
+    alt: { en: 'Joni Fonda, Founder of PUPA Center', id: 'Joni Fonda, Pendiri PUPA Center' },
+    role: { en: 'Founder', id: 'Pendiri' },
+    bio: {
+      en: 'With a deep commitment to empowering neurodivergent individuals, Joni founded PUPA Center to create a space where life skills, independence, and dignity come first. Guided by hands-on experience and a strong belief in inclusive growth, Joni continues to shape PUPA Center\u2019s vision and direction.',
+      id: 'Dengan komitmen yang kuat dalam memberdayakan individu neurodivergen, Joni Fonda membangun PUPA Center sebagai ruang kolaboratif yang mengedepankan keterampilan hidup, kemandirian, dan kesiapan kerja dengan martabat sebagai fondasi utama. Berangkat dari pengalaman langsung dan keyakinan akan pertumbuhan yang inklusif, Joni Fonda terus mengarahkan visi serta langkah PUPA Center hingga hari ini.',
+    },
+  },
+  {
+    name: 'Ninik Kristyaningsih',
+    photo: '/images/team/ninik-kristyaningsih.jpg',
+    alt: { en: 'Ninik Kristyaningsih, Head of Program', id: 'Ninik Kristyaningsih, Kepala Program' },
+    role: { en: 'Head of Program', id: 'Kepala Program' },
+    bio: {
+      en: 'As Head of Program, Ninik is responsible for shaping, coordinating, and refining PUPA Center\u2019s core programs. Her work ensures that each activity is purposeful, well-structured, and aligned with the individual needs of neurodivergent participants.',
+      id: 'Sebagai Kepala Program, Ninik bertanggung jawab merancang, mengoordinasikan, dan menyempurnakan program-program inti PUPA Center. Kerjanya memastikan setiap kegiatan bermakna, terstruktur dengan baik, dan selaras dengan kebutuhan individual peserta neurodivergen.',
+    },
+  },
+  {
+    name: 'Christine Santoso',
+    photo: '/images/team/christine-santoso.jpg',
+    alt: { en: 'Christine Santoso, Head of Business & Enterprise', id: 'Christine Santoso, Kepala Bisnis & Enterprise' },
+    role: { en: 'Head of Business & Enterprise', id: 'Kepala Bisnis & Enterprise' },
+    bio: {
+      en: 'Driving sustainability and growth, Christine leads PUPA Center\u2019s business and enterprise initiatives with a strong focus on impact. She bridges purpose and practicality, developing partnerships and opportunities that support meaningful, inclusive pathways for neurodivergent individuals.',
+      id: 'Berfokus pada keberlanjutan dan pertumbuhan, Christine Santoso memimpin inisiatif bisnis dan enterprise PUPA Center dengan orientasi yang kuat pada dampak. Menjembatani nilai dan kepraktisan melalui pengembangan kemitraan serta peluang yang membuka jalur inklusif dan bermakna bagi individu neurodivergen.',
+    },
+  },
+  {
+    name: 'Adlina Attahiroh',
+    photo: '/images/team/adlina-attahiroh.jpg',
+    alt: { en: 'Adlina Attahiroh, Head of Staff', id: 'Adlina Attahiroh, Kepala Staf' },
+    role: { en: 'Head of Staff', id: 'Kepala Staf' },
+    bio: {
+      en: 'Overseeing day-to-day operations and team coordination, Adlina ensures that PUPA Center\u2019s programs run smoothly and effectively. She supports staff development, internal communication, and operational alignment to create a supportive environment for both the team and participants.',
+      id: 'Penanggung jawab operasional harian dan koordinasi tim, Adlina Attahiroh memastikan program-program PUPA Center berjalan lancar dan efektif. Berperan dalam mendukung pengembangan staf, memperkuat komunikasi internal, serta menjaga keselarasan operasional guna menciptakan lingkungan kerja yang suportif bagi tim dan individu neurodivergen yang tergabung.',
+    },
+  },
+  {
+    name: 'Margaretha Tanumijaya',
+    photo: '/images/team/margaretha-tanumijaya.jpg',
+    alt: { en: 'Margaretha Tanumijaya, General Affairs', id: 'Margaretha Tanumijaya, General Affairs' },
+    role: { en: 'General Affairs', id: 'Manajemen Operasional' },
+    bio: {
+      en: 'Managing administrative and operational needs, Margaretha supports the day-to-day functions that keep PUPA Center running smoothly. She ensures systems, facilities, and internal processes are well-organized to support both the team and program activities.',
+      id: 'Penanggung jawab administratif dan operasional, Margaretha Tanumijaya mendukung kelancaran fungsi harian PUPA Center. Memastikan sistem, fasilitas, serta proses internal terkelola dengan baik guna menunjang kinerja tim dan keberlangsungan kegiatan program.',
+    },
+  },
+  {
+    name: 'Jhonson Gultom',
+    photo: '/images/team/jhonson-gultom.jpg',
+    alt: { en: 'Jhonson Gultom, Partnerships & Outreach', id: 'Jhonson Gultom, Kemitraan & Jangkauan' },
+    role: { en: 'Partnerships & Outreach', id: 'Kemitraan & Jangkauan' },
+    bio: {
+      en: 'Building bridges between PUPA Center and the wider community, Jojo leads partnerships and outreach efforts that expand opportunities for neurodivergent individuals. He cultivates relationships with organizations, families, and partners who share PUPA\u2019s vision of inclusive growth.',
+      id: 'Membangun jembatan antara PUPA Center dan masyarakat luas, Jojo memimpin upaya kemitraan dan jangkauan yang memperluas peluang bagi individu neurodivergen. Ia menjalin hubungan dengan organisasi, keluarga, dan mitra yang berbagi visi PUPA tentang pertumbuhan yang inklusif.',
+    },
+  },
+];
+
+const content = {
+  en: {
+    metaTitle: 'Our Team — The People Behind PUPA Center',
+    metaDescription: 'Meet the leaders and team of PUPA Center: educators, mentors, and professionals supporting neurodivergent young adults in Tangerang, Indonesia.',
+    h1: 'Our Team',
+    intro: 'PUPA Center is home to a vibrant, diverse group of thinkers and doers — educators, mentors, and professionals who share one commitment: supporting neurodivergent young adults to grow in their own time and in their own way.',
+    leadersTitle: 'Meet the Leaders',
+    teamTitle: 'The PUPA Team',
+    photoNote: 'Team photos are temporarily loaded from the current website and will be moved to the new site before launch.',
+  },
+  id: {
+    metaTitle: 'Tim Kami — Orang-Orang di Balik PUPA Center',
+    metaDescription: 'Kenali para pemimpin dan tim PUPA Center: pendidik, mentor, dan tenaga profesional yang mendampingi anak muda neurodivergen di Tangerang, Indonesia.',
+    h1: 'Tim kami',
+    intro: 'PUPA Center adalah rumah bagi kelompok pemikir dan pelaku yang beragam — pendidik, mentor, dan tenaga profesional yang berbagi satu komitmen: mendampingi anak muda neurodivergen untuk bertumbuh dengan waktu dan caranya masing-masing.',
+    leadersTitle: 'Kenali para pemimpin',
+    teamTitle: 'Tim PUPA',
+    photoNote: 'Foto tim sementara dimuat dari situs saat ini dan akan dipindahkan ke situs baru sebelum peluncuran.',
+  },
+};
+const c = content[lang];
+
+const team = [
+  { name: 'Saskya Aryanti Rahmatika', img: '/images/team/saskya-aryanti-rahmatika.jpg' },
+  { name: 'Timothea Indirakristi Aditaputri', img: '/images/team/aini-rosadi.jpg' },
+  { name: 'Aini Rosadi', img: '/images/team/timothea-indirakristi.jpg' },
+  { name: 'Hans Jonathan Ledi', img: '/images/team/hans-jonathan-ledi.jpg' },
+  { name: 'Dewinta Pitaloka', img: '/images/team/dewinta-pitaloka.jpg' },
+  { name: 'Ita Oktaviani Surya', img: '/images/team/ita-oktaviani-surya.jpg' },
+  { name: 'Earl Dimara', img: '/images/team/earl-dimara.jpg' },
+  { name: 'Siti Rahmania', img: '/images/team/siti-rahmania.jpg' },
+  { name: 'Muhammad Eraya Satriana', img: '/images/team/muhammad-eraya.jpg' },
+  { name: 'Owen Albie Saputra', img: '/images/team/owen-albie-saputra.jpg' },
+  { name: 'Hansen Sebastian', img: '/images/team/hansen-sebastian.jpg' },
+  { name: 'Ardhana Hariwidagdo', img: '/images/team/ardhana-hariwidagdo.jpg' },
+  { name: 'Erani Sagala', img: '/images/team/selvi-royna-ginting.jpg' },
+  { name: 'Selvi Royna Ginting', img: '/images/team/erani-sagala.jpg' },
+  { name: 'Renny Dwi Aprianti', img: '/images/team/wildan-nurkhakim.jpg' },
+  { name: 'Wildan Nurkhakim', img: '/images/team/renny-dwi-aprianti.jpg' },
+];
+---
+<Layout lang={lang} routeKey="team" title={c.metaTitle} description={c.metaDescription}>
+  <section class="page-head">
+    <div class="wrap">
+      <h1>{c.h1}</h1>
+      <p class="lede">{c.intro}</p>
+    </div>
+  </section>
+
+  <section class="leaders">
+    <div class="wrap">
+      <h2>{c.leadersTitle}</h2>
+      <div class="leader-grid">
+        {leaders.map((l) => (
+          <article class="leader-card">
+            <img src={l.photo} alt={l.alt[lang]} loading="lazy" width="360" height="440"
+                 onerror="this.style.display='none';this.parentElement.classList.add('no-photo')" />
+            <div class="leader-info">
+              <p class="leader-role">{l.role[lang]}</p>
+              <h3>{l.name}</h3>
+              {l.bio[lang] && <p class="leader-bio">{l.bio[lang]}</p>}
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="team-sec">
+    <div class="wrap">
+      <h2>{c.teamTitle}</h2>
+      <ul class="team-grid">
+        {team.map((t) => (
+          <li class="member">
+            <img src={t.img} alt={t.name} loading="lazy" width="280" height="340" />
+            <span>{t.name}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+</Layout>
+
+<style>
+.page-head{background:var(--cream);padding:64px 0 48px;border-bottom:1px solid var(--line)}
+.page-head .lede{font-size:1.15rem;color:var(--ink-soft);margin-top:18px}
+.leaders{padding:64px 0}
+.leader-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:28px;align-items:stretch}
+.leader-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-lg);overflow:hidden;display:flex;flex-direction:column}
+.leader-card.no-photo::before{content:"";display:block;aspect-ratio:360/440;background:linear-gradient(150deg,var(--sage),var(--peach))}
+.leader-card img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.leader-info{padding:20px 22px 24px;display:flex;flex-direction:column;flex-grow:1}
+.leader-role{font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--teal-700)}
+.leader-info h3{margin:4px 0 10px}
+.leader-bio{font-size:.97rem;color:var(--ink-soft)}
+.photo-note{margin-top:22px;font-size:.9rem;color:var(--ink-soft)}
+.team-sec{background:var(--surface);border-top:1px solid var(--line);padding:64px 0}
+.team-grid{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:24px;align-items:stretch}
+.member{background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-lg);overflow:hidden;text-align:center;display:flex;flex-direction:column}
+.member img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.member span{display:flex;align-items:center;justify-content:center;flex-grow:1;font-weight:600;font-size:.95rem;padding:12px 10px 14px}
+@media (max-width:960px){.leader-grid{grid-template-columns:1fr}.team-grid{grid-template-columns:1fr 1fr}}
+</style>
