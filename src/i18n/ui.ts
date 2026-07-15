@@ -37,7 +37,8 @@ export const ui = {
     'nav.donate': 'Donate',
     'nav.menu': 'Menu',
     'footer.blurb':
-      'Life skills and work readiness for neurodivergent young adults. Alam Sutera, Tangerang, Indonesia.',
+      'Life skills and work readiness for neurodivergent young adults.',
+    'footer.location': 'Alam Sutera, Tangerang, Indonesia.',
     'footer.whatsapp': 'WhatsApp Us',
     'footer.programs': 'Programs',
     'footer.about': 'About',
@@ -93,7 +94,8 @@ export const ui = {
     'nav.donate': 'Donasi',
     'nav.menu': 'Menu',
     'footer.blurb':
-      'Kecakapan hidup dan kesiapan kerja untuk anak muda neurodivergen. Alam Sutera, Tangerang, Indonesia.',
+      'Kecakapan hidup dan kesiapan kerja untuk anak muda neurodivergen.',
+    'footer.location': 'Alam Sutera, Tangerang, Indonesia.',
     'footer.whatsapp': 'Hubungi kami via WhatsApp',
     'footer.programs': 'Program',
     'footer.about': 'Tentang',
