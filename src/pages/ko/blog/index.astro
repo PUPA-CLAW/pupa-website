@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content';
 import Layout from '../../../layouts/Layout.astro';
 
-const posts = (await getCollection('blog', (p) => p.data.lang === 'en')).sort((a, b) => +b.data.date - +a.data.date);
+const posts = (await getCollection('blog', (p) => p.data.lang === 'ko')).sort((a, b) => +b.data.date - +a.data.date);
 
 function summarize(text: string): string {
   if (!text) return '';
@@ -18,13 +18,13 @@ const fmtDate = (d: Date) =>
 <Layout lang="ko" routeKey="blog" title="아티클 & 가이드 | PUPA Center" description="신경다양성 청년의 가족을 위한 실용적인 글: 자립, 생활 기술, 루틴, 실행 기능, 그리고 성인기로의 전환.">
   <section class="page-head"><div class="wrap">
     <h1>아티클 & 가이드</h1>
-    <p class="lede">신경다양성 청년의 가족을 위한 실용적인 글 — 자립, 루틴, 생활 기술, 그리고 성인기로의 전환. 아티클은 현재 영어와 인도네시아어로 제공됩니다.</p>
+    <p class="lede">신경다양성 청년의 가족을 위한 실용적인 글 — 자립, 루틴, 생활 기술, 그리고 성인기로의 전환.</p>
   </div></section>
 
   <section class="listing"><div class="wrap">
     <div class="post-grid">
       {posts.map((p) => (
-        <a class="post-card" href={`/blog/${p.data.slug}/`}>
+        <a class="post-card" href={`/ko/blog/${p.data.slug}/`}>
           {p.data.image && <img class="post-thumb" src={p.data.image} alt="" loading="lazy" width="360" height="225" />}
           <div class="post-info">
             <h2>{p.data.title}</h2>
