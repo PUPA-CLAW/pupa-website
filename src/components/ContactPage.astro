@@ -8,6 +8,7 @@ const { lang } = Astro.props;
 const waText = {
   en: encodeURIComponent('Hello PUPA Center team, I would like to know more about your programs. Thank you.'),
   id: encodeURIComponent('Halo tim PUPA Center, saya ingin mengetahui lebih lanjut mengenai program yang tersedia. Terima kasih.'),
+  ko: encodeURIComponent('Hello PUPA Center team, I am reaching out from Korea and would like to know more about your programs. Thank you. (안녕하세요, 한국에서 연락드립니다.)'),
 };
 const content = {
   en: {
@@ -40,8 +41,23 @@ const content = {
     address: ['Ruko Prominence Blok 38E No. 42-43', 'Jl. Sutera Barat Boulevard', 'Alam Sutera, Tangerang 15143', 'Indonesia'],
     mapsBtn: 'Buka di Google Maps',
   },
+  ko: {
+    metaTitle: 'PUPA 센터 연락처 — 탕에랑 알람 수테라로 오세요',
+    metaDescription: '등록과 문의는 PUPA 센터로 연락 주세요. WhatsApp, 이메일 또는 탕에랑 알람 수테라의 Ruko Prominence로 방문하실 수 있습니다. 월–금 운영.',
+    h1: '연락처',
+    intro: '등록을 고민 중이시든, 궁금한 점이 있으시든, 그저 더 알고 싶으시든 — 여러분의 연락을 기다립니다. 가장 편한 방법으로 연락해 주세요.',
+    waBtn: 'WhatsApp으로 문의하기',
+    waNote: '보통 가장 빠른 연락 방법입니다. 영업일 기준 하루 안에 답변드립니다. 문의는 영어 또는 인도네시아어로 부탁드립니다.',
+    phoneTitle: '전화',
+    emailTitle: '이메일',
+    visitTitle: '오시는 길',
+    hoursTitle: '운영 시간',
+    hours: '월요일–금요일, 오전 8:30 – 오후 4:30 (인도네시아 서부 시간, WIB)',
+    address: ['Ruko Prominence Blok 38E No. 42-43', 'Jl. Sutera Barat Boulevard', 'Alam Sutera, Tangerang 15143', 'Indonesia'],
+    mapsBtn: 'Google 지도에서 열기',
+  },
 };
-const c = content[lang];
+const c = content[lang] ?? content.en;
 const wa = `https://wa.me/62818533698?text=${waText[lang]}`;
 ---
 <Layout lang={lang} routeKey="contact" title={c.metaTitle} description={c.metaDescription}>

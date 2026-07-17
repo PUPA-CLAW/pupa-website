@@ -67,9 +67,10 @@ const menu = [
     </nav>
 
     <div class="header-actions">
-      <div class="lang-toggle" aria-label="Language / Bahasa">
+      <div class="lang-toggle" aria-label="Language / Bahasa / 언어">
         <a href={route.en} aria-current={lang === 'en' ? 'true' : undefined} lang="en">EN</a>
         <a href={route.id} aria-current={lang === 'id' ? 'true' : undefined} lang="id">ID</a>
+        <a href={route.ko} aria-current={lang === 'ko' ? 'true' : undefined} lang="ko">KO</a>
       </div>
       <a class="btn-donate-header" href={routes.donate[lang]}>{t('nav.donate')}</a>
     </div>

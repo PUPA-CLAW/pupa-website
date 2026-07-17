@@ -36,10 +36,26 @@ const t = {
     more: 'Panduan aksesibilitas lengkap',
     close: 'Tutup',
   },
+  ko: {
+    open: '접근성 옵션',
+    title: '접근성',
+    textSize: '글자 크기',
+    decrease: '글자 크기 줄이기',
+    increase: '글자 크기 키우기',
+    contrast: '고대비',
+    spacing: '읽기 쉬운 간격',
+    links: '링크 강조',
+    readAloud: '페이지 읽어주기',
+    stop: '읽기 중지',
+    reset: '모두 초기화',
+    on: '켜짐', off: '꺼짐',
+    more: '접근성 안내 전체 보기',
+    close: '닫기',
+  },
 }[lang];
 
-const guideHref = lang === 'id' ? '/id/aksesibilitas/' : '/accessibility/';
-const readLang = lang === 'id' ? 'id-ID' : 'en-US';
+const guideHref = lang === 'id' ? '/id/aksesibilitas/' : lang === 'ko' ? '/ko/accessibility/' : '/accessibility/';
+const readLang = lang === 'id' ? 'id-ID' : lang === 'ko' ? 'ko-KR' : 'en-US';
 ---
 <button id="a11y-toggle" class="a11y-toggle" aria-label={t.open} aria-expanded="false" aria-controls="a11y-panel" type="button">
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">

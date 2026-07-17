@@ -26,6 +26,7 @@ const site = Astro.site?.toString().replace(/\/$/, '') ?? 'https://www.pupacente
   <link rel="canonical" href={site + route[lang]} />
   <link rel="alternate" hreflang="en" href={site + route.en} />
   <link rel="alternate" hreflang="id" href={site + route.id} />
+  <link rel="alternate" hreflang="ko" href={site + route.ko} />
   <link rel="alternate" hreflang="x-default" href={site + route.en} />
   <link rel="icon" href="/favicon.png" type="image/png" />
   <meta property="og:title" content={title} />
@@ -34,8 +35,8 @@ const site = Astro.site?.toString().replace(/\/$/, '') ?? 'https://www.pupacente
   <meta property="og:image" content={site + '/images/brand/og-image.jpg'} />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="theme-color" content="#00534B" />
-  <meta property="og:locale" content={lang === 'id' ? 'id_ID' : 'en_US'} />
-  <meta property="og:locale:alternate" content={lang === 'id' ? 'en_US' : 'id_ID'} />
+  <meta property="og:locale" content={lang === 'id' ? 'id_ID' : lang === 'ko' ? 'ko_KR' : 'en_US'} />
+  <meta property="og:locale:alternate" content={lang === 'en' ? 'id_ID' : 'en_US'} />
   <meta property="og:site_name" content="PUPA Center" />
   <script type="application/ld+json" set:html={JSON.stringify({
     '@context': 'https://schema.org',

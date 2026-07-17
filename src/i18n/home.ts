@@ -102,4 +102,53 @@ export const home: Record<Lang, any> = {
       { strong: 'Kemitraan perusahaan', rest: ' — hubungi kami melalui email untuk membahas program CSR' },
     ],
   },
+  ko: {
+    metaTitle: 'PUPA Center — 신경다양성 청년을 위한 생활 기술과 취업 준비 | 탕에랑',
+    metaDescription:
+      'PUPA 센터는 인도네시아 탕에랑에서 Mandiri, Karya, Access 프로그램을 통해 신경다양성 청년들이 생활 기술, 취업 준비, 지역사회 참여를 키워 가도록 돕습니다.',
+    eyebrow: '인도네시아 탕에랑, 알람 수테라',
+    heroTitle: '신경다양성 청년이 의미 있는 삶을 살아가는 미래를 만듭니다.',
+    heroLede:
+      'PUPA 센터는 자폐를 포함한 신경다양성 청년들이 일상생활 기술과 직업 기술을 익히고, 일자리와 지역사회로 실제로 연결되도록 돕는 배움의 공간입니다.',
+    ctaVisit: 'WhatsApp으로 방문 예약하기',
+    ctaPrograms: '프로그램 살펴보기',
+    doorwaysTitle: '오늘 어떤 도움이 필요하신가요?',
+    doorwaysLede: '알맞은 길을 선택하세요. 각 항목은 필요한 정보로 바로 안내합니다.',
+    doorways: [
+      { title: '가족을 위해', body: '프로그램 운영 방식과 하루 일과, 등록 절차를 알아보세요. 센터 무료 방문으로 시작하실 수 있습니다.', link: '등록 절차 보기', routeKey: 'enrollment' },
+      { title: '후원자·파트너를 위해', body: '여러분의 후원은 장학금, 교육 자료, 일자리 연계에 쓰입니다. 후원금의 사용처와 기업 파트너십 방법을 확인하세요.', link: '후원 방법 보기', routeKey: 'donate' },
+      { title: '자원봉사자를 위해', body: '수업 멘토, 워크숍 리더, 행사 도우미로 재능을 나눠 주세요. 시간과 경험에 맞는 역할을 찾아 드립니다.', link: '봉사 역할 보기', routeKey: 'getInvolved' },
+    ],
+    programsTitle: '하나의 여정, 세 단계',
+    programsLede:
+      '우리의 프로그램은 하나의 연속된 과정입니다. 참여자는 먼저 자립을, 다음으로 직업 기술을 익히고, 마지막으로 일터와 지역사회로 나아갑니다. 각자 자신의 속도로 나아갑니다.',
+    stages: [
+      { tag: '1단계 · 생활 기술', name: 'Mandiri', body: '일상생활 기술: 자기 관리, 요리, 돈 관리, 대중교통 이용, 일상 속 의사소통.', link: 'Mandiri 알아보기', anchor: '#mandiri' },
+      { tag: '2단계 · 취업 준비', name: 'Karya', body: '직업 훈련과 업무 습관: 지시 따르기, 팀으로 일하기, 실제 생산 과제 연습.', link: 'Karya 알아보기', anchor: '#karya' },
+      { tag: '3단계 · 고용', name: 'Access', body: '지원이 함께하는 인턴십, 파트너 기업 취업 연계, 일터와 지역사회에서의 지속적인 코칭.', link: 'Access 알아보기', anchor: '#access' },
+    ],
+    pathNotePrefix: '주요 과정과 함께, ',
+    pathNoteLink: '방과후 활동',
+    pathNoteSuffix: ' — 미술, 무용, 스포츠, 소셜 클럽 — 을 통해 참여자들은 관심사를 탐색하고 우정을 쌓아 갑니다.',
+    impactTitle: '한눈에 보는 PUPA',
+    impactLede: '탕에랑의 신경다양성 청년을 위한 체계적인 성장 경로.',
+    stats: [
+      { num: '16–25', label: '우리가 지원하는 청년들의 연령대(세)' },
+      { num: '3', label: '하나의 여정을 이루는 핵심 프로그램 — Mandiri, Karya, Access' },
+      { num: '주 5일', label: '월요일부터 금요일까지 진행되는 체계적인 활동' },
+    ],
+    storyTitle: '성장 이야기',
+    storyQuote: '“Kyle은 회사로부터 계약직으로 계속 일해 달라는 제안을 받았고, PUPA 센터를 졸업한 지금도 그곳에서 일하고 있습니다.”',
+    storyAttribution: '— Kyle의 성장 이야기에서',
+    storyCta: '더 많은 성장 이야기 읽기',
+    bannerQuote: '한계로 정의되지 않고, 잠재력으로 인정받습니다.',
+    donateTitle: '한 청년의 자립을 도와주세요',
+    donateLede:
+      '후원금은 프로그램 장학금, 교육 자료, 취업 코칭에 사용됩니다. 모든 기부는 참여자 지원에 직접 쓰이며, 사용 내역을 투명하게 공개합니다.',
+    donateCta: '지금 후원하기',
+    waysTitle: '후원 방법',
+    ways: [
+      { strong: '기업 파트너십', rest: ' — CSR 프로그램 논의는 이메일로 문의해 주세요' },
+    ],
+  },
 };

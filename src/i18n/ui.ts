@@ -1,7 +1,7 @@
 // All shared interface text in both languages.
 // Staff can edit Indonesian translations here — one file, side by side.
 
-export const languages = { en: 'EN', id: 'ID' } as const;
+export const languages = { en: 'EN', id: 'ID', ko: 'KO' } as const;
 export type Lang = keyof typeof languages;
 
 export const ui = {
@@ -121,6 +121,64 @@ export const ui = {
       'Halaman ini adalah bagian dari situs baru PUPA Center dan kontennya sedang disiapkan. Versi final akan memuat semua informasi dari situs saat ini, yang telah ditinjau dan diperbarui.',
     'stub.back': 'Kembali ke beranda',
   },
+  ko: {
+    'site.name': 'PUPA Center',
+    'site.tagline': '생활 기술과 취업 준비',
+    'nav.about': '소개',
+    'nav.about.story': '우리의 이야기',
+    'nav.about.mission': '미션·비전·가치',
+    'nav.about.team': '팀 소개',
+    'nav.about.board': '이사회',
+    'nav.about.approach': '우리의 접근 방식',
+    'nav.programs': '프로그램',
+    'nav.programs.overview': '프로그램 안내',
+    'nav.programs.mandiri': 'Mandiri — 생활 기술',
+    'nav.programs.karya': 'Karya — 취업 준비',
+    'nav.programs.access': 'Access — 고용과 지역사회',
+    'nav.programs.extracurriculars': '방과후 활동',
+    'nav.programs.workshops': '워크숍',
+    'nav.enrollment': '입학 안내',
+    'nav.enrollment.how': '등록 절차',
+    'nav.enrollment.faq': '자주 묻는 질문',
+    'nav.enrollment.visit': '방문 예약',
+    'nav.involved': '함께하기',
+    'nav.involved.volunteer': '자원봉사',
+    'nav.involved.careers': '채용',
+    'nav.involved.partner': '파트너십',
+    'nav.resources': '자료실',
+    'nav.resources.news': '소식과 업데이트',
+    'nav.resources.stories': '성장 이야기',
+    'nav.resources.parents': '학부모 자료',
+    'nav.contact': '연락처',
+    'nav.donate': '후원하기',
+    'nav.menu': '메뉴',
+    'footer.blurb':
+      '신경다양성 청년을 위한 생활 기술과 취업 준비 교육.',
+    'footer.location': '인도네시아 탕에랑, 알람 수테라(Alam Sutera).',
+    'footer.whatsapp': 'WhatsApp 문의',
+    'footer.programs': '프로그램',
+    'footer.about': '소개',
+    'footer.action': '함께하기',
+    'footer.missionBand': 'PUPA 센터는 신경다양성 청년들이 생활 기술과 취업 준비, 그리고 진정한 자립을 이루어 가도록 지원합니다 — 존엄을 지키며, 가족과 함께합니다.',
+    'footer.ctaHeading': '문의하기',
+    'footer.ctaBlurb': '등록을 고민 중이시거나, 프로그램이 궁금하시거나, PUPA 센터를 알고 싶으신가요?',
+    'footer.ctaBlurb2': '기꺼이 도와드리겠습니다.',
+    'footer.ctaCall': '전화 +62 818 533 698',
+    'footer.ctaWhatsapp': 'WhatsApp 메시지 보내기',
+    'footer.ctaContact': 'WhatsApp으로 문의하기',
+    'footer.ctaVisit': '방문하기',
+    'footer.connect': '소통하기',
+    'footer.rights': '모든 권리 보유.',
+    'footer.legalName': 'PUPA 재단',
+    'footer.privacy': '개인정보 처리방침',
+    'footer.accessibility': '접근성',
+    'a11y.skip': '본문 바로가기',
+    'a11y.mainnav': '주요 메뉴',
+    'stub.title': '페이지 준비 중',
+    'stub.body':
+      '이 페이지는 새로운 PUPA 센터 웹사이트의 일부로, 콘텐츠를 준비하고 있습니다. 최종 버전에는 현재 사이트의 모든 정보가 검토와 업데이트를 거쳐 담길 예정입니다.',
+    'stub.back': '홈으로 돌아가기',
+  },
 } as const;
 
 export function useTranslations(lang: Lang) {
@@ -131,20 +189,20 @@ export function useTranslations(lang: Lang) {
 
 // Route map: every page's path in both languages.
 // Used by the language toggle so EN<->ID always lands on the SAME page.
-export const routes: Record<string, { en: string; id: string }> = {
-  home:            { en: '/',                        id: '/id/' },
-  about:           { en: '/about/',                  id: '/id/tentang/' },
-  team:            { en: '/about/team/',             id: '/id/tentang/tim/' },
-  board:           { en: '/about/board/',            id: '/id/tentang/pembina/' },
-  accessibility:   { en: '/accessibility/',          id: '/id/aksesibilitas/' },
-  programs:        { en: '/programs/',               id: '/id/program/' },
-  workshops:       { en: '/workshops/',              id: '/id/workshop/' },
-  enrollment:      { en: '/enrollment/',             id: '/id/pendaftaran/' },
-  getInvolved:     { en: '/get-involved/',           id: '/id/ikut-terlibat/' },
-  resources:       { en: '/resources/',              id: '/id/sumber-daya/' },
-  contact:         { en: '/contact/',                id: '/id/kontak/' },
-  donate:          { en: '/donate/',                 id: '/id/donasi/' },
-  blog:            { en: '/blog/',                   id: '/id/artikel/' },
-  stories:         { en: '/growth-journeys/',        id: '/id/kisah/' },
-  privacy:         { en: '/privacy/',                id: '/privacy/' },
+export const routes: Record<string, { en: string; id: string; ko: string }> = {
+  home:            { en: '/',                        id: '/id/',                    ko: '/ko/' },
+  about:           { en: '/about/',                  id: '/id/tentang/',            ko: '/ko/about/' },
+  team:            { en: '/about/team/',             id: '/id/tentang/tim/',        ko: '/ko/about/team/' },
+  board:           { en: '/about/board/',            id: '/id/tentang/pembina/',    ko: '/ko/about/board/' },
+  accessibility:   { en: '/accessibility/',          id: '/id/aksesibilitas/',      ko: '/ko/accessibility/' },
+  programs:        { en: '/programs/',               id: '/id/program/',            ko: '/ko/programs/' },
+  workshops:       { en: '/workshops/',              id: '/id/workshop/',           ko: '/ko/workshops/' },
+  enrollment:      { en: '/enrollment/',             id: '/id/pendaftaran/',        ko: '/ko/enrollment/' },
+  getInvolved:     { en: '/get-involved/',           id: '/id/ikut-terlibat/',      ko: '/ko/get-involved/' },
+  resources:       { en: '/resources/',              id: '/id/sumber-daya/',        ko: '/ko/resources/' },
+  contact:         { en: '/contact/',                id: '/id/kontak/',             ko: '/ko/contact/' },
+  donate:          { en: '/donate/',                 id: '/id/donasi/',             ko: '/ko/donate/' },
+  blog:            { en: '/blog/',                   id: '/id/artikel/',            ko: '/ko/blog/' },
+  stories:         { en: '/growth-journeys/',        id: '/id/kisah/',              ko: '/ko/growth-journeys/' },
+  privacy:         { en: '/privacy/',                id: '/privacy/',               ko: '/privacy/' },
 };

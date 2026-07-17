@@ -55,8 +55,33 @@ const content = {
     storiesBody: 'Kisah nyata peserta PUPA Center — perjalanan keberanian, kemampuan, dan kemajuan menuju kemandirian serta pekerjaan yang bermakna.',
     storiesCta: 'Baca kisahnya',
   },
+  ko: {
+    metaTitle: '자료실 — 소식, 학부모 자료, 이야기 | PUPA Center',
+    metaDescription: 'PUPA 센터와 연결되어 있으세요: WhatsApp 커뮤니티에서 소식과 업데이트를 받고, 학부모를 위한 실용적인 글을 읽고, 참여자들의 성장 이야기를 따라가 보세요.',
+    h1: '자료실',
+    newsTitle: '소식과 업데이트',
+    newsBody: '연결되어 있고 싶은 분이라면 누구든 PUPA 센터 WhatsApp 커뮤니티에 함께하실 수 있습니다. 우리의 일이 펼쳐지는 과정을 지켜보고 참여할 수 있는 열린 공간이며, 함께 만들어 가는 여정의 일원이 되는 길입니다.',
+    expectTitle: '무엇을 받게 되나요',
+    expect: [
+      ['프로그램 소식', 'Mandiri, Karya, Access의 새 커리큘럼 소식과 모집 일정을 가장 먼저 받아 보세요.'],
+      ['다가오는 행사', 'PUPA 센터의 활동, 커뮤니티 워크숍, 야외 행사 소식을 발표되는 대로 받아 보세요.'],
+      ['이정표와 순간들', '참여자들의 성취와 커뮤니티의 특별한 순간을 함께 축하해 주세요.'],
+      ['함께하는 공간', '가족, 후원자, 참여자가 미래를 향한 비전으로 하나 되는 전용 채널입니다.'],
+    ],
+    joinTitle: 'WhatsApp 커뮤니티 가입하기',
+    joinBody: '버튼을 눌러 바로 가입하거나, 휴대전화 카메라로 QR 코드를 스캔하세요. PUPA의 소식과 업데이트, 커뮤니티의 순간이 오가는 따뜻한 공간으로 초대합니다. 대화는 주로 인도네시아어와 영어로 이루어집니다.',
+    newsCta: 'WhatsApp 커뮤니티 가입',
+    qrAlt: 'PUPA 커뮤니티 WhatsApp 그룹 가입 QR 코드',
+    qrCaption: '또는 휴대전화로 스캔하세요',
+    parentsTitle: '학부모 자료',
+    parentsBody: '신경다양성 청년의 가족을 위한 실용적인 글 — 자립, 루틴, 생활 기술, 실행 기능, 성인기로의 전환. 현재는 영어와 인도네시아어로 제공됩니다.',
+    parentsCta: '아티클 읽기',
+    storiesTitle: '성장 이야기',
+    storiesBody: 'PUPA 센터 참여자들의 진짜 이야기 — 자립과 의미 있는 일을 향한 용기와 가능성, 그리고 성장의 여정.',
+    storiesCta: '이야기 읽기',
+  },
 };
-const c = content[lang];
+const c = content[lang] ?? content.en;
 
 // Four distinct icons matching each "what to expect" item
 const expectIcons = [

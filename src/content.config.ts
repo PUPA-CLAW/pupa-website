@@ -6,7 +6,7 @@ const blog = defineCollection({
   schema: z.object({
     title: z.string(),
     date: z.coerce.date(),
-    lang: z.enum(['en', 'id']),
+    lang: z.enum(['en', 'id', 'ko']),
     slug: z.string(),
     image: z.string().optional(),
     description: z.string().optional(),
@@ -18,7 +18,7 @@ const stories = defineCollection({
   schema: z.object({
     title: z.string(),
     date: z.coerce.date(),
-    lang: z.enum(['en', 'id']),
+    lang: z.enum(['en', 'id', 'ko']),
     slug: z.string(),
     image: z.string().optional(),
     description: z.string().optional(),

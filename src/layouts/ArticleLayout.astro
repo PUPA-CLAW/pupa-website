@@ -13,7 +13,7 @@ interface Props {
   backLabel: string;
 }
 const { lang, routeKey, title, description, date, image, backHref, backLabel } = Astro.props;
-const fmtDate = date?.toLocaleDateString(lang === 'id' ? 'id-ID' : 'en-US', { year: 'numeric', month: 'long' });
+const fmtDate = date?.toLocaleDateString(lang === 'id' ? 'id-ID' : lang === 'ko' ? 'ko-KR' : 'en-US', { year: 'numeric', month: 'long' });
 ---
 <Layout lang={lang} routeKey={routeKey} title={`${title} | PUPA Center`} description={description}>
   <article class="article">
