@@ -1,0 +1,18 @@
+---
+title: "Cerita Tentang Hari"
+date: 2019-05-28
+lang: id
+slug: "hari-cerita"
+image: "/images/afm-9358.jpg"
+description: "Perjalanan **ARDHANA HARIWIDAGDO**, biasa kami kenal dengan nama **HARI** di PUPA Center dimulai dari dorongan orang tua yang gelisah tentang mandiri dan kesiapan suatu hari masuk "
+---
+
+Perjalanan **ARDHANA HARIWIDAGDO**, biasa kami kenal dengan nama **HARI** di PUPA Center dimulai dari dorongan orang tua yang gelisah tentang mandiri dan kesiapan suatu hari masuk ke dunia kerja. Tiga tahun mengikuti program PUPA, **Hari** adaptasi dalam berbagai latihan dan simulasi yang dirancang hingga pada fase praktik menyerupai situasi kerja nyata.
+
+Memasuki tahap kesiapan kerja, Hari mulai berani berpikir lebih jauh tentang masa depannya. Ia mengembangkan ide usaha berupa kartu edukatif yang membantu melatih keterampilan hidup sehari-hari, seperti merapikan tempat tidur dan mengepel lantai. Hari tidak hanya merancang produknya, tetapi juga menyusun proposal, mempresentasikan ide, dan bekerja sama dengan tim untuk mewujudkannya. Dari proses ini, kemampuan komunikasi dan rasa percaya diriya semakin berkembang.
+
+Harijuga mendapatkan kesempatan magang selama lima bulan di bagian *customer service* melalui mitra perusahaan PUPA Center. Di sana, ia belajar menghadapi tuntutan profesional, berkomunikasi dengan pelanggan, dan menjalankan tanggung jawab kerja sebagai mana mestinya. Dengan pendampingan yang konsisten, Harimampu beradaptasi dan menunjukkan kemandirian yang konsisten.
+
+Harikini bekerja sebagai guru Bahasa Inggris di sebuah sekolah yang ternama. Ia juga terlibat sebagai tenaga paruh waktu di PUPA Center, membantu mengembangkan materi dan konten edukasi. Baginya, ini bukan sekadar pekerjaan tetapi cara untuk memberi kembali kepada komunitas yang telah mendukung perjalanannya.
+
+**Kisah Hari mengingatkan kita bahwa ketika seseorang mendapat dukungan yang tepat dan kesempatan yang nyata, pertumbuhan bukan hanya mungkin, tetapi benar-benar terjadi.**

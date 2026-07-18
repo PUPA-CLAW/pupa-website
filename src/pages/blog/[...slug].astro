@@ -1,0 +1,13 @@
+---
+import { getCollection, render } from 'astro:content';
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+export async function getStaticPaths() {
+  const posts = await getCollection('blog', (p) => p.data.lang === 'en');
+  return posts.map((p) => ({ params: { slug: p.data.slug }, props: { post: p } }));
+}
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+<ArticleLayout lang="en" routeKey="blog" title={post.data.title} description={post.data.description ?? ''} date={post.data.date} image={post.data.image} backHref="/blog/" backLabel="All parent resources">
+  <Content />
+</ArticleLayout>

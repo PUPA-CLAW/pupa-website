@@ -1,0 +1,13 @@
+---
+import { getCollection, render } from 'astro:content';
+import ArticleLayout from '../../../layouts/ArticleLayout.astro';
+export async function getStaticPaths() {
+  const stories = await getCollection('stories', (s) => s.data.lang === 'ko');
+  return stories.map((s) => ({ params: { slug: s.data.slug }, props: { story: s } }));
+}
+const { story } = Astro.props;
+const { Content } = await render(story);
+---
+<ArticleLayout lang="ko" routeKey="stories" title={story.data.title} description={story.data.description ?? ''} date={story.data.date} image={story.data.image} backHref="/ko/growth-journeys/" backLabel="모든 성장 이야기 보기">
+  <Content />
+</ArticleLayout>
