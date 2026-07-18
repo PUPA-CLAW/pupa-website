@@ -81,10 +81,10 @@ const menu = [
 .site-header{background:var(--surface);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
 .topbar{display:flex;align-items:center;gap:16px;min-height:76px;flex-wrap:wrap}
 .logo{display:flex;align-items:center;text-decoration:none;min-height:44px}
-.logo-img{height:68px;width:auto}
+.logo-img{height:76px;width:auto}
 nav.primary{margin-left:auto}
 nav.primary > ul{display:flex;list-style:none;gap:2px}
-nav.primary a{display:flex;align-items:center;min-height:44px;padding:10px 13px;font-size:1rem;font-weight:500;color:var(--ink);text-decoration:none;border-radius:10px}
+nav.primary a{display:flex;align-items:center;min-height:44px;padding:10px 11px;font-size:1rem;font-weight:500;color:var(--ink);text-decoration:none;border-radius:10px}
 nav.primary a:hover, nav.primary li:focus-within > a{background:var(--teal-050)}
 nav.primary li{position:relative}
 .caret{margin-left:6px;font-size:.7em;color:var(--ink-soft)}
@@ -99,7 +99,7 @@ nav.primary li:hover > .dropdown, nav.primary li:focus-within > .dropdown{displa
 .btn-donate-header:hover{background:#93441A}
 .menu-btn{display:none;margin-left:auto;min-height:44px;min-width:44px;padding:8px 16px;font:inherit;font-weight:600;background:var(--teal-050);color:var(--teal-700);border:1.5px solid var(--teal-100);border-radius:10px;cursor:pointer}
 
-@media (max-width:1020px){
+@media (max-width:1160px){
   .menu-btn{display:inline-flex;align-items:center;justify-content:center}
   nav.primary{display:none;width:100%;margin-left:0;order:4}
   nav.primary.open{display:block}
@@ -109,7 +109,6 @@ nav.primary li:hover > .dropdown, nav.primary li:focus-within > .dropdown{displa
   .menu-btn{order:3}
 }
 @media (max-width:560px){
-  .logo-img{height:58px}
   .topbar{gap:8px}
   .logo{margin-right:auto}
   .menu-btn{order:2;margin-left:0;padding:8px 14px}
