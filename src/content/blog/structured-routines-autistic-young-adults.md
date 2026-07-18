@@ -26,7 +26,7 @@ Many autistic young adults benefit from knowing what activities will happen, whe
 
 At the same time, routines can also become opportunities to practice flexibility gradually. Small and manageable adjustments within structured environments may help individuals develop coping strategies for unexpected situations.
 
-At [PUPA Mandiri](/programs/#mandiri) programmes, structured routines are integrated into learning experiences and daily activities to help participants build consistency, confidence, and participation over time.
+At [PUPA Mandiri](/programs/#mandiri) programs, structured routines are integrated into learning experiences and daily activities to help participants build consistency, confidence, and participation over time.
 
 Families can also support routines at home through visual schedules, calendars, reminders, and consistent expectations. Clear communication and predictable environments often help reduce unnecessary stress.
 

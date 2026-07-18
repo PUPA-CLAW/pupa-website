@@ -6,6 +6,7 @@
    - No auto-motion; prefers-reduced-motion respected
    ============================================================ */
 :root{
+  --font-display:'Varela Round','Noto Sans KR','Inter',sans-serif;
   --bg:        #F9FAFB;
   --surface:   #FFFFFF;
   --ink:       #111827;
@@ -36,13 +37,13 @@ html{scroll-behavior:smooth}
   *,*::before,*::after{animation:none!important;transition:none!important}
 }
 body{
-  font-family:'Inter',system-ui,sans-serif;
+  font-family:'Inter','Noto Sans KR',system-ui,sans-serif;
   font-size:18px;line-height:1.65;
   color:var(--ink);background:var(--bg);
   -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
   font-feature-settings:'cv02','cv03','cv04','cv11';
 }
-h1,h2,h3,h4{font-family:'Varela Round','Inter',serif;line-height:1.2;letter-spacing:-0.005em;font-optical-sizing:auto;text-wrap:balance;color:var(--teal-900)}
+h1,h2,h3,h4{font-family:var(--font-display);line-height:1.2;letter-spacing:-0.005em;font-optical-sizing:auto;text-wrap:balance;color:var(--teal-900)}
 h1{font-size:clamp(2.3rem,5vw,3.6rem);font-weight:600;line-height:1.1;letter-spacing:-0.015em}
 h2{font-size:clamp(1.7rem,3.2vw,2.35rem);font-weight:600;letter-spacing:-0.01em}
 h3{font-size:1.3rem;font-weight:600}
