@@ -129,4 +129,10 @@ nav.primary li:hover > .dropdown, nav.primary li:focus-within > .dropdown{displa
     const open = nav?.classList.toggle('open');
     btn.setAttribute('aria-expanded', open ? 'true' : 'false');
   });
+  // Remember an explicit language choice so the homepage never overrides it.
+  document.querySelectorAll('.lang-toggle a').forEach((a) => {
+    a.addEventListener('click', () => {
+      try { localStorage.setItem('pupa-lang', a.getAttribute('lang') || ''); } catch {}
+    });
+  });
 </script>

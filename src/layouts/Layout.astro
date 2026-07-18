@@ -15,12 +15,28 @@ const { lang, routeKey, title, description } = Astro.props;
 const t = useTranslations(lang);
 const route = routes[routeKey] ?? routes.home;
 const site = Astro.site?.toString().replace(/\/$/, '') ?? 'https://www.pupacenter.org';
+
+// First-visit language gateway: only on the EN homepage ('/'). Respects a stored
+// explicit choice, otherwise routes by browser language. Runtime path guard keeps
+// this inert if the markup is ever served at another URL (e.g. a CDN 404 fallback).
+const isHomeGateway = Astro.url.pathname === '/';
+const langRedirectScript = `(function(){try{
+if(location.pathname!=='/')return;
+var s=localStorage.getItem('pupa-lang');
+if(s==='id'){location.replace('/id/');return}
+if(s==='ko'){location.replace('/ko/');return}
+if(s)return;
+var l=((navigator.languages&&navigator.languages[0])||navigator.language||'').toLowerCase();
+if(l==='id'||l.indexOf('id-')===0||l==='in'||l.indexOf('in-')===0){location.replace('/id/')}
+else if(l==='ko'||l.indexOf('ko-')===0){location.replace('/ko/')}
+}catch(e){}})();`;
 ---
 <!DOCTYPE html>
 <html lang={lang}>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  {isHomeGateway && <script is:inline set:html={langRedirectScript} />}
   <title>{title}</title>
   <meta name="description" content={description} />
   <link rel="canonical" href={site + route[lang]} />
@@ -32,6 +48,7 @@ const site = Astro.site?.toString().replace(/\/$/, '') ?? 'https://www.pupacente
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content={site + route[lang]} />
   <meta property="og:image" content={site + '/images/brand/og-image.jpg'} />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="theme-color" content="#00534B" />
