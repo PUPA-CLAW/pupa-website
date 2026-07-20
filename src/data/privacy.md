@@ -3,6 +3,8 @@
 
 **Last updated: 18 July 2026**
 
+*A note for young readers: if you are under 18 or have a guardian, please read this policy together with your parent or guardian, so you can decide together how your information is shared with us.*
+
 ### 1. Who We Are
 
 PUPA Center (Yayasan Perisai Unggul Pelita Anugrah) "PUPA," "we," "us" is a development center based in Tangerang, Indonesia, providing life-skills and work-readiness support for neurodivergent young adults. This Privacy Policy explains how we collect, use, store, and protect personal data when you visit our website or communicate with us, including through our WhatsApp and Telegram messaging services.

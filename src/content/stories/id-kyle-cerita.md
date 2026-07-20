@@ -5,10 +5,10 @@ translationKey: "kyle"
 lang: id
 slug: "kyle-cerita"
 image: "/images/screenshot-2026-02-02-192840.jpg"
-description: "**Kyle Angelo Rompas.** Ia memulai prosesnya di PUPA Center melalui program kemandirian *(Life Skill)* waktu yang tidak terlupakan. Seorang remaja, usia 18 tahun yang sangat tertut"
+description: "**Kyle Angelo Rompas.** Ia memulai prosesnya di PUPA Center melalui program kemandirian pada masa yang tidak terlupakan. Seorang remaja, usia 18 tahun yang sangat tertut"
 ---
 
-**Kyle Angelo Rompas.** Ia memulai prosesnya di PUPA Center melalui program kemandirian *(Life Skill)* waktu yang tidak terlupakan. Seorang remaja, usia 18 tahun yang sangat tertutup, hampir tidak mau berbicara. Kyle melalui fase penting dalam proses mengenal diri, membangun kepercayaan diri, dan mengenali kebutuhannya. Pupa menjadi salah satu ruang yang aman dan reflektif baginya, Kyle belajar bagaimana berkomunikasi, berani berinteraksi, pelan-pelan ia membangun pondasi hidupnya.
+**Kyle Angelo Rompas.** Ia memulai prosesnya di PUPA Center melalui program kemandirian pada masa yang tidak terlupakan. Seorang remaja, usia 18 tahun yang sangat tertutup, hampir tidak mau berbicara. Kyle melalui fase penting dalam proses mengenal diri, membangun kepercayaan diri, dan mengenali kebutuhannya. Pupa menjadi salah satu ruang yang aman dan reflektif baginya, Kyle belajar bagaimana berkomunikasi, berani berinteraksi, pelan-pelan ia membangun pondasi hidupnya.
 
 Dalam proses waktu adaptasi, Kyle mendapat dukungan mencoba hal diluar gambaran dirinya, dia mendaftar di kelas *modeling*. Beberapa kali mendapat kesempatan praktik *cat-walk* bahkan hingga sebagai *drummer*. Kyle juga aktif berolahraga dan tercetus ingin menjadi seorang *personal trainer.*
 

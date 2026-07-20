@@ -54,7 +54,7 @@ export const home: Record<Lang, any> = {
     eyebrow: 'Alam Sutera, Tangerang · Indonesia',
     heroTitle: 'Mewujudkan Masa Depan agar Individu Neurodivergen Menjalani Hidup yang Bermakna.',
     heroLede:
-      'Program PUPA Center dirancang untuk pengembangan diri individu neurodivergen dewasa — mendampingi transisi dari sekolah atau pendidikan formal menuju penguatan keterampilan hidup (Life Skill) dan kesiapan kerja (Work Readiness), sebagai langkah menjalani kehidupan yang lebih mandiri baik dalam keseharian maupun di dunia kerja.',
+      'Program PUPA Center dirancang untuk pengembangan diri individu neurodivergen dewasa — mendampingi transisi dari sekolah atau pendidikan formal menuju penguatan keterampilan hidup dan kesiapan kerja, sebagai langkah menjalani kehidupan yang lebih mandiri baik dalam keseharian maupun di dunia kerja.',
     ctaVisit: 'Jadwalkan kunjungan via WhatsApp',
     ctaPrograms: 'Lihat program kami',
     doorwaysTitle: 'Apa yang Bisa Kami Bantu Hari Ini?',
@@ -68,9 +68,9 @@ export const home: Record<Lang, any> = {
     programsLede:
       'Program kami tersusun sebagai satu rangkaian. Peserta membangun kemandirian terlebih dahulu, lalu keterampilan kerja, kemudian melangkah ke dunia kerja dan kehidupan komunitas. Setiap peserta melangkah sesuai ritmenya masing-masing.',
     stages: [
-      { tag: 'Tahap 1 · Kecakapan hidup', name: 'Mandiri', body: 'Keterampilan hidup sehari-hari: merawat diri, memasak, mengelola uang, menggunakan transportasi, dan berkomunikasi dalam situasi sehari-hari.', link: 'Pelajari Mandiri', anchor: '#mandiri' },
-      { tag: 'Tahap 2 · Kesiapan kerja', name: 'Karya', body: 'Pelatihan vokasional dan kebiasaan kerja: mengikuti instruksi, bekerja dalam tim, dan berlatih tugas produksi yang nyata.', link: 'Pelajari Karya', anchor: '#karya' },
-      { tag: 'Tahap 3 · Pekerjaan', name: 'Access', body: 'Magang dengan pendampingan, penempatan kerja di perusahaan mitra, dan pembinaan berkelanjutan di tempat kerja dan komunitas.', link: 'Pelajari Access', anchor: '#access' },
+      { tag: 'Tahap 1 · Kecakapan hidup', name: 'Mandiri', body: 'Keterampilan hidup sehari-hari: merawat diri, memasak, mengelola uang, menggunakan transportasi, dan berkomunikasi dalam situasi sehari-hari.', link: 'Kenali program Mandiri', anchor: '#mandiri' },
+      { tag: 'Tahap 2 · Kesiapan kerja', name: 'Karya', body: 'Pelatihan vokasional dan kebiasaan kerja: mengikuti instruksi, bekerja dalam tim, dan berlatih tugas produksi yang nyata.', link: 'Kenali program Karya', anchor: '#karya' },
+      { tag: 'Tahap 3 · Pekerjaan', name: 'Access', body: 'Magang dengan pendampingan, penempatan kerja di perusahaan mitra, dan pembinaan berkelanjutan di tempat kerja dan komunitas.', link: 'Kenali program Access', anchor: '#access' },
     ],
     pathNotePrefix: 'Di samping perjalanan utama, ',
     pathNoteLink: 'kelas ekstrakurikuler',

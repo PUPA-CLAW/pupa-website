@@ -3,6 +3,8 @@
 
 **Terakhir diperbarui: 18 Juli 2026**
 
+*Catatan untuk pembaca muda: jika Anda berusia di bawah 18 tahun atau memiliki wali, bacalah kebijakan ini bersama orang tua atau wali Anda, agar kalian dapat memutuskan bersama bagaimana informasi Anda dibagikan kepada kami.*
+
 ### 1. Tentang Kami
 
 PUPA Center (Yayasan Perisai Unggul Pelita Anugrah) — "PUPA", "kami" — adalah pusat pengembangan di Tangerang, Indonesia, yang menyediakan pendampingan kecakapan hidup dan kesiapan kerja bagi anak muda neurodivergen. Kebijakan Privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, menyimpan, dan melindungi data pribadi ketika Anda mengunjungi situs web kami atau berkomunikasi dengan kami, termasuk melalui layanan pesan WhatsApp dan Telegram kami.

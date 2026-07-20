@@ -27,7 +27,7 @@ Contoh keterampilan kesiapan kerja meliputi:
 * Mengikuti instruksi
 * Membangun tanggung jawab dan konsistensi
 
-Banyak dewasa muda neurodivergen terbantu oleh pendekatan belajar langsung (hands-on). Latihan nyata, kegiatan terbimbing, bermain peran, dan simulasi tempat kerja dengan dukungan dapat membantu peserta menjadi lebih nyaman dengan harapan dan rutinitas.
+Banyak dewasa muda neurodivergen terbantu oleh pendekatan belajar langsung. Latihan nyata, kegiatan terbimbing, bermain peran, dan simulasi tempat kerja dengan dukungan dapat membantu peserta menjadi lebih nyaman dengan harapan dan rutinitas.
 
 Penting juga untuk menyadari bahwa jalur vokasional harus bersifat personal. Sebagian individu mungkin berkembang di lingkungan yang sangat terstruktur dengan tugas berulang, sementara yang lain mungkin lebih menyukai kegiatan kreatif, praktis, atau sosial. Memahami kekuatan, minat, dan kebutuhan dukungan sangatlah penting.
 
