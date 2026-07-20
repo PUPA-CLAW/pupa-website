@@ -46,17 +46,13 @@ export const home: Record<Lang, any> = {
     donateLede:
       'Donations fund program scholarships, training materials, and job coaching. Every contribution goes directly to learner support, and we publish how funds are used.',
     donateCta: 'Donate now',
-    waysTitle: 'Ways to Give',
-    ways: [
-      { strong: 'Corporate partnership', rest: ' — email us to discuss CSR programs' },
-    ],
   },
   id: {
     metaTitle: 'PUPA Center — Kecakapan Hidup & Kesiapan Kerja untuk Anak Muda Neurodivergen | Tangerang',
     metaDescription:
       'PUPA Center membantu anak muda neurodivergen di Tangerang membangun kecakapan hidup, kesiapan kerja, dan akses ke komunitas melalui program Mandiri, Karya, dan Access.',
     eyebrow: 'Alam Sutera, Tangerang · Indonesia',
-    heroTitle: 'Mewujudkan Masa Depan Individu Neurodivergen Menjalani Hidup yang Bermakna.',
+    heroTitle: 'Mewujudkan Masa Depan agar Individu Neurodivergen Menjalani Hidup yang Bermakna.',
     heroLede:
       'Program PUPA Center dirancang untuk pengembangan diri individu neurodivergen dewasa — mendampingi transisi dari sekolah atau pendidikan formal menuju penguatan keterampilan hidup (Life Skill) dan kesiapan kerja (Work Readiness), sebagai langkah menjalani kehidupan yang lebih mandiri baik dalam keseharian maupun di dunia kerja.',
     ctaVisit: 'Jadwalkan kunjungan via WhatsApp',
@@ -70,7 +66,7 @@ export const home: Record<Lang, any> = {
     ],
     programsTitle: 'Satu Perjalanan, Tiga Tahap',
     programsLede:
-      'Program kami adalah sebuah urutan. Peserta membangun kemandirian terlebih dahulu, lalu keterampilan kerja, kemudian melangkah ke dunia kerja dan kehidupan komunitas. Setiap peserta bergerak sesuai kecepatannya sendiri.',
+      'Program kami tersusun sebagai satu rangkaian. Peserta membangun kemandirian terlebih dahulu, lalu keterampilan kerja, kemudian melangkah ke dunia kerja dan kehidupan komunitas. Setiap peserta melangkah sesuai ritmenya masing-masing.',
     stages: [
       { tag: 'Tahap 1 · Kecakapan hidup', name: 'Mandiri', body: 'Keterampilan hidup sehari-hari: merawat diri, memasak, mengelola uang, menggunakan transportasi, dan berkomunikasi dalam situasi sehari-hari.', link: 'Pelajari Mandiri', anchor: '#mandiri' },
       { tag: 'Tahap 2 · Kesiapan kerja', name: 'Karya', body: 'Pelatihan vokasional dan kebiasaan kerja: mengikuti instruksi, bekerja dalam tim, dan berlatih tugas produksi yang nyata.', link: 'Pelajari Karya', anchor: '#karya' },
@@ -80,7 +76,7 @@ export const home: Record<Lang, any> = {
     pathNoteLink: 'kelas ekstrakurikuler',
     pathNoteSuffix: ' — seni, tari, olahraga, dan klub sosial — membantu peserta menggali minat dan membangun persahabatan.',
     impactTitle: 'PUPA Secara Sekilas',
-    impactLede: 'Jalur yang terstruktur bagi anak muda neurodivergen.',
+    impactLede: 'Jalur terstruktur bagi anak muda neurodivergen.',
     stats: [
       { num: '16–25', label: 'Rentang usia anak muda yang kami dampingi' },
       { num: '3', label: 'Program inti — Mandiri, Karya, dan Access — dalam satu perjalanan' },
@@ -90,17 +86,11 @@ export const home: Record<Lang, any> = {
     storyQuote: '“Kyle mendapat kesempatan sebagai intern Human Resources di perusahaan mitra — dan setelah lulus dari PUPA Center, ia tetap bekerja di sana hingga hari ini.”',
     storyAttribution: '— Dari kisah pertumbuhan Kyle',
     storyCta: 'Baca kisah pertumbuhan lainnya',
-    bannerQuote: 'Dikenali karena potensinya, bukan didefinisikan oleh keterbatasannya.',
+    bannerQuote: 'Dikenali karena potensinya, bukan dinilai dari keterbatasannya.',
     donateTitle: 'Bantu Anak Muda Mencapai Kemandirian',
     donateLede:
       'Donasi mendanai beasiswa program, materi pelatihan, dan pendampingan kerja. Setiap kontribusi langsung digunakan untuk mendukung peserta, dan kami mempublikasikan penggunaan dana.',
     donateCta: 'Donasi sekarang',
-    waysTitle: 'Cara berdonasi',
-    ways: [
-      { strong: 'Transfer Bank', rest: ' — detail rekening dicantumkan di sini (contoh)' },
-      { strong: 'QRIS', rest: ' — kode pindai untuk berdonasi ditampilkan di sini (contoh)' },
-      { strong: 'Kemitraan perusahaan', rest: ' — hubungi kami melalui email untuk membahas program CSR' },
-    ],
   },
   ko: {
     metaTitle: 'PUPA Center — 신경다양성 청년을 위한 생활 기술과 취업 준비 | 탕에랑',
@@ -146,9 +136,5 @@ export const home: Record<Lang, any> = {
     donateLede:
       '후원금은 프로그램 장학금, 교육 자료, 취업 코칭에 사용됩니다. 모든 기부는 참여자 지원에 직접 쓰이며, 사용 내역을 투명하게 공개합니다.',
     donateCta: '지금 후원하기',
-    waysTitle: '후원 방법',
-    ways: [
-      { strong: '기업 파트너십', rest: ' — CSR 프로그램 논의는 이메일로 문의해 주세요' },
-    ],
   },
 };
