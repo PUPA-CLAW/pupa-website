@@ -8,7 +8,7 @@ const { lang } = Astro.props;
 const p = (key: string) => (routes[key] ?? routes.home)[lang];
 
 const stories = (await getCollection('stories', (s) => s.data.lang === lang))
-  .sort((a, b) => +a.data.date - +b.data.date);
+  .sort((a, b) => +a.data.date - +b.data.date || a.id.localeCompare(b.id));
 const storyBase = p('stories').replace(/\/$/, '');
 
 const c = {
@@ -25,9 +25,9 @@ const c = {
   id: {
     metaTitle: 'Kisah Pertumbuhan — PUPA Center',
     metaDescription: 'Perjalanan nyata para peserta PUPA Center — kisah keberanian, kapasitas, dan pertumbuhan menuju kemandirian dan pekerjaan yang bermakna.',
-    h1: 'Kisah pertumbuhan',
+    h1: 'Kisah Pertumbuhan',
     lede: 'Setiap kisah di sini lahir dari keberanian dan kapasitas untuk bertumbuh — perjalanan nyata para peserta PUPA Center menuju kemandirian dan pekerjaan yang bermakna.',
-    introHeading: 'Ruang untuk bertumbuh, tempat untuk menjadi diri sendiri',
+    introHeading: 'Ruang untuk Bertumbuh, Tempat untuk Menjadi Diri Sendiri',
     introBody: 'Dengan dukungan yang tepat, setiap individu mampu mengambil peran yang bermakna dalam masyarakat. Inilah mereka yang menjalaninya — masing-masing sesuai waktu dan caranya sendiri.',
     storiesLede: 'Baca perjalanan mereka',
     readCta: 'Baca kisah →',

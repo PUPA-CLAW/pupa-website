@@ -13,4 +13,6 @@ From there, Kyle progressed into PUPA Karya, our work-readiness program. Over th
 
 During PUPA Karya, Kyle was matched with one of our partner companies that was seeking Human Resources interns. As part of the program, we supported the transition on both sides—preparing Kyle for the responsibilities of the role while also working closely with the company to build understanding, readiness, and inclusive practices. With guidance, patience, and open communication, Kyle and the company learned and grew together, creating a work environment where expectations were clear and support was shared.
 
-That partnership led to something lasting. Kyle was invited to continue with the company as a contract worker, and after graduating from PUPA Center, he remains employed there today. His story reflects what becomes possible when individuals, organizations, and communities come together with intention. When the right support meets opportunity, employment becomes more than a role—it becomes a shared success built on trust, collaboration, and belief in potential.
+That partnership led to something lasting. Kyle was invited to continue with the company as a contract worker, and after graduating from PUPA Center, he remains employed there today.
+
+**His story reflects what becomes possible when individuals, organizations, and communities come together with intention. When the right support meets opportunity, employment becomes more than a role—it becomes a shared success built on trust, collaboration, and belief in potential.**

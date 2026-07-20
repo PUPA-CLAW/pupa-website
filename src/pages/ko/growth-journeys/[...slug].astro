@@ -8,6 +8,6 @@ export async function getStaticPaths() {
 const { story } = Astro.props;
 const { Content } = await render(story);
 ---
-<ArticleLayout lang="ko" routeKey="stories" title={story.data.title} description={story.data.description ?? ''} date={story.data.date} image={story.data.image} backHref="/ko/growth-journeys/" backLabel="모든 성장 이야기 보기">
+<ArticleLayout lang="ko" routeKey="stories" title={story.data.title} description={story.data.description ?? ''} image={story.data.image} backHref="/ko/growth-journeys/" backLabel="모든 성장 이야기 보기">
   <Content />
 </ArticleLayout>

@@ -17,4 +17,4 @@ Owen juga mengembangkan keterampilan ke dunia kopi. Owen mendapatkan kesempatan 
 
 Saat ini, Owen bekerja sebagai bagian dari tim media sosial PUPA Center. Ia terlibat dalam pembuatan konten digital yang membantu menyebarkan edukasi dan memperluas pemahaman masyarakat tentang neurodiversitas sekaligus menjadi salah satu team training barista di wilayah Jakarta & Tangerang.
 
-Perjalanan Owen menunjukkan bahwa aktualisasi diri seorang individu bukan hanya tanggung jawab ia secara pribadi, namun perlu dukungan kita bersama.
+**Perjalanan Owen menunjukkan bahwa aktualisasi diri seorang individu bukan hanya tanggung jawab ia secara pribadi, namun perlu dukungan kita bersama.**
