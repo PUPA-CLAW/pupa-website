@@ -1,6 +1,7 @@
 ---
 title: "Akbar의 이야기"
 date: 2019-05-28
+translationKey: "akbar"
 lang: ko
 slug: "akbar-ko"
 image: "/images/afm-9305.jpg"

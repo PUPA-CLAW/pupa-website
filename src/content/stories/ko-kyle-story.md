@@ -1,6 +1,7 @@
 ---
 title: "Kyle의 이야기"
 date: 2026-02-06
+translationKey: "kyle"
 lang: ko
 slug: "kyle-ko"
 image: "/images/screenshot-2026-02-02-192840.jpg"

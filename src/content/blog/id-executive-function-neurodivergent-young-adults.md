@@ -1,6 +1,7 @@
 ---
 title: "Memahami Tantangan Fungsi Eksekutif pada Dewasa Muda Neurodivergen"
 date: 2026-01-15
+translationKey: "executive-function"
 lang: id
 slug: "executive-function-neurodivergent-young-adults-id"
 image: "/images/a6701555-edited.jpg"

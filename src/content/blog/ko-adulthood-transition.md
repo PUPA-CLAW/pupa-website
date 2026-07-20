@@ -1,6 +1,7 @@
 ---
 title: "인도네시아 신경다양성 청년의 성인기 전환을 돕는 길"
 date: 2026-08-15
+translationKey: "adulthood-transition"
 lang: ko
 slug: "neurodivergent-adulthood-transition-indonesia-ko"
 image: "/images/pupa-group-9707.jpg"

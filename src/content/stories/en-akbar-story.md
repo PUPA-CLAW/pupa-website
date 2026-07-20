@@ -1,6 +1,7 @@
 ---
 title: "Akbar’s Story"
 date: 2019-05-28
+translationKey: "akbar"
 lang: en
 slug: "akbar-story"
 image: "/images/afm-9305.jpg"

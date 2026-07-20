@@ -6,8 +6,16 @@ export async function getStaticPaths() {
   return posts.map((p) => ({ params: { slug: p.data.slug }, props: { post: p } }));
 }
 const { post } = Astro.props;
+const __all = await getCollection('blog');
+const __bases = { en: '/blog/', id: '/id/artikel/', ko: '/ko/blog/' };
+const __alt = (l: 'en' | 'id' | 'ko') => {
+  const k = post.data.translationKey;
+  const m = k ? __all.find((e) => e.data.lang === l && e.data.translationKey === k) : undefined;
+  return m ? __bases[l] + m.data.slug + '/' : __bases[l];
+};
+const altUrls = { en: __alt('en'), id: __alt('id'), ko: __alt('ko') };
 const { Content } = await render(post);
 ---
-<ArticleLayout lang="en" routeKey="blog" title={post.data.title} description={post.data.description ?? ''} date={post.data.date} image={post.data.image} backHref="/blog/" backLabel="All parent resources">
+<ArticleLayout lang="en" routeKey="blog" altUrls={altUrls} title={post.data.title} description={post.data.description ?? ''} date={post.data.date} image={post.data.image} backHref="/blog/" backLabel="All parent resources">
   <Content />
 </ArticleLayout>

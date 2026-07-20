@@ -1,6 +1,7 @@
 ---
 title: "Raissa의 이야기"
 date: 2026-07-15
+translationKey: "raissa"
 lang: ko
 slug: "raissa-ko"
 image: "/images/raissa-story.jpg"

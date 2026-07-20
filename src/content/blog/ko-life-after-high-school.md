@@ -1,6 +1,7 @@
 ---
 title: "자폐 청년에게 고등학교 졸업 이후는 어떤 모습일까요?"
 date: 2026-07-15
+translationKey: "life-after-high-school"
 lang: ko
 slug: "life-after-high-school-autism-ko"
 image: "/images/img-0559-1.jpg"

@@ -1,6 +1,7 @@
 ---
 title: "Cerita Tentang Akbar"
 date: 2019-05-28
+translationKey: "akbar"
 lang: id
 slug: "akbar-cerita"
 image: "/images/afm-9305.jpg"

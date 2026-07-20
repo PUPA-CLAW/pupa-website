@@ -1,6 +1,7 @@
 ---
 title: "Hari’s Story"
 date: 2019-05-28
+translationKey: "hari"
 lang: en
 slug: "hari-story"
 image: "/images/afm-9358.jpg"

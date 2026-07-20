@@ -1,6 +1,7 @@
 ---
 title: "Enzo’s Story"
 date: 2019-05-28
+translationKey: "enzo"
 lang: en
 slug: "enzo-story"
 image: "/images/afm-9263.jpg"

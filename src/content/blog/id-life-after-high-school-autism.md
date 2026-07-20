@@ -1,6 +1,7 @@
 ---
 title: "Apa yang Terjadi Setelah SMA bagi Dewasa Muda Autistik?"
 date: 2026-07-15
+translationKey: "life-after-high-school"
 lang: id
 slug: "life-after-high-school-autism-id"
 image: "/images/img-0559-1.jpg"

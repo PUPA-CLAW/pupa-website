@@ -1,6 +1,7 @@
 ---
 title: "Enzo의 이야기"
 date: 2019-05-28
+translationKey: "enzo"
 lang: ko
 slug: "enzo-ko"
 image: "/images/afm-9263.jpg"

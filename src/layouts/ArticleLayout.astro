@@ -8,14 +8,15 @@ interface Props {
   title: string;
   description: string;
   date?: Date;
+  altUrls?: { en: string; id: string; ko: string };
   image?: string;
   backHref: string;
   backLabel: string;
 }
-const { lang, routeKey, title, description, date, image, backHref, backLabel } = Astro.props;
+const { lang, routeKey, title, description, date, image, backHref, backLabel, altUrls } = Astro.props;
 const fmtDate = date?.toLocaleDateString(lang === 'id' ? 'id-ID' : lang === 'ko' ? 'ko-KR' : 'en-US', { year: 'numeric', month: 'long' });
 ---
-<Layout lang={lang} routeKey={routeKey} title={`${title} | PUPA Center`} description={description}>
+<Layout lang={lang} routeKey={routeKey} altUrls={altUrls} title={`${title} | PUPA Center`} description={description}>
   <article class="article">
     <header class="article-head">
       <div class="wrap narrow">

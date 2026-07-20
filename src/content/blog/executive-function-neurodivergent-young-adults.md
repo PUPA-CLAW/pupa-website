@@ -1,6 +1,7 @@
 ---
 title: "Understanding Executive Function Challenges in Neurodivergent Young Adults"
 date: 2026-01-15
+translationKey: "executive-function"
 lang: en
 slug: "executive-function-neurodivergent-young-adults"
 image: "/images/a6701555-edited.jpg"

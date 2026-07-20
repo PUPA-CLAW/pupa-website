@@ -1,6 +1,7 @@
 ---
 title: "Owen의 이야기"
 date: 2019-05-28
+translationKey: "owen"
 lang: ko
 slug: "owen-ko"
 image: "/images/afm-8982.jpg"

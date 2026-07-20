@@ -1,6 +1,7 @@
 ---
 title: "Hari의 이야기"
 date: 2019-05-28
+translationKey: "hari"
 lang: ko
 slug: "hari-ko"
 image: "/images/afm-9358.jpg"

@@ -1,6 +1,7 @@
 ---
 title: "신경다양성 청년을 위한 취업 준비"
 date: 2026-06-15
+translationKey: "vocational-readiness"
 lang: ko
 slug: "vocational-readiness-neurodivergent-young-adults-ko"
 image: "/images/dji-20260112112138-0105-d-pa2.jpg"

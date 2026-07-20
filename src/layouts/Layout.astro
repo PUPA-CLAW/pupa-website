@@ -8,12 +8,13 @@ import '../styles/global.css';
 interface Props {
   lang: Lang;
   routeKey: string;      // key into the routes map, powers hreflang + language toggle
+  altUrls?: { en: string; id: string; ko: string };  // per-page overrides (article translations)
   title: string;
   description: string;
 }
-const { lang, routeKey, title, description } = Astro.props;
+const { lang, routeKey, title, description, altUrls } = Astro.props;
 const t = useTranslations(lang);
-const route = routes[routeKey] ?? routes.home;
+const route = altUrls ?? (routes[routeKey] ?? routes.home);
 const site = Astro.site?.toString().replace(/\/$/, '') ?? 'https://www.pupacenter.org';
 
 // First-visit language gateway: only on the EN homepage ('/'). Respects a stored
@@ -95,7 +96,7 @@ else if(l==='ko'||l.indexOf('ko-')===0){location.replace('/ko/')}
 </head>
 <body>
   <a class="skip-link" href="#main">{t('a11y.skip')}</a>
-  <Header lang={lang} routeKey={routeKey} />
+  <Header lang={lang} routeKey={routeKey} altRoute={altUrls} />
   <main id="main">
     <slot />
   </main>

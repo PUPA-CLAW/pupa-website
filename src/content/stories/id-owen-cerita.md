@@ -1,6 +1,7 @@
 ---
 title: "Cerita Tentang Owen"
 date: 2019-05-28
+translationKey: "owen"
 lang: id
 slug: "owen-cerita"
 image: "/images/afm-8982.jpg"

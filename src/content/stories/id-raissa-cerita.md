@@ -1,6 +1,7 @@
 ---
 title: "Cerita Tentang Raissa"
 date: 2026-07-15
+translationKey: "raissa"
 lang: id
 slug: "raissa-cerita"
 image: "/images/raissa-story.jpg"

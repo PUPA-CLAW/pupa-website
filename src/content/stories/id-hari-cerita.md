@@ -1,6 +1,7 @@
 ---
 title: "Cerita Tentang Hari"
 date: 2019-05-28
+translationKey: "hari"
 lang: id
 slug: "hari-cerita"
 image: "/images/afm-9358.jpg"

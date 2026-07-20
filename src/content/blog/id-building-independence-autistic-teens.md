@@ -1,6 +1,7 @@
 ---
 title: "Cara Membangun Kemandirian bagi Remaja Autistik"
 date: 2026-04-15
+translationKey: "building-independence"
 lang: id
 slug: "building-independence-autistic-teens-id"
 image: "/images/a6701958.jpg"

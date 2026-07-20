@@ -1,6 +1,7 @@
 ---
 title: "Kesiapan Kerja bagi Dewasa Muda Neurodivergen"
 date: 2026-06-15
+translationKey: "vocational-readiness"
 lang: id
 slug: "vocational-readiness-neurodivergent-young-adults-id"
 image: "/images/dji-20260112112138-0105-d-pa2.jpg"

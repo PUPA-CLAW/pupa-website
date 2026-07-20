@@ -1,6 +1,7 @@
 ---
 title: "Mendukung Transisi Menuju Kedewasaan bagi Dewasa Muda Neurodivergen di Indonesia"
 date: 2026-08-15
+translationKey: "adulthood-transition"
 lang: id
 slug: "neurodivergent-adulthood-transition-indonesia-id"
 image: "/images/pupa-group-9707.jpg"

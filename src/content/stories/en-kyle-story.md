@@ -1,6 +1,7 @@
 ---
 title: "Kyle’s Story"
 date: 2026-02-06
+translationKey: "kyle"
 lang: en
 slug: "kyle-story"
 image: "/images/screenshot-2026-02-02-192840.jpg"

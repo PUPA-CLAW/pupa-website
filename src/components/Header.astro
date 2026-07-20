@@ -1,10 +1,10 @@
 ---
 import { useTranslations, routes, type Lang } from '../i18n/ui';
-interface Props { lang: Lang; routeKey: string; }
-const { lang, routeKey } = Astro.props;
+interface Props { lang: Lang; routeKey: string; altRoute?: { en: string; id: string; ko: string }; }
+const { lang, routeKey, altRoute } = Astro.props;
 const t = useTranslations(lang);
 const other: Lang = lang === 'en' ? 'id' : 'en';
-const route = routes[routeKey] ?? routes.home;
+const route = altRoute ?? (routes[routeKey] ?? routes.home);
 const p = (key: string) => (routes[key] ?? routes.home)[lang];
 
 const menu = [

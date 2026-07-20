@@ -1,6 +1,7 @@
 ---
 title: "Mengapa Rutinitas Terstruktur Penting bagi Dewasa Muda Autistik"
 date: 2026-02-15
+translationKey: "structured-routines"
 lang: id
 slug: "structured-routines-autistic-young-adults-id"
 image: "/images/a6701722.jpg"

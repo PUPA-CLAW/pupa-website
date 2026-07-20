@@ -1,6 +1,7 @@
 ---
 title: "Cerita Tentang Enzo"
 date: 2019-05-28
+translationKey: "enzo"
 lang: id
 slug: "enzo-cerita"
 image: "/images/afm-9263.jpg"

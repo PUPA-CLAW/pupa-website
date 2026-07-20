@@ -1,6 +1,7 @@
 ---
 title: "Raissa's Story"
 date: 2026-07-15
+translationKey: "raissa"
 lang: en
 slug: "raissa-story"
 image: "/images/raissa-story.jpg"

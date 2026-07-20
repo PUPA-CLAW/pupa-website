@@ -1,6 +1,7 @@
 ---
 title: "Life Skills Every Autistic Young Adult Should Practice Before Adulthood"
 date: 2026-03-15
+translationKey: "life-skills"
 lang: en
 slug: "life-skills-autistic-young-adults"
 image: "/images/a6701680.jpg"

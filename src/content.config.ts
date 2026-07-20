@@ -10,6 +10,7 @@ const blog = defineCollection({
     slug: z.string(),
     image: z.string().optional(),
     description: z.string().optional(),
+    translationKey: z.string().optional(),
   }),
 });
 
@@ -22,6 +23,7 @@ const stories = defineCollection({
     slug: z.string(),
     image: z.string().optional(),
     description: z.string().optional(),
+    translationKey: z.string().optional(),
   }),
 });
 

@@ -1,6 +1,7 @@
 ---
 title: "Owen’s Story"
 date: 2019-05-28
+translationKey: "owen"
 lang: en
 slug: "owen-story"
 image: "/images/afm-8982.jpg"
