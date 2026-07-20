@@ -8,6 +8,7 @@ The site now has a full Korean version at /ko/ (e.g. pupacenter.org/ko/). It was
 - About, Programs, Enrollment (incl. all 17 FAQs), Workshops, Contact, Donate, Get Involved, Resources, Growth Journeys intro, Accessibility page (each component's `ko:` block)
 - All 6 Growth Journey stories (src/content/stories/ko-*.md)
 - All 8 blog articles (src/content/blog/ko-*.md)
+- Privacy policy (src/data/privacy-ko.md, served at /ko/privacy/) — legal-adjacent text, please review the register and terminology carefully
 
 ## Blog articles (now translated — please review)
 All 8 parenting-guidance articles are now in Korean (src/content/blog/ko-*.md). These give practical advice to families about autism, so review them carefully for tone and terminology — alongside the personal bios, they are the highest-priority review items.

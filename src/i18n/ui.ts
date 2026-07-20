@@ -204,5 +204,5 @@ export const routes: Record<string, { en: string; id: string; ko: string }> = {
   donate:          { en: '/donate/',                 id: '/id/donasi/',             ko: '/ko/donate/' },
   blog:            { en: '/blog/',                   id: '/id/artikel/',            ko: '/ko/blog/' },
   stories:         { en: '/growth-journeys/',        id: '/id/kisah/',              ko: '/ko/growth-journeys/' },
-  privacy:         { en: '/privacy/',                id: '/id/privasi/',            ko: '/privacy/' },
+  privacy:         { en: '/privacy/',                id: '/id/privasi/',            ko: '/ko/privacy/' },
 };
