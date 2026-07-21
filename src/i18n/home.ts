@@ -35,7 +35,7 @@ export const home: Record<Lang, any> = {
     stats: [
       { num: '16–25', label: 'The age range of young adults we support' },
       { num: '3', label: 'Core programs — Mandiri, Karya, and Access — forming one journey' },
-      { num: '5 days', label: 'Of structured activities every week, Monday to Friday' },
+      { num: 'Senin–Jumat', label: 'Of structured activities each week' },
     ],
     storyTitle: 'Growth Journeys',
     storyQuote: '“Kyle was invited to continue with the company as a contract worker — and after graduating from PUPA Center, he remains employed there today.”',
@@ -80,7 +80,7 @@ export const home: Record<Lang, any> = {
     stats: [
       { num: '16–25', label: 'Rentang usia anak muda yang kami dampingi' },
       { num: '3', label: 'Program inti — Mandiri, Karya, dan Access — dalam satu perjalanan' },
-      { num: '5 hari', label: 'Kegiatan terstruktur setiap minggu, Senin sampai Jumat' },
+      { num: 'Senin–Jumat', label: 'Kegiatan terstruktur setiap minggu' },
     ],
     storyTitle: 'Kisah Pertumbuhan',
     storyQuote: '“Kyle mendapat kesempatan sebagai intern Human Resources di perusahaan mitra — dan setelah lulus dari PUPA Center, ia tetap bekerja di sana hingga hari ini.”',
@@ -125,7 +125,7 @@ export const home: Record<Lang, any> = {
     stats: [
       { num: '16–25', label: '우리가 지원하는 청년들의 연령대(세)' },
       { num: '3', label: '하나의 여정을 이루는 핵심 프로그램 — Mandiri, Karya, Access' },
-      { num: '주 5일', label: '월요일부터 금요일까지 진행되는 체계적인 활동' },
+      { num: '월–금', label: '매주 진행되는 체계적인 활동' },
     ],
     storyTitle: '성장 이야기',
     storyQuote: '“Kyle은 회사로부터 계약직으로 계속 일해 달라는 제안을 받았고, PUPA 센터를 졸업한 지금도 그곳에서 일하고 있습니다.”',
