@@ -176,7 +176,7 @@ const pupaIcons = [
         <div class="mv-card mv-2"><p class="mv-label">{c.mvLabels[1]}</p><p class="mv-text">{c.vision}</p></div>
         <div class="mv-card mv-3"><p class="mv-label">{c.mvLabels[2]}</p><p class="mv-text motto">{c.motto}</p></div>
       </div>
-      <p class="story-p">{c.missionNote}</p>
+      <p class="story-p mission-note">{c.missionNote}</p>
       <div class="values-block">
         <h3 id="values" class="values-title">{c.valuesTitle}</h3>
         <p class="values-intro">{c.valuesIntro}</p>
@@ -231,6 +231,7 @@ const pupaIcons = [
 @media (max-width:960px){.story-wrap{grid-template-columns:1fr}.group-band img{height:300px}}
 .about-sec.alt{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .story-p{margin:14px 0;color:var(--ink-soft)}
+.mission-note{max-width:none}
 .about-sec h3{margin:32px 0 8px}
 .mv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:20px 0 22px}
 .mv-card{background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-lg);padding:24px}
