@@ -54,7 +54,7 @@ export const home: Record<Lang, any> = {
     eyebrow: 'Alam Sutera, Tangerang · Indonesia',
     heroTitle: 'Mewujudkan Masa Depan agar Individu Neurodivergen Menjalani Hidup yang Bermakna.',
     heroLede:
-      'Program PUPA Center dirancang untuk pengembangan diri individu neurodivergen dewasa — mendampingi transisi dari sekolah atau pendidikan formal menuju penguatan keterampilan hidup dan kesiapan kerja, sebagai langkah menjalani kehidupan yang lebih mandiri baik dalam keseharian maupun di dunia kerja.',
+      'PUPA Center adalah pusat pembelajaran tempat anak muda dengan autisme dan neurodivergen lainnya membangun kecakapan hidup sehari-hari, keterampilan kerja, serta koneksi nyata menuju dunia kerja dan komunitas.',
     ctaVisit: 'Jadwalkan kunjungan via WhatsApp',
     ctaPrograms: 'Lihat program kami',
     doorwaysTitle: 'Apa yang Bisa Kami Bantu Hari Ini?',
@@ -83,7 +83,7 @@ export const home: Record<Lang, any> = {
       { num: 'Senin–Jumat', label: 'Kegiatan terstruktur setiap minggu' },
     ],
     storyTitle: 'Kisah Pertumbuhan',
-    storyQuote: '“Kyle mendapat kesempatan sebagai intern Human Resources di perusahaan mitra — dan setelah lulus dari PUPA Center, ia tetap bekerja di sana hingga hari ini.”',
+    storyQuote: '“Kyle diundang untuk melanjutkan di perusahaan mitra sebagai karyawan kontrak — dan setelah lulus dari PUPA Center, ia tetap bekerja di sana hingga hari ini.”',
     storyAttribution: '— Dari kisah pertumbuhan Kyle',
     storyCta: 'Baca kisah pertumbuhan lainnya',
     bannerQuote: 'Dikenali karena potensinya, bukan dinilai dari keterbatasannya.',

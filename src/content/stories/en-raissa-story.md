@@ -8,7 +8,7 @@ image: "/images/raissa-story.jpg"
 description: "When **Castalia Raissa Amadin** first joined PUPA Center, she began her journey in our Transition Class. Even then, it was clear that she possessed a remarkable artistic talent, especially in pottery."
 ---
 
-When Raissa first joined PUPA Center, she began her journey in our Transition Class. Even then, it was clear that she possessed a remarkable artistic talent, especially in pottery. Since her teenage years, Raissa has dedicated herself to learning and practicing pottery, transforming her creativity into beautiful handmade pieces. Over time, she has proudly showcased and sold her pottery at various community bazaars, sharing her passion with others.
+When **Castalia Raissa Amadin** (Raissa) first joined PUPA Center, she began her journey in our Transition Class. Even then, it was clear that she possessed a remarkable artistic talent, especially in pottery. Since her teenage years, Raissa has dedicated herself to learning and practicing pottery, transforming her creativity into beautiful handmade pieces. Over time, she has proudly showcased and sold her pottery at various community bazaars, sharing her passion with others.
 
 Pottery is only one of the many ways Raissa expresses herself. She also enjoys drawing, writing, singing, and baking, filling her days with creativity and meaningful activities. Her curiosity and love for learning have always been among her greatest strengths.
 
