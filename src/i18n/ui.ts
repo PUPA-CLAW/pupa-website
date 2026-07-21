@@ -73,7 +73,7 @@ export const ui = {
     'nav.about.board': 'Dewan Pengurus',
     'nav.about.approach': 'Pendekatan Kami',
     'nav.programs': 'Program',
-    'nav.programs.overview': 'Ikhtisar program',
+    'nav.programs.overview': 'Program Kami',
     'nav.programs.mandiri': 'Mandiri — kecakapan hidup',
     'nav.programs.karya': 'Karya — kesiapan kerja',
     'nav.programs.access': 'Access — pekerjaan & komunitas',
