@@ -1,0 +1,176 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { routes, type Lang } from '../i18n/ui';
+
+interface Props { lang: Lang; }
+const { lang } = Astro.props;
+const p = (key: string) => (routes[key] ?? routes.home)[lang];
+
+const content = {
+  en: {
+    metaTitle: 'Resources — News, Parent Resources & Stories | PUPA Center',
+    metaDescription: 'Stay connected with PUPA Center: join our WhatsApp community for news and updates, read practical articles for parents, and follow our participants\u2019 growth journeys.',
+    h1: 'Resources',
+    newsTitle: 'News & Updates',
+    newsBody: 'We welcome anyone who would like to stay connected to join our PUPA Center WhatsApp community. It\u2019s an accessible space to stay informed and engaged with our work as it unfolds, allowing you to be part of the ongoing journey we are building together.',
+    expectTitle: 'What to Expect',
+    expect: [
+      ['Program Updates', 'Be the first to know about new curriculum developments and intake schedules for Mandiri, Karya, and Access.'],
+      ['Upcoming Events', 'Stay informed about PUPA Center\u2019s activities, community workshops, and public outings as they are announced.'],
+      ['Milestones & Moments', 'Celebrate participant achievements and community highlights as they happen.'],
+      ['A Shared Space', 'A dedicated channel for families, supporters, and participants to remain united in our vision for the future.'],
+    ],
+    joinTitle: 'Join Our WhatsApp Community',
+    joinBody: 'Tap the button to join instantly, or scan the QR code with your phone camera. You will be welcomed into a friendly space for PUPA news, updates, and community moments.',
+    newsCta: 'Join the WhatsApp community',
+    qrAlt: 'QR code to join the PUPA Community WhatsApp group',
+    qrCaption: 'Or scan with your phone',
+    parentsTitle: 'Resources for Parents',
+    parentsBody: 'Practical articles for families of neurodivergent young adults — independence, routines, life skills, executive function, and the transition to adulthood.',
+    parentsCta: 'Read the articles',
+    storiesTitle: 'Growth Journeys',
+    storiesBody: 'Real stories of PUPA Center participants — journeys of courage, capability, and progress toward independence and meaningful work.',
+    storiesCta: 'Read the stories',
+  },
+  id: {
+    metaTitle: 'Sumber Daya — Berita, Sumber Daya Orang Tua & Kisah | PUPA Center',
+    metaDescription: 'Tetap terhubung dengan PUPA Center: bergabunglah dengan komunitas WhatsApp kami untuk berita dan kabar terbaru, baca artikel praktis untuk orang tua, dan ikuti kisah pertumbuhan para peserta.',
+    h1: 'Sumber Daya',
+    newsTitle: 'Berita & Kabar Terbaru',
+    newsBody: 'Kami menyambut siapa pun yang ingin tetap terhubung untuk bergabung dengan komunitas WhatsApp PUPA Center. Ini adalah ruang yang mudah diakses untuk tetap mendapat informasi dan terlibat dengan kerja kami, sehingga Anda menjadi bagian dari perjalanan yang kami bangun bersama.',
+    expectTitle: 'Apa yang Bisa Diharapkan',
+    expect: [
+      ['Kabar Program', 'Jadilah yang pertama mengetahui perkembangan kurikulum baru dan jadwal penerimaan Mandiri, Karya, dan Access.'],
+      ['Acara Mendatang', 'Dapatkan informasi tentang kegiatan PUPA Center, lokakarya komunitas, dan kegiatan luar saat diumumkan.'],
+      ['Pencapaian & Momen', 'Rayakan pencapaian peserta dan momen komunitas saat terjadi.'],
+      ['Ruang Bersama', 'Saluran khusus bagi keluarga, pendukung, dan peserta untuk tetap bersatu dalam visi kita bersama.'],
+    ],
+    newsCta: 'Gabung komunitas WhatsApp',
+    qrAlt: 'Kode QR untuk bergabung dengan grup WhatsApp PUPA Community',
+    qrCaption: 'Atau pindai dengan ponsel Anda',
+    parentsTitle: 'Sumber Daya untuk Orang Tua',
+    parentsBody: 'Artikel praktis untuk keluarga anak muda neurodivergen — kemandirian, rutinitas, kecakapan hidup, fungsi eksekutif, dan transisi menuju kedewasaan. Saat ini tersedia dalam bahasa Inggris.',
+    parentsCta: 'Baca artikelnya',
+    storiesTitle: 'Kisah Pertumbuhan',
+    storiesBody: 'Kisah nyata peserta PUPA Center — perjalanan keberanian, kemampuan, dan kemajuan menuju kemandirian serta pekerjaan yang bermakna.',
+    storiesCta: 'Baca kisahnya',
+  },
+  ko: {
+    metaTitle: '자료실 — 소식, 학부모 자료, 이야기 | PUPA Center',
+    metaDescription: 'PUPA 센터와 연결되어 있으세요: WhatsApp 커뮤니티에서 소식과 업데이트를 받고, 학부모를 위한 실용적인 글을 읽고, 참여자들의 성장 이야기를 따라가 보세요.',
+    h1: '자료실',
+    newsTitle: '소식과 업데이트',
+    newsBody: '연결되어 있고 싶은 분이라면 누구든 PUPA 센터 WhatsApp 커뮤니티에 함께하실 수 있습니다. 우리의 일이 펼쳐지는 과정을 지켜보고 참여할 수 있는 열린 공간이며, 함께 만들어 가는 여정의 일원이 되는 길입니다.',
+    expectTitle: '무엇을 받게 되나요',
+    expect: [
+      ['프로그램 소식', 'Mandiri, Karya, Access의 새 커리큘럼 소식과 모집 일정을 가장 먼저 받아 보세요.'],
+      ['다가오는 행사', 'PUPA 센터의 활동, 커뮤니티 워크숍, 야외 행사 소식을 발표되는 대로 받아 보세요.'],
+      ['이정표와 순간들', '참여자들의 성취와 커뮤니티의 특별한 순간을 함께 축하해 주세요.'],
+      ['함께하는 공간', '가족, 후원자, 참여자가 미래를 향한 비전으로 하나 되는 전용 채널입니다.'],
+    ],
+    joinTitle: 'WhatsApp 커뮤니티 가입하기',
+    joinBody: '버튼을 눌러 바로 가입하거나, 휴대전화 카메라로 QR 코드를 스캔하세요. PUPA의 소식과 업데이트, 커뮤니티의 순간이 오가는 따뜻한 공간으로 초대합니다. 대화는 주로 인도네시아어와 영어로 이루어집니다.',
+    newsCta: 'WhatsApp 커뮤니티 가입',
+    qrAlt: 'PUPA 커뮤니티 WhatsApp 그룹 가입 QR 코드',
+    qrCaption: '또는 휴대전화로 스캔하세요',
+    parentsTitle: '학부모 자료',
+    parentsBody: '신경다양성 청년의 가족을 위한 실용적인 글 — 자립, 루틴, 생활 기술, 실행 기능, 성인기로의 전환.',
+    parentsCta: '아티클 읽기',
+    storiesTitle: '성장 이야기',
+    storiesBody: 'PUPA 센터 참여자들의 진짜 이야기 — 자립과 의미 있는 일을 향한 용기와 가능성, 그리고 성장의 여정.',
+    storiesCta: '이야기 읽기',
+  },
+};
+const c = content[lang] ?? content.en;
+
+// Four distinct icons matching each "what to expect" item
+const expectIcons = [
+  // Program updates — megaphone / announcement
+  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11v2a1 1 0 0 0 1 1h2l4 4V6L6 10H4a1 1 0 0 0-1 1z"/><path d="M14 8a4 4 0 0 1 0 8"/><path d="M17.5 5a8 8 0 0 1 0 14"/></svg>',
+  // Upcoming events — calendar
+  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>',
+  // Milestones & moments — award / trophy
+  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12v4a6 6 0 0 1-12 0z"/><path d="M6 6H4a2 2 0 0 0 0 4h2M18 6h2a2 2 0 0 1 0 4h-2"/><path d="M9 18h6M10 14v4M14 14v4M8 21h8"/></svg>',
+  // A shared space — community / people
+  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20v-1a6 6 0 0 1 12 0v1"/><path d="M15 20v-1a4 4 0 0 1 6 0v1"/></svg>',
+];
+---
+<Layout lang={lang} routeKey="resources" title={c.metaTitle} description={c.metaDescription}>
+  <section class="page-head">
+    <div class="wrap"><h1>{c.h1}</h1></div>
+  </section>
+
+  <section class="res-sec" id="news">
+    <div class="wrap">
+      <h2>{c.newsTitle}</h2>
+      <p class="res-body">{c.newsBody}</p>
+      <h3>{c.expectTitle}</h3>
+      <div class="card-grid expect-grid">
+        {c.expect.map((e, ei) => (
+          <div class="card icon-card">
+            <span class="mini-icon" aria-hidden="true" set:html={expectIcons[ei % expectIcons.length]}></span>
+            <h4>{e[0]}</h4><p>{e[1]}</p>
+          </div>
+        ))}
+      </div>
+      <div class="community-card">
+        <div class="community-copy">
+          <h3>{c.joinTitle}</h3>
+          <p>{c.joinBody}</p>
+          <a class="btn btn-primary" href="https://chat.whatsapp.com/GY7IwyE2UXS5DoBup80S81" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true" style="margin-right:2px"><path d="M17.6 6.32A7.85 7.85 0 0 0 12 4a7.94 7.94 0 0 0-6.9 11.9L4 20l4.2-1.1A7.9 7.9 0 0 0 12 19.9a7.94 7.94 0 0 0 5.6-13.58zM12 18.5a6.6 6.6 0 0 1-3.36-.92l-.24-.14-2.5.65.67-2.43-.16-.25a6.59 6.59 0 1 1 12.2-3.51A6.6 6.6 0 0 1 12 18.5zm3.62-4.94c-.2-.1-1.17-.58-1.35-.64s-.31-.1-.44.1-.51.64-.62.77-.23.15-.43.05a5.4 5.4 0 0 1-1.59-.98 6 6 0 0 1-1.1-1.37c-.11-.2 0-.3.09-.4l.3-.35a1.36 1.36 0 0 0 .2-.33.37.37 0 0 0 0-.35c-.05-.1-.44-1.07-.6-1.46s-.32-.34-.44-.34h-.38a.72.72 0 0 0-.52.24 2.19 2.19 0 0 0-.69 1.63A3.82 3.82 0 0 0 8.1 12a8.7 8.7 0 0 0 3.32 2.93c.46.2.82.32 1.1.41a2.66 2.66 0 0 0 1.22.08 2 2 0 0 0 1.31-.92 1.63 1.63 0 0 0 .11-.92c-.04-.09-.17-.14-.37-.24z"/></svg>
+            {c.newsCta}
+          </a>
+        </div>
+        <figure class="qr-box">
+          <img src="/images/brand/wa-community-qr.png" alt={c.qrAlt} width="200" height="200" loading="lazy" />
+          <figcaption>{c.qrCaption}</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="res-sec alt" id="parents">
+    <div class="wrap">
+      <h2>{c.parentsTitle}</h2>
+      <p class="res-body">{c.parentsBody}</p>
+      <a class="btn btn-primary" href={p('blog')}>{c.parentsCta}</a>
+    </div>
+  </section>
+
+  <section class="res-sec" id="stories">
+    <div class="wrap">
+      <h2>{c.storiesTitle}</h2>
+      <p class="res-body">{c.storiesBody}</p>
+      <a class="btn btn-primary" href={p('stories')}>{c.storiesCta}</a>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+.page-head{background:var(--cream);padding:64px 0 48px;border-bottom:1px solid var(--line)}
+.res-sec{padding:56px 0}
+.res-sec.alt{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.res-body{color:var(--ink-soft);margin:14px 0 22px}
+.res-sec h3{margin:8px 0 6px}
+.expect-grid{grid-template-columns:repeat(4,1fr);margin-bottom:26px}
+.expect-grid h4{font-family:var(--font-display);font-size:1.05rem}
+.res-sec .placeholder-flag{margin-top:16px}
+.join-row{display:flex;align-items:center;gap:28px;flex-wrap:wrap}
+.qr-box{margin:0;text-align:center}
+.qr-box img{border:1px solid var(--line);border-radius:var(--radius);background:#fff}
+.qr-box figcaption{font-size:.85rem;color:var(--ink-soft);margin-top:6px}
+@media (max-width:960px){.expect-grid{grid-template-columns:1fr 1fr}}
+
+.community-card{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center;margin-top:20px;background:linear-gradient(120deg,var(--sage),var(--peach));border:1px solid #EFE4D2;border-radius:var(--radius-lg);padding:36px 40px}
+.community-copy h3{margin-bottom:10px}
+.community-copy p{color:var(--teal-900);opacity:.9;max-width:46ch;margin-bottom:22px}
+.qr-box{margin:0;text-align:center;flex:none}
+.qr-box img{border:1px solid rgba(15,107,102,.2);border-radius:16px;padding:12px;background:#fff;box-shadow:0 10px 28px rgba(11,68,65,.14);display:block}
+.qr-box figcaption{margin-top:10px;font-size:.9rem;color:var(--teal-900);font-weight:600}
+@media (max-width:760px){.community-card{grid-template-columns:1fr;text-align:center;justify-items:center;padding:32px 28px}.community-copy p{margin-left:auto;margin-right:auto}}
+
+.icon-card .mini-icon{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:12px;background:var(--teal-050);color:var(--teal-700);margin-bottom:12px}
+.icon-card .mini-icon svg{width:24px;height:24px}
+</style>

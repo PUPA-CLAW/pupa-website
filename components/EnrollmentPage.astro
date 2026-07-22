@@ -1,0 +1,237 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { routes, type Lang } from '../i18n/ui';
+
+interface Props { lang: Lang; }
+const { lang } = Astro.props;
+const p = (key: string) => (routes[key] ?? routes.home)[lang];
+const wa = 'https://wa.me/62818533698';
+
+const content = {
+  en: {
+    metaTitle: 'Enrollment — How to Join PUPA Center',
+    metaDescription: 'PUPA Center\u2019s enrollment process for neurodivergent young adults aged 16–25: initial contact, introduction session, onsite visit, assessment, and a 1–3 month probation period to ensure the right program fit.',
+    h1: 'Enrollment',
+    intro: 'Our enrollment process is designed to ensure the right fit for every participant. Through an initial introduction and assessment period, we take time to understand individual needs, goals, and readiness before placement into our programs. Registration is open year-round.',
+    stepsTitle: 'The Enrollment Process',
+    steps: [
+      ['Contact the PUPA admin', 'Parents contact the PUPA admin to receive initial information.'],
+      ['PUPA introduction session', 'Parents are introduced to PUPA through a video or virtual meeting.'],
+      ['Onsite visit', 'Parents and the prospective participant visit PUPA to experience the environment firsthand.'],
+      ['Enrollment form submission', 'Parents complete the enrollment form and submit psychological and IQ assessment results from the past two years.'],
+      ['Probation schedule', 'PUPA confirms and shares the probation schedule once all documents are received.'],
+      ['Probation period', 'The prospective participant takes part in a 1–3 month probation period.'],
+      ['Parent counseling', 'Parents attend one counseling session with a PUPA Center counselor.'],
+      ['Evaluation meeting', 'Parents meet with the PUPA team to discuss the probation evaluation results.'],
+      ['Enrollment decision', 'Ready for enrollment: parents receive an offering letter. Further preparation required: parents receive a detailed evaluation report with recommendations and guidance.'],
+    ],
+    ctaStart: 'Start with the first step — message us on WhatsApp',
+    faqTitle: 'Frequently Asked Questions',
+    faq: [
+      ['What is PUPA Center?', 'PUPA Center is a development center focused on life skills and work readiness for neurodivergent individuals, particularly adolescents and young adults. The program is delivered through structured and practical programs.'],
+      ['Is PUPA Center a school?', 'No. PUPA Center is a development and support center rather than a formal school. Our programs do not follow an academic school curriculum.'],
+      ['Is PUPA Center a therapy center?', 'No. PUPA Center does not provide therapy services. Instead, we focus on developing life skills and independence for neurodivergent individuals through structured, supportive activities.'],
+      ['Who can participate in PUPA Center programs?', 'Our programs are intended for neurodivergent adolescents and adults, including individuals on the autism spectrum. Participation is determined through eligibility criteria and an initial assessment process.'],
+      ['What programs are offered at PUPA Center?', 'PUPA Center offers programs including life skills development, work readiness skills, social and communication skills, functional activities, and practice-based learning experiences (experiential learning).'],
+      ['What is the age requirement to enroll?', 'PUPA Center accepts participants between the ages of 16 and 25.'],
+      ['Is there an assessment before joining?', 'Yes. All prospective participants undergo a probation period to help determine their individual needs, goals, and the most suitable program placement.'],
+      ['Can participants be accompanied by a shadow teacher?', 'Participants receive support from PUPA Center supervisors during activities. Shadow teachers are not permitted to enter the classroom.'],
+      ['Does PUPA Center offer job placement or internships?', 'PUPA Center offers programs that introduce participants to the world of work and provide practical experience, but employment placement is not guaranteed.'],
+      ['How does communication with parents work?', 'We maintain regular communication with parents through dedicated applications, progress reports, and ongoing discussions with the PUPA Center team.'],
+      ['Are there activities outside of PUPA Center?', 'Yes. Participants may take part in outings, social activities, and experience-based projects, depending on the program and scheduled timeline.'],
+      ['How can I enroll?', 'To register, please contact the PUPA Center admin for more detailed information.'],
+      ['What is the activity schedule?', 'Activities take place five days a week, Monday through Friday, from 9:00 AM to 3:00 PM (WIB).'],
+      ['Will participants get a job after completing a program?', 'PUPA Center does not guarantee job placement. However, our programs are designed to equip participants with work-related skills, work habits, and relevant practical experience as preparation for employment or other productive activities.'],
+      ['My child is non-verbal. Can they participate?', 'PUPA Center is open to individuals with a wide range of support needs. Program suitability for both verbal and non-verbal participants is determined through an initial assessment to understand their needs, abilities, and the type of support required.'],
+      ['How are classes structured, considering the diversity of the autism spectrum?', 'To accommodate diverse needs, PUPA Center conducts a 1–3 month probation period during which assessments and observations are carried out. Participants are then grouped into classes based on similar developmental phases and learning paces.'],
+      ['Can registration be done at any time?', 'Yes, registration is open year-round. PUPA Center organizes its programs into three terms each year. Participants who join between January and June may enter an ongoing program, with any missed content adjusted through an Individualized Education Plan (IEP). Participants who join between July and December will repeat the program package in the following year, as more than 50% of the program content has already been completed.'],
+    ],
+  },
+  id: {
+    metaTitle: 'Pendaftaran — Cara Bergabung dengan PUPA Center',
+    metaDescription: 'Proses pendaftaran PUPA Center untuk anak muda neurodivergen usia 16–25: kontak awal, sesi perkenalan, kunjungan langsung, asesmen, dan masa percobaan 1–3 bulan untuk memastikan penempatan program yang tepat.',
+    h1: 'Pendaftaran',
+    intro: 'Proses pendaftaran kami dirancang untuk memastikan setiap peserta mendapatkan program yang paling sesuai. Melalui masa perkenalan dan asesmen awal, kami meluangkan waktu untuk memahami kebutuhan, tujuan, dan kesiapan setiap individu sebelum penempatan ke dalam program kami. Pendaftaran dibuka sepanjang tahun.',
+    stepsTitle: 'Proses Pendaftaran',
+    steps: [
+      ['Menghubungi PUPA', 'Orang tua menghubungi Admin PUPA untuk mendapatkan informasi awal.'],
+      ['Informasi Program', 'Orang tua akan mendapatkan penjelasan mengenai PUPA melalui video atau pertemuan virtual.'],
+      ['Kunjungan PUPA Center', 'Orang tua dan calon peserta berkunjung ke PUPA untuk melihat dan merasakan langsung lingkungan PUPA Center.'],
+      ['Pendaftaran', 'Orang tua mengisi formulir pendaftaran serta melampirkan hasil asesmen psikologi dan tes IQ dalam dua tahun terakhir.'],
+      ['Jadwal Masa Percobaan', 'PUPA akan mengonfirmasi dan membagikan jadwal masa percobaan setelah seluruh dokumen diterima.'],
+      ['Masa Percobaan', 'Calon peserta mengikuti masa percobaan selama 1–3 bulan.'],
+      ['Sesi Konseling', 'Orang tua mengikuti satu sesi konseling bersama konselor PUPA Center.'],
+      ['Evaluasi', 'Orang tua bertemu dengan tim PUPA untuk membahas hasil evaluasi selama masa percobaan.'],
+      ['Keputusan Pendaftaran', 'Siap bergabung: orang tua akan menerima surat penawaran. Diperlukan persiapan lebih lanjut: orang tua akan menerima laporan evaluasi terperinci beserta rekomendasi dan panduan.'],
+    ],
+    ctaStart: 'Mulai dari langkah pertama — hubungi kami via WhatsApp',
+    faqTitle: 'Pertanyaan yang Sering Diajukan',
+    faq: [
+      ['Apa itu PUPA Center?', 'PUPA Center adalah pusat pengembangan keterampilan hidup dan kesiapan kerja bagi individu neurodivergen, khususnya remaja dan dewasa muda. Program pendampingan disampaikan secara terstruktur dan praktis, sehingga setiap peserta dapat belajar dan mempraktikkan setiap landasan teori sesuai tahap yang diperlukan.'],
+      ['Apakah PUPA Center sebuah sekolah?', 'Bukan. PUPA Center adalah pusat pengembangan dan pendampingan (lembaga informal), bukan sekolah formal. Program-program kami tidak mengikuti kurikulum akademik sekolah, melainkan dirancang untuk mengembangkan keterampilan hidup dan kesiapan kerja secara praktis khusus bagi individu neurodivergen.'],
+      ['Apakah PUPA Center pusat terapi?', 'Bukan. PUPA Center bukan tempat terapi. Kami fokus pada pengembangan keterampilan hidup dan kemandirian bagi individu neurodivergen melalui kegiatan yang terstruktur dan suportif.'],
+      ['Siapa yang dapat mengikuti program PUPA Center?', 'Program PUPA Center ditujukan untuk remaja dan dewasa neurodivergen, termasuk individu dengan spektrum autisme, sesuai dengan kriteria dan asesmen awal.'],
+      ['Program apa saja yang tersedia di PUPA Center?', 'Program PUPA Center mencakup pengembangan kemandirian (keterampilan hidup), kesiapan kerja, keterampilan sosial dan komunikasi, aktivitas fungsional, serta pengalaman belajar berbasis praktik.'],
+      ['Berapa usia yang dipersyaratkan untuk mendaftar?', 'Syarat usia peserta PUPA Center antara 16 hingga 25 tahun (saat mendaftar).'],
+      ['Apakah ada asesmen sebelum bergabung?', 'Ya. Setiap calon peserta akan melalui masa percobaan untuk menentukan kebutuhan, tujuan, dan penempatan program yang sesuai.'],
+      ['Apakah peserta dapat didampingi guru pendamping?', 'Pendampingan peserta selama kegiatan dilakukan oleh Supervisor PUPA Center. Guru pendamping tidak diizinkan masuk ke dalam ruang kegiatan.'],
+      ['Apakah PUPA Center menyediakan penempatan kerja atau magang?', 'Magang kerja adalah bagian dari rangkaian program PUPA (Karya). PUPA Center menyediakan program pengenalan dunia kerja dan pengalaman praktik, namun bukan sebagai jaminan penempatan kerja.'],
+      ['Bagaimana komunikasi dengan orang tua berlangsung?', 'Komunikasi dilakukan sesuai keperluan melalui aplikasi yang tersedia. Laporan perkembangan/evaluasi hasil pendampingan diberikan secara berkala dan terstruktur, serta tersedia diskusi dengan tim PUPA Center bila diperlukan.'],
+      ['Apakah ada kegiatan di luar PUPA Center?', 'Ya. PUPA mendorong peserta aktif dan mandiri berkegiatan di area publik. Outing, hangout, dan berbelanja adalah hal rutin yang dikembangkan dalam program kegiatan PUPA secara terstruktur, selaras dengan program.'],
+      ['Bagaimana cara mendaftar?', 'Pendaftaran dapat dilakukan dengan menghubungi admin PUPA Center untuk mendapatkan informasi detail.'],
+      ['Bagaimana jadwal kegiatan di PUPA Center?', 'Kegiatan dilaksanakan lima hari dalam seminggu, Senin–Jumat, pukul 09.00–15.00 WIB.'],
+      ['Apakah peserta akan mendapat pekerjaan setelah menyelesaikan program?', 'PUPA Center tidak menjamin penempatan kerja. Namun, program PUPA Center dirancang untuk membekali peserta dengan keterampilan kerja, kebiasaan kerja, dan pengalaman praktik yang relevan sebagai persiapan menuju dunia kerja atau aktivitas produktif lainnya.'],
+      ['Anak saya non-verbal. Apakah bisa mengikuti program?', 'PUPA Center terbuka untuk individu dengan berbagai profil kebutuhan. Kesesuaian program bagi keseluruhan peserta, baik verbal maupun non-verbal, akan ditentukan melalui proses asesmen awal guna melihat kebutuhan, kemampuan, serta bentuk pendampingan yang diperlukan.'],
+      ['Bagaimana struktur kelas, mengingat keberagaman spektrum autisme?', 'PUPA Center menerapkan masa percobaan selama 1–3 bulan. Pada periode ini, tim melakukan asesmen dan observasi untuk memahami profil, kebutuhan, serta pace berkegiatan peserta. Peserta akan bergabung pada kelompok yang selaras dengan kebutuhannya.'],
+      ['Apakah pendaftaran dapat dilakukan kapan saja?', 'Ya, pendaftaran dibuka sepanjang tahun. PUPA Center membagi programnya menjadi tiga term setiap tahun. Peserta yang bergabung antara Januari–Juni dapat masuk ke program yang sedang berjalan, dengan materi yang terlewat disesuaikan melalui Individualized Education Plan (IEP). Peserta yang bergabung antara Juli–Desember akan mengulang paket program pada tahun berikutnya, karena lebih dari 50% materi program telah selesai.'],
+    ],
+  },
+  ko: {
+    metaTitle: '입학 안내 — PUPA 센터 등록 절차',
+    metaDescription: '16–25세 신경다양성 청년을 위한 PUPA 센터 등록 절차: 첫 문의, 소개 세션, 현장 방문, 평가, 그리고 알맞은 프로그램 배치를 위한 1–3개월의 적응 기간.',
+    h1: '입학 안내',
+    intro: '우리의 등록 절차는 모든 참여자에게 맞는 자리를 찾기 위해 설계되었습니다. 첫 소개와 평가 기간을 통해, 프로그램 배치에 앞서 개인의 필요와 목표, 준비 정도를 충분히 이해하는 시간을 갖습니다. 등록은 연중 언제나 가능합니다.',
+    stepsTitle: '등록 절차',
+    steps: [
+      ['PUPA 사무국에 연락하기', '부모님이 PUPA 사무국에 연락해 기본 안내를 받습니다.'],
+      ['PUPA 소개 세션', '영상 또는 화상 미팅을 통해 PUPA를 소개받습니다.'],
+      ['현장 방문', '부모님과 예비 참여자가 PUPA를 방문해 환경을 직접 경험합니다.'],
+      ['등록 서류 제출', '등록 신청서를 작성하고, 최근 2년 이내의 심리 평가 및 IQ 검사 결과를 제출합니다.'],
+      ['적응 기간 일정 안내', '모든 서류가 접수되면 PUPA가 적응 기간(probation) 일정을 확정해 안내합니다.'],
+      ['적응 기간', '예비 참여자가 1–3개월의 적응 기간에 참여합니다.'],
+      ['부모 상담', '부모님이 PUPA 센터 상담사와 상담 세션을 한 차례 갖습니다.'],
+      ['평가 미팅', '부모님이 PUPA 팀과 만나 적응 기간 평가 결과를 논의합니다.'],
+      ['등록 결정', '등록 준비 완료 시: 입학 안내문을 받습니다. 추가 준비가 필요한 경우: 권고와 안내가 담긴 상세 평가 보고서를 받습니다.'],
+    ],
+    ctaStart: '1단계부터 시작하기 — WhatsApp으로 문의',
+    faqTitle: '자주 묻는 질문',
+    faq: [
+      ['PUPA 센터는 어떤 곳인가요?', 'PUPA 센터는 신경다양인, 특히 청소년과 청년의 생활 기술과 취업 준비에 집중하는 성장 지원 센터입니다. 체계적이고 실용적인 프로그램으로 운영됩니다.'],
+      ['PUPA 센터는 학교인가요?', '아니요. PUPA 센터는 정규 학교가 아닌 성장 지원 센터입니다. 우리의 프로그램은 학교 교과 과정을 따르지 않습니다.'],
+      ['PUPA 센터는 치료 센터인가요?', '아니요. PUPA 센터는 치료 서비스를 제공하지 않습니다. 대신 체계적이고 지지적인 활동을 통해 신경다양인의 생활 기술과 자립을 키우는 데 집중합니다.'],
+      ['누가 PUPA 센터 프로그램에 참여할 수 있나요?', '자폐 스펙트럼을 포함한 신경다양성 청소년과 성인을 위한 프로그램입니다. 참여 여부는 자격 기준과 초기 평가 과정을 통해 결정됩니다.'],
+      ['어떤 프로그램이 있나요?', 'PUPA 센터는 생활 기술 개발, 취업 준비 기술, 사회성과 의사소통 기술, 기능적 활동, 그리고 실습 기반 학습(체험 학습)을 포함한 프로그램을 제공합니다.'],
+      ['등록 가능한 연령은 어떻게 되나요?', 'PUPA 센터는 16세부터 25세까지의 참여자를 받습니다.'],
+      ['참여 전에 평가가 있나요?', '네. 모든 예비 참여자는 적응 기간을 거치며, 이를 통해 개인의 필요와 목표, 가장 적합한 프로그램 배치를 파악합니다.'],
+      ['보조 교사(섀도 티처)가 동행할 수 있나요?', '활동 중에는 PUPA 센터 지도자들이 참여자를 지원합니다. 보조 교사는 교실에 들어올 수 없습니다.'],
+      ['취업 연계나 인턴십이 있나요?', 'PUPA 센터는 일의 세계를 소개하고 실무 경험을 제공하는 프로그램을 운영하지만, 취업 배치가 보장되지는 않습니다.'],
+      ['부모와의 소통은 어떻게 이루어지나요?', '전용 애플리케이션, 성장 보고서, 그리고 PUPA 센터 팀과의 지속적인 논의를 통해 부모님과 정기적으로 소통합니다.'],
+      ['PUPA 센터 밖에서의 활동도 있나요?', '네. 프로그램과 일정에 따라 참여자들은 야외 활동, 사회 활동, 체험 기반 프로젝트에 참여할 수 있습니다.'],
+      ['어떻게 등록하나요?', '등록을 원하시면 PUPA 센터 사무국에 연락해 자세한 안내를 받아 주세요.'],
+      ['활동 일정은 어떻게 되나요?', '활동은 주 5일, 월요일부터 금요일까지 오전 9시부터 오후 3시(WIB)까지 진행됩니다.'],
+      ['프로그램을 마치면 취업이 되나요?', 'PUPA 센터는 취업을 보장하지 않습니다. 다만 우리의 프로그램은 취업 또는 그 밖의 생산적 활동을 준비할 수 있도록 업무 관련 기술과 업무 습관, 실질적 경험을 갖추게 설계되어 있습니다.'],
+      ['우리 아이는 말을 하지 않습니다. 참여할 수 있나요?', 'PUPA 센터는 다양한 지원 요구를 가진 이들에게 열려 있습니다. 비언어 참여자의 프로그램 적합성은 초기 평가를 통해 필요와 능력, 요구되는 지원 유형을 파악하여 결정합니다.'],
+      ['자폐 스펙트럼의 다양성을 고려할 때 수업은 어떻게 구성되나요?', '다양한 필요를 반영하기 위해 PUPA 센터는 1–3개월의 적응 기간 동안 평가와 관찰을 진행합니다. 이후 발달 단계와 학습 속도가 비슷한 참여자들끼리 반을 구성합니다.'],
+      ['아무 때나 등록할 수 있나요?', '네, 등록은 연중 열려 있습니다. PUPA 센터는 프로그램을 매년 세 학기로 운영합니다. 1월–6월에 합류하는 참여자는 진행 중인 프로그램에 들어가며, 놓친 내용은 개별화교육계획(IEP)으로 조정합니다. 7월–12월에 합류하는 참여자는 프로그램 내용의 50% 이상이 이미 진행되었기 때문에 이듬해에 해당 프로그램 과정을 다시 이수합니다.'],
+    ],
+  },
+};
+const c = content[lang] ?? content.en;
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: c.faq.map(([q, a]) => ({
+    '@type': 'Question',
+    name: q,
+    acceptedAnswer: { '@type': 'Answer', text: a },
+  })),
+};
+---
+<Layout lang={lang} routeKey="enrollment" title={c.metaTitle} description={c.metaDescription}>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <section class="page-head">
+    <div class="wrap">
+      <h1>{c.h1}</h1>
+      <p class="lede">{c.intro}</p>
+    </div>
+  </section>
+
+  <section class="steps">
+    <div class="wrap">
+      <h2 class="steps-title">{c.stepsTitle}</h2>
+      <div class="steps-grid">
+        <div class="timeline">
+          {c.steps.map((s, i) => (
+            <details class="tl-step" open={i === 0}>
+              <summary>
+                <span class="tl-node" aria-hidden="true">{i + 1}</span>
+                <span class="tl-title">{s[0]}</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </summary>
+              <div class="tl-body"><p>{s[1]}</p></div>
+            </details>
+          ))}
+          <a class="btn btn-primary steps-cta" href={wa} rel="noopener">{c.ctaStart}</a>
+        </div>
+        <div class="steps-photo">
+          <img src="/images/enrollment.jpg" alt="A participant taking part in an activity at PUPA Center" loading="lazy" width="520" height="680" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="wrap faq-grid">
+      <div class="faq-head">
+        <h2><span class="faq-title-hl">{c.faqTitle}</span></h2>
+      </div>
+      <div class="faq-list">
+        {c.faq.map((f) => (
+          <details>
+            <summary><span>{f[0]}</span><span class="faq-icon" aria-hidden="true"></span></summary>
+            <p>{f[1]}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+.page-head{background:var(--cream);padding:64px 0 48px;border-bottom:1px solid var(--line)}
+.page-head .lede{font-size:1.15rem;color:var(--ink-soft);margin-top:18px}
+.steps{padding:64px 0}
+.steps-title{margin-bottom:32px}
+.steps-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:start}
+.timeline{position:relative}
+.timeline::before{content:"";position:absolute;left:21px;top:14px;bottom:70px;width:2px;background:var(--teal-100);z-index:0}
+.tl-step{position:relative;border-bottom:1px solid rgba(15,107,102,.16)}
+.tl-step:first-child{border-top:1px solid rgba(15,107,102,.16)}
+.tl-step summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:16px;padding:16px 40px 16px 0;min-height:44px;position:relative}
+.tl-step summary::-webkit-details-marker{display:none}
+.tl-node{flex:none;position:relative;z-index:1;display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:var(--teal-700);color:#fff;font-family:var(--font-display);font-weight:700;font-size:1.05rem;box-shadow:0 0 0 4px var(--bg)}
+.tl-step[open] .tl-node{background:var(--orange-500);color:#2B1503}
+.tl-title{font-family:var(--font-display);font-weight:600;font-size:1.12rem;color:var(--teal-700)}
+.tl-step summary .faq-icon{right:2px}
+.tl-body{padding:0 0 18px 60px}
+.tl-body p{color:var(--ink-soft)}
+.steps-cta{margin-top:26px;margin-left:0}
+.steps-photo{position:sticky;top:100px}
+.steps-photo img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--radius-lg);box-shadow:0 16px 40px rgba(11,68,65,.16)}
+.faq{background:linear-gradient(110deg,var(--sage),var(--peach));border-top:1px solid #EFE4D2;padding:72px 0}
+.faq-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:start}
+.faq-head{position:sticky;top:100px}
+.faq-title-hl{display:inline;background:var(--orange-500);color:#fff;padding:4px 14px;box-decoration-break:clone;-webkit-box-decoration-break:clone;line-height:1.6}
+.faq-head h2::after{display:none}
+.faq-list{display:grid}
+details{border-bottom:1px solid rgba(15,107,102,.28)}
+details:first-child{border-top:1px solid rgba(15,107,102,.28)}
+summary{cursor:pointer;font-weight:600;color:var(--teal-700);padding:18px 40px 18px 2px;min-height:44px;position:relative;list-style:none;display:block}
+summary::-webkit-details-marker{display:none}
+summary:hover{color:var(--teal-900)}
+.faq-icon{position:absolute;right:4px;top:50%;width:18px;height:18px;transform:translateY(-50%)}
+.faq-icon::before,.faq-icon::after{content:"";position:absolute;background:var(--teal-700);border-radius:2px}
+.faq-icon::before{left:0;top:8px;width:18px;height:2px}
+.faq-icon::after{left:8px;top:0;width:2px;height:18px;transition:opacity .15s ease}
+details[open] .faq-icon::after{opacity:0}
+details p{padding:0 40px 20px 2px;color:var(--teal-900);opacity:.85}
+
+/* Responsive: collapse two-column layouts on tablet/mobile (placed last so it wins) */
+@media (max-width:960px){
+  .steps-grid{grid-template-columns:1fr;gap:32px}
+  .steps-photo{position:static;order:-1}
+  .faq-grid{grid-template-columns:1fr;gap:24px}
+  .faq-head{position:static}
+}
+</style>

@@ -1,0 +1,115 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import { routes, type Lang } from '../i18n/ui';
+
+interface Props { lang: Lang; }
+const { lang } = Astro.props;
+const p = (key: string) => (routes[key] ?? routes.home)[lang];
+
+const stories = (await getCollection('stories', (s) => s.data.lang === lang))
+  .sort((a, b) => +a.data.date - +b.data.date || a.id.localeCompare(b.id));
+const storyBase = p('stories').replace(/\/$/, '');
+
+const c = {
+  en: {
+    metaTitle: 'Growth Journeys — PUPA Center',
+    metaDescription: 'Real journeys of PUPA Center participants — stories of courage, capability, and growth toward independence and meaningful work.',
+    h1: 'Growth Journeys',
+    lede: 'Every story here is one of courage and capability — real journeys of PUPA Center participants growing toward independence and meaningful work.',
+    introHeading: 'A Space to Grow, a Place to Belong',
+    introBody: 'With the right support, every individual can play a meaningful role in our community. These are the people living that out — each at their own pace, in their own way.',
+    storiesLede: 'Read their journeys',
+    readCta: 'Read story →',
+  },
+  id: {
+    metaTitle: 'Kisah Pertumbuhan — PUPA Center',
+    metaDescription: 'Perjalanan nyata para peserta PUPA Center — kisah keberanian, kapasitas, dan pertumbuhan menuju kemandirian dan pekerjaan yang bermakna.',
+    h1: 'Kisah Pertumbuhan',
+    lede: 'Setiap kisah di sini lahir dari keberanian dan kapasitas untuk bertumbuh — perjalanan nyata para peserta PUPA Center menuju kemandirian dan pekerjaan yang bermakna.',
+    introHeading: 'Ruang untuk Bertumbuh, Tempat untuk Menjadi Diri Sendiri',
+    introBody: 'Dengan dukungan yang tepat, setiap individu mampu mengambil peran yang bermakna dalam masyarakat. Inilah mereka yang menjalaninya — masing-masing sesuai waktu dan caranya sendiri.',
+    storiesLede: 'Baca perjalanan mereka',
+    readCta: 'Baca kisah →',
+  },
+  ko: {
+    metaTitle: '성장 이야기 — PUPA Center',
+    metaDescription: 'PUPA 센터 참여자들의 진짜 여정 — 용기와 가능성, 그리고 자립과 의미 있는 일을 향한 성장의 이야기.',
+    h1: '성장 이야기',
+    lede: '여기 담긴 모든 이야기는 용기와 가능성의 기록입니다 — 자립과 의미 있는 일을 향해 성장해 가는 PUPA 센터 참여자들의 진짜 여정입니다.',
+    introHeading: '성장하는 공간, 소속감을 느끼는 곳',
+    introBody: '알맞은 지원이 있다면 누구나 지역사회에서 의미 있는 역할을 해낼 수 있습니다. 그 삶을 살아가는 사람들이 여기 있습니다 — 저마다의 속도로, 저마다의 방식으로.',
+    storiesLede: '그들의 여정 읽어 보기',
+    readCta: '이야기 읽기 →',
+  },
+}[lang];
+---
+<Layout lang={lang} routeKey="stories" title={c.metaTitle} description={c.metaDescription}>
+
+  <!-- HERO -->
+  <section class="gj-hero">
+    <div class="wrap">
+      <h1>{c.h1}</h1>
+      <p class="gj-lede">{c.lede}</p>
+    </div>
+  </section>
+
+  <!-- INTRO STRIP -->
+  <section class="gj-intro">
+    <div class="wrap gj-intro-inner">
+      <span class="gj-mark" aria-hidden="true">
+        <img src="/images/brand/pupa-butterfly.png" alt="" width="66" height="49" />
+      </span>
+      <h2>{c.introHeading}</h2>
+      <p>{c.introBody}</p>
+    </div>
+  </section>
+
+  <!-- STORY CARDS -->
+  <section class="gj-stories">
+    <div class="wrap">
+      <p class="gj-stories-lede">{c.storiesLede}</p>
+      <div class="story-grid">
+        {stories.map((s) => (
+          <a class="story-card" href={`${storyBase}/${s.data.slug}/`}>
+            {s.data.image && <img src={s.data.image} alt="" loading="lazy" width="360" height="270" />}
+            <div class="story-card-body">
+              <h3>{s.data.title}</h3>
+              <span class="story-card-cta">{c.readCta}</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+/* HERO */
+.gj-hero{background:var(--cream);padding:72px 0 56px;border-bottom:1px solid #EFE4D2}
+.gj-hero h1{margin-bottom:16px}
+.gj-lede{font-size:1.2rem;color:var(--ink-soft);max-width:60ch;line-height:1.6}
+
+/* INTRO STRIP */
+.gj-intro{padding:56px 0 40px}
+.gj-intro-inner{max-width:760px;margin:0 auto;text-align:center}
+.gj-mark{display:inline-flex;margin-bottom:16px}
+.gj-intro h2{margin-bottom:14px}
+.gj-intro p{color:var(--ink-soft);font-size:1.08rem;line-height:1.7;max-width:60ch;margin:0 auto}
+
+/* STORY CARDS */
+.gj-stories{padding:8px 0 72px}
+.gj-stories-lede{font-size:.82rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--orange-700);margin-bottom:20px;text-align:center}
+.story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.story-card{background:var(--surface);border:1px solid #EFE4D2;border-radius:var(--radius-lg);overflow:hidden;text-decoration:none;color:var(--ink);transition:transform .2s ease,box-shadow .2s ease;display:flex;flex-direction:column}
+.story-card:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(11,68,65,.14)}
+.story-card:hover .story-card-cta{color:var(--teal-700)}
+.story-card img{width:100%;aspect-ratio:4/3.4;object-fit:cover;object-position:center 22%}
+.story-card-body{padding:20px 22px 24px;display:flex;flex-direction:column;gap:8px;flex-grow:1}
+.story-card h3{font-size:1.2rem}
+.story-card-cta{font-size:.9rem;font-weight:600;color:var(--ink-soft);margin-top:auto;transition:color .2s ease}
+
+@media (max-width:900px){ .story-grid{grid-template-columns:1fr 1fr} }
+@media (max-width:600px){ .story-grid{grid-template-columns:1fr} .gj-lede{font-size:1.08rem} }
+</style>
