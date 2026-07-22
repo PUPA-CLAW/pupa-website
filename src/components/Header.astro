@@ -67,12 +67,6 @@ const menu = [
     </nav>
 
     <div class="header-actions">
-      <div class="lang-toggle" aria-label="Language / Bahasa / 언어">
-        <a href={route.id} aria-current={lang === 'id' ? 'true' : undefined} lang="id">ID</a>
-        <a href={route.en} aria-current={lang === 'en' ? 'true' : undefined} lang="en">EN</a>
-        <a href={route.ko} aria-current={lang === 'ko' ? 'true' : undefined} lang="ko">KO</a>
-      </div>
-
       <div class="lang-menu" data-lang-menu>
         <button class="lang-btn" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="lang-list" aria-label="Language / Bahasa / 언어">
           <svg class="globe-ic" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
@@ -110,10 +104,7 @@ nav.primary li{position:relative}
 nav.primary li:hover > .dropdown, nav.primary li:focus-within > .dropdown{display:block}
 .dropdown a{width:100%;border-radius:10px}
 .header-actions{display:flex;align-items:center;gap:10px}
-.lang-toggle{display:flex;border:1.5px solid var(--line);border-radius:999px;overflow:hidden}
-.lang-toggle a{display:flex;align-items:center;justify-content:center;min-width:44px;min-height:40px;padding:0 12px;font-size:.9rem;font-weight:600;text-decoration:none;color:var(--ink-soft)}
-.lang-toggle a[aria-current="true"]{background:var(--teal-700);color:#fff}
-.lang-menu{display:none;position:relative}
+.lang-menu{position:relative}
 .lang-btn{display:inline-flex;align-items:center;gap:5px;min-height:40px;padding:0 12px;border:1.5px solid var(--line);border-radius:999px;background:var(--surface);color:var(--ink);font-size:.9rem;font-weight:600;font-family:inherit;cursor:pointer}
 .lang-btn:hover{background:var(--teal-050)}
 .lang-btn .globe-ic{color:var(--teal-700)}
@@ -142,9 +133,6 @@ nav.primary li:hover > .dropdown, nav.primary li:focus-within > .dropdown{displa
   nav.primary > ul{flex-direction:column;padding-bottom:12px}
   .dropdown{position:static;display:block;border:none;box-shadow:none;padding-left:16px}
   .header-actions{margin-left:auto;order:2}
-  /* On mobile the segmented toggle is replaced by an always-visible globe dropdown */
-  .lang-toggle{display:none}
-  .lang-menu{display:block}
   .logo-img{height:54px}
   /* When the mobile menu is open: lock the page, and let the menu scroll on its own */
   html.menu-open, html.menu-open body{overflow:hidden}
@@ -204,7 +192,7 @@ nav.primary li:hover > .dropdown, nav.primary li:focus-within > .dropdown{displa
   // Close the nav drawer when a nav link is tapped (so on-page anchors don't leave it open).
   nav?.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setMenu(false)));
   // Remember an explicit language choice so the homepage never overrides it.
-  document.querySelectorAll('.lang-toggle a, .lang-menu a').forEach((a) => {
+  document.querySelectorAll('.lang-menu a').forEach((a) => {
     a.addEventListener('click', () => {
       try { localStorage.setItem('pupa-lang', a.getAttribute('lang') || ''); } catch {}
     });
