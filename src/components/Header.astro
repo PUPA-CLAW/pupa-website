@@ -47,8 +47,8 @@ const menu = [
       <img class="logo-img" src="/images/brand/pupa-logo.svg" alt="PUPA" width="120" height="80" />
     </a>
 
-    <button class="menu-btn" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
-      <span class="menu-btn-label">{t('nav.menu')}</span>
+    <button class="menu-btn" aria-expanded="false" aria-controls="site-nav" aria-label={t('nav.menu')} data-menu-toggle>
+      <span class="menu-icon" aria-hidden="true"></span>
     </button>
 
     <nav class="primary" id="site-nav" aria-label={t('a11y.mainnav')}>
@@ -72,6 +72,24 @@ const menu = [
         <a href={route.en} aria-current={lang === 'en' ? 'true' : undefined} lang="en">EN</a>
         <a href={route.ko} aria-current={lang === 'ko' ? 'true' : undefined} lang="ko">KO</a>
       </div>
+
+      <div class="lang-menu" data-lang-menu>
+        <button class="lang-btn" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="lang-list" aria-label="Language / Bahasa / 언어">
+          <svg class="globe-ic" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <circle cx="12" cy="12" r="9" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <path d="M12 3c2.6 2.7 2.6 15.3 0 18M12 3c-2.6 2.7-2.6 15.3 0 18" />
+          </svg>
+          <span class="lang-code">{lang.toUpperCase()}</span>
+          <span class="caret" aria-hidden="true">▾</span>
+        </button>
+        <ul class="lang-list" id="lang-list">
+          <li><a href={route.id} lang="id" aria-current={lang === 'id' ? 'true' : undefined}>Indonesia</a></li>
+          <li><a href={route.en} lang="en" aria-current={lang === 'en' ? 'true' : undefined}>English</a></li>
+          <li><a href={route.ko} lang="ko" aria-current={lang === 'ko' ? 'true' : undefined}>한국어</a></li>
+        </ul>
+      </div>
+
       <a class="btn-donate-header" href={routes.donate[lang]}>{t('nav.donate')}</a>
     </div>
   </div>
@@ -95,41 +113,98 @@ nav.primary li:hover > .dropdown, nav.primary li:focus-within > .dropdown{displa
 .lang-toggle{display:flex;border:1.5px solid var(--line);border-radius:999px;overflow:hidden}
 .lang-toggle a{display:flex;align-items:center;justify-content:center;min-width:44px;min-height:40px;padding:0 12px;font-size:.9rem;font-weight:600;text-decoration:none;color:var(--ink-soft)}
 .lang-toggle a[aria-current="true"]{background:var(--teal-700);color:#fff}
+.lang-menu{display:none;position:relative}
+.lang-btn{display:inline-flex;align-items:center;gap:5px;min-height:40px;padding:0 12px;border:1.5px solid var(--line);border-radius:999px;background:var(--surface);color:var(--ink);font-size:.9rem;font-weight:600;font-family:inherit;cursor:pointer}
+.lang-btn:hover{background:var(--teal-050)}
+.lang-btn .globe-ic{color:var(--teal-700)}
+.lang-btn .caret{margin-left:2px;color:var(--ink-soft)}
+.lang-list{position:absolute;top:calc(100% + 6px);right:0;min-width:154px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:6px;margin:0;list-style:none;display:none;z-index:60}
+.lang-menu.open .lang-list{display:block}
+.lang-list a{display:block;padding:9px 12px;border-radius:8px;font-size:.95rem;font-weight:500;color:var(--ink);text-decoration:none}
+.lang-list a:hover{background:var(--teal-050)}
+.lang-list a[aria-current="true"]{background:var(--teal-050);color:var(--teal-700)}
 .btn-donate-header{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:0 18px;border-radius:999px;background:var(--orange-700);color:#fff;font-size:.9rem;font-weight:600;text-decoration:none;transition:background .2s ease}
 .btn-donate-header:hover{background:#93441A}
-.menu-btn{display:none;margin-left:auto;min-height:44px;min-width:44px;padding:8px 16px;font:inherit;font-weight:600;background:var(--teal-050);color:var(--teal-700);border:1.5px solid var(--teal-100);border-radius:10px;cursor:pointer}
+.menu-btn{display:none;margin-left:auto;width:44px;height:44px;padding:0;background:transparent;color:var(--ink);border:none;border-radius:10px;cursor:pointer}
+.menu-btn:hover{background:var(--teal-050)}
+.menu-icon,.menu-icon::before,.menu-icon::after{display:block;width:24px;height:2px;background:currentColor;border-radius:2px;transition:transform .2s ease,opacity .2s ease}
+.menu-icon{position:relative}
+.menu-icon::before{content:"";position:absolute;left:0;top:-7px}
+.menu-icon::after{content:"";position:absolute;left:0;top:7px}
+.menu-btn[aria-expanded="true"] .menu-icon{background:transparent}
+.menu-btn[aria-expanded="true"] .menu-icon::before{transform:translateY(7px) rotate(45deg)}
+.menu-btn[aria-expanded="true"] .menu-icon::after{transform:translateY(-7px) rotate(-45deg)}
 
 @media (max-width:1160px){
-  .menu-btn{display:inline-flex;align-items:center;justify-content:center}
+  .menu-btn{display:inline-flex;align-items:center;justify-content:center;order:3;margin-left:0}
   nav.primary{display:none;width:100%;margin-left:0;order:4}
   nav.primary.open{display:block}
   nav.primary > ul{flex-direction:column;padding-bottom:12px}
   .dropdown{position:static;display:block;border:none;box-shadow:none;padding-left:16px}
   .header-actions{margin-left:auto;order:2}
-  .menu-btn{order:3}
+  /* On mobile the segmented toggle is replaced by an always-visible globe dropdown */
+  .lang-toggle{display:none}
+  .lang-menu{display:block}
+  .logo-img{height:54px}
+  /* When the mobile menu is open: lock the page, and let the menu scroll on its own */
+  html.menu-open, html.menu-open body{overflow:hidden}
+  html.menu-open .topbar{
+    max-height:100vh; max-height:100dvh;
+    overflow-y:auto;
+    overscroll-behavior:contain;
+    -webkit-overflow-scrolling:touch;
+  }
 }
 @media (max-width:560px){
   .topbar{gap:8px}
-  .logo{margin-right:auto}
-  .menu-btn{order:2;margin-left:0;padding:8px 14px}
-  /* Move language toggle below, into the menu flow, so top row is just logo + menu */
-  .header-actions{order:5;width:100%;margin-left:0;justify-content:flex-start;padding-top:4px}
-  .header-actions{display:none}
-  nav.primary.open ~ .header-actions,
-  .topbar:has(nav.primary.open) .header-actions{display:flex}
+  /* Keep logo + globe + donate + hamburger together in one tidy row */
+  .header-actions{order:2;gap:8px}
+  .menu-btn{order:3}
+  .lang-btn{padding:0 10px}
+  .btn-donate-header{padding:0 14px}
 }
 </style>
 
 <script>
-  // Mobile menu toggle — simple, predictable, no animation.
+  // Mobile menu toggle — hamburger <-> X, with a page-scroll lock so the menu scrolls on its own.
   const btn = document.querySelector('[data-menu-toggle]');
   const nav = document.getElementById('site-nav');
+  // Globe language dropdown (mobile).
+  const langMenu = document.querySelector('[data-lang-menu]');
+  const langBtn = langMenu?.querySelector('.lang-btn');
+
+  const setMenu = (open: boolean) => {
+    nav?.classList.toggle('open', open);
+    btn?.setAttribute('aria-expanded', open ? 'true' : 'false');
+    document.documentElement.classList.toggle('menu-open', open);
+  };
+  const setLang = (open: boolean) => {
+    langMenu?.classList.toggle('open', open);
+    langBtn?.setAttribute('aria-expanded', open ? 'true' : 'false');
+  };
+
+  // Opening one closes the other, so they never overlap.
   btn?.addEventListener('click', () => {
-    const open = nav?.classList.toggle('open');
-    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    const open = !nav?.classList.contains('open');
+    if (open) setLang(false);
+    setMenu(open);
   });
+  langBtn?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const open = !langMenu?.classList.contains('open');
+    if (open) setMenu(false);
+    setLang(open);
+  });
+
+  // Escape closes both; a click outside the language menu closes it.
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') { setMenu(false); setLang(false); } });
+  document.addEventListener('click', (e) => {
+    if (langMenu && !langMenu.contains(e.target as Node)) setLang(false);
+  });
+  // Close the nav drawer when a nav link is tapped (so on-page anchors don't leave it open).
+  nav?.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setMenu(false)));
   // Remember an explicit language choice so the homepage never overrides it.
-  document.querySelectorAll('.lang-toggle a').forEach((a) => {
+  document.querySelectorAll('.lang-toggle a, .lang-menu a').forEach((a) => {
     a.addEventListener('click', () => {
       try { localStorage.setItem('pupa-lang', a.getAttribute('lang') || ''); } catch {}
     });
