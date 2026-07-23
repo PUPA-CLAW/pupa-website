@@ -1,9 +1,8 @@
 ---
 import { getCollection } from 'astro:content';
 import Layout from '../../../layouts/Layout.astro';
-import { isPublished } from '../../../utils/published';
 
-const posts = (await getCollection('blog', (p) => p.data.lang === 'ko' && isPublished(p.data.date))).sort((a, b) => +b.data.date - +a.data.date);
+const posts = (await getCollection('blog', (p) => p.data.lang === 'ko')).sort((a, b) => +b.data.date - +a.data.date);
 
 function summarize(text: string): string {
   if (!text) return '';

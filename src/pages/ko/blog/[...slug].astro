@@ -1,13 +1,12 @@
 ---
 import { getCollection, render } from 'astro:content';
 import ArticleLayout from '../../../layouts/ArticleLayout.astro';
-import { isPublished } from '../../../utils/published';
 export async function getStaticPaths() {
-  const posts = await getCollection('blog', (p) => p.data.lang === 'ko' && isPublished(p.data.date));
+  const posts = await getCollection('blog', (p) => p.data.lang === 'ko');
   return posts.map((p) => ({ params: { slug: p.data.slug }, props: { post: p } }));
 }
 const { post } = Astro.props;
-const __all = await getCollection('blog', (p) => isPublished(p.data.date));
+const __all = await getCollection('blog');
 const __bases = { en: '/blog/', id: '/id/artikel/', ko: '/ko/blog/' };
 const __alt = (l: 'en' | 'id' | 'ko') => {
   const k = post.data.translationKey;

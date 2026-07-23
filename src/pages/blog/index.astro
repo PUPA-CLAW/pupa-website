@@ -1,9 +1,8 @@
 ---
 import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
-import { isPublished } from '../../utils/published';
 
-const posts = (await getCollection('blog', (p) => p.data.lang === 'en' && isPublished(p.data.date))).sort((a, b) => +b.data.date - +a.data.date);
+const posts = (await getCollection('blog', (p) => p.data.lang === 'en')).sort((a, b) => +b.data.date - +a.data.date);
 
 // Clean one-line summary: trim to ~110 chars ending at a word boundary
 function summarize(text: string): string {
