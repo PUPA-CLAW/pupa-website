@@ -125,6 +125,20 @@ const content = {
   },
 };
 const c = content[lang] ?? content.en;
+const aboutAlts = {
+  en: {
+    story: 'Participants and mentors in an activity together at PUPA Center',
+    group: 'The PUPA Center community in a group photo outdoors',
+  },
+  id: {
+    story: 'Peserta dan mentor dalam kegiatan bersama di PUPA Center',
+    group: 'Komunitas PUPA Center dalam foto bersama di luar ruangan',
+  },
+  ko: {
+    story: 'PUPA 센터에서 함께 활동하는 참여자와 멘토들',
+    group: '야외에서 단체 사진을 찍은 PUPA 센터 커뮤니티',
+  },
+}[lang];
 
 // P.U.P.A big-letter treatment metadata (shared across languages)
 const pupaLetters = ['P', 'U', 'P', 'A'];
@@ -153,7 +167,7 @@ const pupaIcons = [
         <h2>{c.storyTitle}</h2>
         {c.story.map((par) => <p class="story-p">{par}</p>)}
       </div>
-      <img class="blob about-photo" src="/images/about-our-story.jpg" alt="" loading="lazy" width="480" height="420" />
+      <img class="blob about-photo" src="/images/about-our-story.jpg" alt={aboutAlts.story} loading="lazy" width="480" height="420" />
     </div>
     <div class="wrap">
       <div class="hl-strip">
@@ -165,7 +179,7 @@ const pupaIcons = [
   </section>
 
   <section class="group-band" aria-hidden="true">
-    <img src="/images/pupa-group-9696.jpg" alt="" loading="lazy" />
+    <img src="/images/pupa-group-9696.jpg" alt={aboutAlts.group} loading="lazy" />
   </section>
 
   <section class="about-sec alt" id="mission">

@@ -6,6 +6,8 @@ lang: en
 slug: "community-participation-neurodivergent-young-adults"
 image: "/images/afm-9647.jpg"
 description: "Community participation is an important part of adulthood and independence. For autistic and neurodivergent young adults, opportunities to participate in community environments can"
+imageAlt: "Participants during an outdoor community activity"
+seoTitle: "Preparing for Community Participation"
 ---
 
 Community participation is an important part of adulthood and independence. For autistic and neurodivergent young adults, opportunities to participate in community environments can help develop confidence, communication skills, adaptability, and social awareness.

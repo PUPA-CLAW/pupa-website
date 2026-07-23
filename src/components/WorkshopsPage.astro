@@ -126,6 +126,26 @@ const c = {
 
 // Placeholder images — swap in real photos when provided
 const unitImgs = ['/images/workshop-bites.jpg', '/images/workshop-coffee.jpg', '/images/workshop-tacta.jpg', '/images/workshop-eggstra.jpg'];
+const unitAlts = {
+  en: [
+    'Baked snacks made by participants in the Bites workshop',
+    'A participant brewing coffee in the Coffee workshop',
+    'Handmade tactile products from the Tacta workshop',
+    'Egg products from the Eggstra workshop',
+  ],
+  id: [
+    'Camilan buatan peserta di workshop Bites',
+    'Peserta menyeduh kopi di workshop Coffee',
+    'Produk taktil buatan tangan dari workshop Tacta',
+    'Produk telur dari workshop Eggstra',
+  ],
+  ko: [
+    'Bites 워크숍에서 참여자들이 만든 간식',
+    'Coffee 워크숍에서 커피를 내리는 참여자',
+    'Tacta 워크숍의 수제 촉각 제품',
+    'Eggstra 워크숍의 달걀 제품',
+  ],
+}[lang];
 const unitIcons = [
   // Bites — cookie
   '<circle cx="12" cy="12" r="9"/><circle cx="9" cy="10" r="1" fill="currentColor"/><circle cx="14" cy="9" r="1" fill="currentColor"/><circle cx="15" cy="14" r="1" fill="currentColor"/><circle cx="10" cy="15" r="1" fill="currentColor"/>',
@@ -159,7 +179,7 @@ const unitIcons = [
         {c.units.map((u, i) => (
           <article class="unit-card">
             <div class="unit-photo">
-              <img src={unitImgs[i]} alt="" loading="lazy" width="480" height="320"
+              <img src={unitImgs[i]} alt={unitAlts[i]} loading="lazy" width="480" height="320"
                    onerror="this.style.display='none';this.parentElement.classList.add('no-photo')" />
               <span class="unit-photo-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" set:html={unitIcons[i]}></svg>

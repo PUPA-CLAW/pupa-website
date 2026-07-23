@@ -6,6 +6,7 @@ lang: id
 slug: "raissa-cerita"
 image: "/images/raissa-story.jpg"
 description: "Ketika pertama kali bergabung di PUPA Center, Raissa memulai perjalanannya di Kelas Transisi. Sejak awal, bakat seninya yang luar biasa sudah terlihat jelas, terutama dalam seni tembikar."
+imageAlt: "Raissa di PUPA Center"
 ---
 
 Ketika pertama kali bergabung di PUPA Center, **Castalia Raissa Amadin** (Raissa) memulai perjalanannya di Kelas Transisi. Sejak awal, bakat seninya yang luar biasa sudah terlihat jelas, terutama dalam seni tembikar (*pottery*). Sejak masa remaja, Raissa telah menekuni dan melatih keterampilan tembikarnya, mengubah kreativitasnya menjadi karya-karya buatan tangan yang indah. Seiring waktu, ia dengan bangga memamerkan dan menjual karyanya di berbagai bazar komunitas, berbagi kecintaannya kepada orang lain.

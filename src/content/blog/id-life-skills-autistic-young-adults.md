@@ -6,6 +6,8 @@ lang: id
 slug: "life-skills-autistic-young-adults-id"
 image: "/images/a6701680.jpg"
 description: "Kecakapan hidup adalah bagian penting dalam mempersiapkan dewasa muda autistik dan neurodivergen menuju kedewasaan. Keterampilan sehari-hari sama pentingnya dengan pembelajaran akademis."
+imageAlt: "Peserta berlatih keterampilan hidup sehari-hari di meja"
+seoTitle: "Kecakapan Hidup bagi Dewasa Muda Autistik"
 ---
 
 Kecakapan hidup adalah bagian penting dalam mempersiapkan dewasa muda autistik dan neurodivergen menuju kedewasaan. Meskipun pembelajaran akademis itu penting, keterampilan hidup sehari-hari sering kali memainkan peran yang sama pentingnya dalam mendukung kemandirian, kepercayaan diri, dan partisipasi yang bermakna dalam komunitas.

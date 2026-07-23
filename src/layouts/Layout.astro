@@ -54,7 +54,9 @@ else if(l==='ko'||l.indexOf('ko-')===0){location.replace('/ko/')}
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="theme-color" content="#00534B" />
   <meta property="og:locale" content={lang === 'id' ? 'id_ID' : lang === 'ko' ? 'ko_KR' : 'en_US'} />
-  <meta property="og:locale:alternate" content={lang === 'en' ? 'id_ID' : 'en_US'} />
+  {(['en', 'id', 'ko'] as const).filter((l) => l !== lang).map((l) => (
+    <meta property="og:locale:alternate" content={l === 'id' ? 'id_ID' : l === 'ko' ? 'ko_KR' : 'en_US'} />
+  ))}
   <meta property="og:site_name" content="PUPA Center" />
   <script type="application/ld+json" set:html={JSON.stringify({
     '@context': 'https://schema.org',
@@ -66,6 +68,8 @@ else if(l==='ko'||l.indexOf('ko-')===0){location.replace('/ko/')}
     image: 'https://www.pupacenter.org/images/brand/og-image.jpg',
     description: lang === 'id'
       ? 'Pusat pengembangan kecakapan hidup dan kesiapan kerja bagi anak muda neurodivergen di Tangerang, Indonesia.'
+      : lang === 'ko'
+      ? '인도네시아 탕에랑에 있는 신경다양성 청년을 위한 생활 기술 및 취업 준비 발달 센터입니다.'
       : 'A development center for life skills and work readiness for neurodivergent young adults in Tangerang, Indonesia.',
     slogan: 'Transform to shine',
     email: 'info@pupacenter.org',

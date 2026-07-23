@@ -6,6 +6,8 @@ lang: en
 slug: "life-after-high-school-autism"
 image: "/images/img-0559-1.jpg"
 description: "For many families, high school graduation is often associated with independence, employment, and adulthood. However, for autistic and neurodivergent young adults, the transition af"
+imageAlt: "Participants working together in a PUPA Center classroom"
+seoTitle: "Life After High School for Autistic Young Adults"
 ---
 
 For many families, high school graduation is often associated with independence, employment, and adulthood. However, for autistic and neurodivergent young adults, the transition after school can feel uncertain and overwhelming. Parents frequently ask the same questions: What comes next? How can my child continue developing after graduation? What opportunities are available beyond school?

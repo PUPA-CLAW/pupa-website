@@ -6,6 +6,8 @@ lang: id
 slug: "life-after-high-school-autism-id"
 image: "/images/img-0559-1.jpg"
 description: "Bagi banyak keluarga, kelulusan SMA sering dikaitkan dengan kemandirian dan kedewasaan. Namun bagi dewasa muda autistik, transisi setelah sekolah dapat terasa tidak pasti."
+imageAlt: "Peserta belajar bersama di ruang kelas PUPA Center"
+seoTitle: "Kehidupan Setelah SMA bagi Dewasa Muda Autistik"
 ---
 
 Bagi banyak keluarga, kelulusan SMA sering dikaitkan dengan kemandirian, pekerjaan, dan kedewasaan. Namun, bagi dewasa muda autistik dan neurodivergen, transisi setelah sekolah dapat terasa tidak pasti dan membebani. Orang tua sering mengajukan pertanyaan yang sama: Apa langkah selanjutnya? Bagaimana anak saya dapat terus berkembang setelah lulus? Kesempatan apa yang tersedia di luar sekolah?

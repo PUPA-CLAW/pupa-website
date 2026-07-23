@@ -6,6 +6,7 @@ lang: id
 slug: "vocational-readiness-neurodivergent-young-adults-id"
 image: "/images/dji-20260112112138-0105-d-pa2.jpg"
 description: "Kesiapan kerja adalah bagian penting dalam mempersiapkan dewasa muda neurodivergen menuju kedewasaan dan partisipasi komunitas. Pengalaman terkait kerja membantu membangun kepercayaan diri."
+imageAlt: "Pemandangan udara kegiatan kelompok PUPA Center"
 ---
 
 Kesiapan kerja adalah bagian penting dalam mempersiapkan dewasa muda neurodivergen menuju kedewasaan dan [partisipasi komunitas](/id/artikel/community-participation-neurodivergent-young-adults-id). Meskipun hasil pekerjaan dapat terlihat berbeda pada setiap individu, pengalaman terkait tempat kerja dapat membantu membangun kepercayaan diri, keterampilan komunikasi, tanggung jawab, dan kemandirian.
