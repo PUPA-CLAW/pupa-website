@@ -47,11 +47,7 @@ const menu = [
       <img class="logo-img" src="/images/brand/pupa-logo.svg" alt="PUPA" width="120" height="80" />
     </a>
 
-    <button class="menu-btn" aria-expanded="false" aria-controls="site-nav" aria-label={t('nav.menu')} data-menu-toggle>
-      <span class="menu-icon" aria-hidden="true"></span>
-    </button>
-
-    <nav class="primary" id="site-nav" aria-label={t('a11y.mainnav')}>
+    <nav class="primary" aria-label={t('a11y.mainnav')}>
       <ul>
         {menu.map((item) => (
           <li class={item.children.length ? 'has-children' : ''}>
@@ -86,14 +82,43 @@ const menu = [
 
       <a class="btn-donate-header" href={routes.donate[lang]}>{t('nav.donate')}</a>
     </div>
+
+    <button class="menu-btn" aria-expanded="false" aria-controls="mobile-nav" aria-label={t('nav.menu')} data-menu-toggle>
+      <span class="menu-icon" aria-hidden="true"></span>
+    </button>
   </div>
 </header>
 
+<div class="nav-backdrop" data-menu-close aria-hidden="true"></div>
+
+<nav class="mobile-drawer" id="mobile-nav" aria-label={t('a11y.mainnav')}>
+  <ul class="drawer-list">
+    {menu.map((item, i) => (
+      <li class={item.children.length ? 'has-sub' : ''}>
+        {item.children.length > 0 ? (
+          <Fragment>
+            <button type="button" class="drawer-head" aria-expanded="false" aria-controls={`acc-${i}`} data-acc-toggle>
+              <span class="acc-label">{item.label}</span>
+              <span class="acc-chev" aria-hidden="true">▾</span>
+            </button>
+            <ul class="drawer-sub" id={`acc-${i}`}>
+              {item.children.map((c) => <li><a href={c.href}>{c.label}</a></li>)}
+            </ul>
+          </Fragment>
+        ) : (
+          <a class="drawer-link" href={item.href}>{item.label}</a>
+        )}
+      </li>
+    ))}
+  </ul>
+</nav>
+
 <style>
-.site-header{background:var(--surface);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
-.topbar{display:flex;align-items:center;gap:16px;min-height:76px;flex-wrap:wrap}
+.site-header{background:var(--surface);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:60}
+.topbar{display:flex;align-items:center;gap:16px;min-height:76px}
 .logo{display:flex;align-items:center;text-decoration:none;min-height:44px}
 .logo-img{height:76px;width:auto}
+
 nav.primary{margin-left:auto}
 nav.primary > ul{display:flex;list-style:none;gap:2px}
 nav.primary a{display:flex;align-items:center;min-height:44px;padding:10px 11px;font-size:1rem;font-weight:500;color:var(--ink);text-decoration:none;border-radius:10px}
@@ -103,20 +128,22 @@ nav.primary li{position:relative}
 .dropdown{position:absolute;top:100%;left:0;min-width:240px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:8px;list-style:none;display:none}
 nav.primary li:hover > .dropdown, nav.primary li:focus-within > .dropdown{display:block}
 .dropdown a{width:100%;border-radius:10px}
+
 .header-actions{display:flex;align-items:center;gap:10px}
 .lang-menu{position:relative}
 .lang-btn{display:inline-flex;align-items:center;gap:5px;min-height:40px;padding:0 12px;border:1.5px solid var(--line);border-radius:999px;background:var(--surface);color:var(--ink);font-size:.9rem;font-weight:600;font-family:inherit;cursor:pointer}
 .lang-btn:hover{background:var(--teal-050)}
 .lang-btn .globe-ic{color:var(--teal-700)}
 .lang-btn .caret{margin-left:2px;color:var(--ink-soft)}
-.lang-list{position:absolute;top:calc(100% + 6px);right:0;min-width:154px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:6px;margin:0;list-style:none;display:none;z-index:60}
+.lang-list{position:absolute;top:calc(100% + 6px);right:0;min-width:154px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:6px;margin:0;list-style:none;display:none;z-index:70}
 .lang-menu.open .lang-list{display:block}
 .lang-list a{display:block;padding:9px 12px;border-radius:8px;font-size:.95rem;font-weight:500;color:var(--ink);text-decoration:none}
 .lang-list a:hover{background:var(--teal-050)}
 .lang-list a[aria-current="true"]{background:var(--teal-050);color:var(--teal-700)}
 .btn-donate-header{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:0 18px;border-radius:999px;background:var(--orange-700);color:#fff;font-size:.9rem;font-weight:600;text-decoration:none;transition:background .2s ease}
 .btn-donate-header:hover{background:#93441A}
-.menu-btn{display:none;margin-left:auto;width:44px;height:44px;padding:0;background:transparent;color:var(--ink);border:none;border-radius:10px;cursor:pointer}
+
+.menu-btn{display:none;width:44px;height:44px;padding:0;background:transparent;color:var(--ink);border:none;border-radius:10px;cursor:pointer}
 .menu-btn:hover{background:var(--teal-050)}
 .menu-icon,.menu-icon::before,.menu-icon::after{display:block;width:24px;height:2px;background:currentColor;border-radius:2px;transition:transform .2s ease,opacity .2s ease}
 .menu-icon{position:relative}
@@ -126,26 +153,42 @@ nav.primary li:hover > .dropdown, nav.primary li:focus-within > .dropdown{displa
 .menu-btn[aria-expanded="true"] .menu-icon::before{transform:translateY(7px) rotate(45deg)}
 .menu-btn[aria-expanded="true"] .menu-icon::after{transform:translateY(-7px) rotate(-45deg)}
 
+.nav-backdrop{display:none}
+.mobile-drawer{display:none}
+
 @media (max-width:1160px){
+  nav.primary{display:none}
   .menu-btn{display:inline-flex;align-items:center;justify-content:center;order:3;margin-left:0}
-  nav.primary{display:none;width:100%;margin-left:0;order:4}
-  nav.primary.open{display:block}
-  nav.primary > ul{flex-direction:column;padding-bottom:12px}
-  .dropdown{position:static;display:block;border:none;box-shadow:none;padding-left:16px}
   .header-actions{margin-left:auto;order:2}
   .logo-img{height:54px}
-  /* When the mobile menu is open: lock the page, and let the menu scroll on its own */
+
+  /* Dim the page behind the menu; the header stays bright on top */
+  .nav-backdrop{display:block;position:fixed;inset:0;background:rgba(0,0,0,.45);opacity:0;visibility:hidden;transition:opacity .24s ease,visibility 0s linear .24s;z-index:40}
   html.menu-open, html.menu-open body{overflow:hidden}
-  html.menu-open .topbar{
-    max-height:100vh; max-height:100dvh;
-    overflow-y:auto;
-    overscroll-behavior:contain;
-    -webkit-overflow-scrolling:touch;
-  }
+  html.menu-open .nav-backdrop{opacity:1;visibility:visible;transition:opacity .24s ease}
+
+  /* Right-side slide-in drawer, sitting just below the 76px header */
+  .mobile-drawer{display:block;position:fixed;top:76px;right:0;bottom:0;width:82%;max-width:360px;background:var(--surface);border-left:1px solid var(--line);box-shadow:-8px 0 24px rgba(0,0,0,.12);z-index:50;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;transform:translateX(100%);visibility:hidden;transition:transform .24s ease,visibility 0s linear .24s;padding:14px 0 28px}
+  .mobile-drawer.open{transform:translateX(0);visibility:visible;transition:transform .24s ease}
+  .drawer-list{list-style:none;margin:0;padding:0}
+  .drawer-list > li{border-bottom:1px solid var(--line)}
+  .drawer-list > li:last-child{border-bottom:none}
+  /* Section heading (accordion toggle) and childless links share the row look */
+  .drawer-head,.drawer-link{display:flex;align-items:center;width:100%;padding:16px 22px;font-size:1.05rem;font-weight:600;color:var(--ink);text-decoration:none;background:none;border:none;font-family:inherit;cursor:pointer;text-align:left}
+  .drawer-head{justify-content:space-between}
+  .drawer-head:hover,.drawer-link:hover{background:var(--teal-050)}
+  .acc-chev{color:var(--ink-soft);font-size:.8em;transition:transform .25s ease}
+  .drawer-list > li.open .drawer-head{color:var(--teal-700)}
+  .drawer-list > li.open .acc-chev{transform:rotate(180deg);color:var(--teal-700)}
+  /* Sub-links stay collapsed until their section is opened */
+  .drawer-sub{list-style:none;margin:0;padding:0;max-height:0;overflow:hidden;transition:max-height .3s ease;background:#fbfcfb}
+  .drawer-list > li.open .drawer-sub{max-height:520px}
+  .drawer-sub a{display:block;padding:11px 22px 11px 34px;font-size:.95rem;font-weight:500;color:var(--ink-soft);text-decoration:none}
+  .drawer-sub a:hover{background:var(--teal-050);color:var(--ink)}
+  .drawer-sub li:last-child a{padding-bottom:14px}
 }
 @media (max-width:560px){
   .topbar{gap:8px}
-  /* Keep logo + globe + donate + hamburger together in one tidy row */
   .header-actions{order:2;gap:8px}
   .menu-btn{order:3}
   .lang-btn{padding:0 10px}
@@ -154,29 +197,39 @@ nav.primary li:hover > .dropdown, nav.primary li:focus-within > .dropdown{displa
 </style>
 
 <script>
-  // Mobile menu toggle — hamburger <-> X, with a page-scroll lock so the menu scrolls on its own.
+  // Mobile: hamburger opens a right-side drawer; header stays put on top.
   const btn = document.querySelector('[data-menu-toggle]');
-  const nav = document.getElementById('site-nav');
-  // Globe language dropdown (mobile).
+  const drawer = document.getElementById('mobile-nav');
+  const closers = document.querySelectorAll('[data-menu-close]');
+  // Globe language dropdown.
   const langMenu = document.querySelector('[data-lang-menu]');
   const langBtn = langMenu?.querySelector('.lang-btn');
 
   const setMenu = (open: boolean) => {
-    nav?.classList.toggle('open', open);
+    drawer?.classList.toggle('open', open);
     btn?.setAttribute('aria-expanded', open ? 'true' : 'false');
     document.documentElement.classList.toggle('menu-open', open);
+    if (!open) {
+      // Collapse any open section so the drawer always reopens tidy.
+      drawer?.querySelectorAll('.drawer-list > li.open').forEach((o) => {
+        o.classList.remove('open');
+        o.querySelector('[data-acc-toggle]')?.setAttribute('aria-expanded', 'false');
+      });
+    }
   };
   const setLang = (open: boolean) => {
     langMenu?.classList.toggle('open', open);
     langBtn?.setAttribute('aria-expanded', open ? 'true' : 'false');
   };
 
-  // Opening one closes the other, so they never overlap.
+  // Opening one closes the other.
   btn?.addEventListener('click', () => {
-    const open = !nav?.classList.contains('open');
+    const open = !drawer?.classList.contains('open');
     if (open) setLang(false);
     setMenu(open);
   });
+  // Tapping the dimmed backdrop closes the drawer.
+  closers.forEach((el) => el.addEventListener('click', () => setMenu(false)));
   langBtn?.addEventListener('click', (e) => {
     e.stopPropagation();
     const open = !langMenu?.classList.contains('open');
@@ -189,8 +242,23 @@ nav.primary li:hover > .dropdown, nav.primary li:focus-within > .dropdown{displa
   document.addEventListener('click', (e) => {
     if (langMenu && !langMenu.contains(e.target as Node)) setLang(false);
   });
-  // Close the nav drawer when a nav link is tapped (so on-page anchors don't leave it open).
-  nav?.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setMenu(false)));
+  // Close the drawer when a link inside it is tapped.
+  drawer?.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setMenu(false)));
+  // Accordion: tapping a section heading expands it and collapses the others.
+  drawer?.querySelectorAll('[data-acc-toggle]').forEach((tgl) => {
+    tgl.addEventListener('click', () => {
+      const li = tgl.parentElement;
+      const wasOpen = li?.classList.contains('open');
+      drawer?.querySelectorAll('.drawer-list > li.open').forEach((o) => {
+        o.classList.remove('open');
+        o.querySelector('[data-acc-toggle]')?.setAttribute('aria-expanded', 'false');
+      });
+      if (!wasOpen) {
+        li?.classList.add('open');
+        tgl.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
   // Remember an explicit language choice so the homepage never overrides it.
   document.querySelectorAll('.lang-menu a').forEach((a) => {
     a.addEventListener('click', () => {
