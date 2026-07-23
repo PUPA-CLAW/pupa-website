@@ -1,0 +1,22 @@
+---
+import { getCollection, render } from 'astro:content';
+import ArticleLayout from '../../../layouts/ArticleLayout.astro';
+import { isPublished } from '../../../utils/published';
+export async function getStaticPaths() {
+  const posts = await getCollection('blog', (p) => p.data.lang === 'id' && isPublished(p.data.date));
+  return posts.map((p) => ({ params: { slug: p.data.slug }, props: { post: p } }));
+}
+const { post } = Astro.props;
+const __all = await getCollection('blog', (p) => isPublished(p.data.date));
+const __bases = { en: '/blog/', id: '/id/artikel/', ko: '/ko/blog/' };
+const __alt = (l: 'en' | 'id' | 'ko') => {
+  const k = post.data.translationKey;
+  const m = k ? __all.find((e) => e.data.lang === l && e.data.translationKey === k) : undefined;
+  return m ? __bases[l] + m.data.slug + '/' : __bases[l];
+};
+const altUrls = { en: __alt('en'), id: __alt('id'), ko: __alt('ko') };
+const { Content } = await render(post);
+---
+<ArticleLayout lang="id" routeKey="blog" altUrls={altUrls} title={post.data.title} description={post.data.description ?? ''} date={post.data.date} image={post.data.image} backHref="/id/artikel/" backLabel="Semua artikel & panduan">
+  <Content />
+</ArticleLayout>
