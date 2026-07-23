@@ -6,8 +6,6 @@ lang: id
 slug: "executive-function-neurodivergent-young-adults-id"
 image: "/images/a6701555-edited.jpg"
 description: "Fungsi eksekutif merujuk pada sekelompok keterampilan mental yang membantu individu mengatur, merencanakan, mengelola tugas, meregulasi emosi, dan beradaptasi dengan situasi sehari-hari."
-imageAlt: "Peserta berkonsentrasi mengerjakan tugas di meja"
-seoTitle: "Memahami Tantangan Fungsi Eksekutif"
 ---
 
 Fungsi eksekutif merujuk pada sekelompok keterampilan mental yang membantu individu mengatur, merencanakan, mengelola tugas, meregulasi emosi, dan beradaptasi dengan situasi sehari-hari. Banyak dewasa muda autistik dan neurodivergen mengalami tantangan dengan fungsi eksekutif, yang dapat memengaruhi rutinitas, komunikasi, pembelajaran, dan [kemandirian](/id/artikel/building-independence-autistic-teens-id).

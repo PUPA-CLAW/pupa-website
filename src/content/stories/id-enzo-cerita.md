@@ -6,7 +6,6 @@ lang: id
 slug: "enzo-cerita"
 image: "/images/afm-9263.jpg"
 description: "Perkembangan seringkali berawal dari perubahan-perubahan kecil yang bermakna. Kisah **Fiecenzo Hutahaean** (Enzo) di PUPA Center adalah salah satunya."
-imageAlt: "Enzo di PUPA Center"
 ---
 
 Perkembangan seringkali berawal dari perubahan-perubahan kecil yang bermakna. Kisah **Fiecenzo Hutahaean** (Enzo) di PUPA Center adalah salah satunya.

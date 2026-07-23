@@ -6,7 +6,6 @@ lang: en
 slug: "kyle-story"
 image: "/images/screenshot-2026-02-02-192840.jpg"
 description: "Kyle’s journey at PUPA Center began in our independence program, where participants are supported in learning more about themselves—how they communicate, make decisions, and naviga"
-imageAlt: "Kyle at PUPA Center"
 ---
 
 Kyle’s journey at PUPA Center began in our independence program, where participants are supported in learning more about themselves—how they communicate, make decisions, and navigate daily life with greater confidence. During this stage, Kyle took time to understand his strengths, preferences, and needs in a space that encouraged reflection and self-awareness. This foundation was essential, giving him the clarity and confidence to begin imagining what his future could look like beyond the classroom.

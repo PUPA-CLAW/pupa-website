@@ -57,7 +57,7 @@ export const home: Record<Lang, any> = {
       'PUPA Center adalah pusat pembelajaran tempat anak muda dengan autisme dan neurodivergen lainnya membangun kecakapan hidup sehari-hari, keterampilan kerja, serta koneksi nyata menuju dunia kerja dan komunitas.',
     ctaVisit: 'Jadwalkan kunjungan via WhatsApp',
     ctaPrograms: 'Lihat program kami',
-    doorwaysTitle: 'Apa yang Bisa Kami Bantu Hari Ini?',
+    doorwaysTitle: 'Apa Yang Bisa Kami Bantu Hari Ini?',
     doorwaysLede: 'Pilih jalur yang sesuai untuk Anda. Setiap jalur langsung menuju informasi yang Anda butuhkan.',
     doorways: [
       { title: 'Untuk Keluarga', body: 'Pelajari cara kerja program kami, seperti apa kegiatan sehari-hari, dan cara mendaftarkan anak Anda. Mulai dengan kunjungan gratis ke pusat kami.', link: 'Lihat cara pendaftaran', routeKey: 'enrollment' },

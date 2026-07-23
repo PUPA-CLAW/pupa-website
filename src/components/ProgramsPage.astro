@@ -224,27 +224,10 @@ const areaIcons = [
   '<path d="M6 3v18"/><path d="M6 4h9l-1.5 3L15 10H6"/>',                                                   // Independent (flag/goal)
   '<path d="M4 7h16v13H4z"/><path d="M9 7V4h6v3"/><path d="M4 13h16"/>',                                    // Vocational (briefcase)
 ];
-const progAlts = {
-  en: {
-    mandiri: 'A participant practicing life skills with a mentor at PUPA Center',
-    karya: 'A participant practicing work tasks in the Karya program',
-    access: 'A participant working in a real work setting through the Access program',
-  },
-  id: {
-    mandiri: 'Peserta berlatih kecakapan hidup bersama mentor di PUPA Center',
-    karya: 'Peserta berlatih tugas kerja dalam program Karya',
-    access: 'Peserta bekerja di lingkungan kerja nyata melalui program Access',
-  },
-  ko: {
-    mandiri: 'PUPA 센터에서 멘토와 함께 생활 기술을 연습하는 참여자',
-    karya: 'Karya 프로그램에서 업무 과제를 연습하는 참여자',
-    access: 'Access 프로그램을 통해 실제 근무 환경에서 일하는 참여자',
-  },
-}[lang];
 const sections = [
-  { id: 'mandiri', d: c.mandiri, img: '/images/program-mandiri.jpg', alt: progAlts.mandiri },
-  { id: 'karya', d: c.karya, img: '/images/program-karya.webp', alt: progAlts.karya },
-  { id: 'access', d: c.access, img: '/images/program-access.jpg', alt: progAlts.access },
+  { id: 'mandiri', d: c.mandiri, img: '/images/program-mandiri.jpg' },
+  { id: 'karya', d: c.karya, img: '/images/program-karya.webp' },
+  { id: 'access', d: c.access, img: '/images/program-access.jpg' },
 ];
 const extraImgs: Record<string, string> = {
   0: '/images/extra-art.jpg',     // Art
@@ -271,7 +254,7 @@ const extraImgs: Record<string, string> = {
             <p class="prog-lede">{s.d.lede}</p>
             <p>{s.d.overview}</p>
           </div>
-          <img class="blob prog-photo" src={s.img} alt={s.alt} loading="lazy" width="480" height="420" />
+          <img class="blob prog-photo" src={s.img} alt="" loading="lazy" width="480" height="420" />
         </div>
 
         {'areas' in s.d && (
@@ -314,7 +297,7 @@ const extraImgs: Record<string, string> = {
         {c.extra.classes.map((cl, i) => (
           <div class="card photo-card">
             {extraImgs[i]
-              ? <img src={extraImgs[i]} alt={cl[0]} loading="lazy" width="360" height="220" />
+              ? <img src={extraImgs[i]} alt="" loading="lazy" width="360" height="220" />
               : <div class="yoga-ph" aria-hidden="true">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2"/><path d="M12 8v6"/><path d="M5 21c2-3 4.5-4.5 7-4.5S17 18 19 21"/><path d="M4 12c3 1.5 5.5 2 8 2s5-.5 8-2"/></svg>
                 </div>}

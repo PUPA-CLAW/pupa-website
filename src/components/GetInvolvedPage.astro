@@ -43,23 +43,6 @@ const content = {
 };
 const c = content[lang] ?? content.en;
 const giImgs = ['/images/volunteer.jpg', '/images/careers-internship.jpg', '/images/pupa-group-9678.jpg'];
-const giAlts = {
-  en: [
-    'Volunteers and participants in a group activity',
-    'A staff member working alongside a participant',
-    'Participants and staff of PUPA Center together',
-  ],
-  id: [
-    'Relawan dan peserta dalam kegiatan kelompok',
-    'Staf bekerja berdampingan dengan peserta',
-    'Peserta dan staf PUPA Center bersama-sama',
-  ],
-  ko: [
-    '그룹 활동 중인 자원봉사자와 참여자들',
-    '참여자와 나란히 일하는 직원',
-    '함께 모인 PUPA 센터 참여자와 직원들',
-  ],
-}[lang];
 ---
 <Layout lang={lang} routeKey="getInvolved" title={c.metaTitle} description={c.metaDescription}>
   <section class="page-head">
@@ -77,7 +60,7 @@ const giAlts = {
           <p class="gi-body">{s.body}</p>
           <a class="btn btn-primary" href={s.href} rel="noopener">{s.cta}</a>
         </div>
-        <img class={i % 2 ? 'blob-alt gi-photo' : 'blob gi-photo'} src={giImgs[i]} alt={giAlts[i]} loading="lazy" width="420" height="360" />
+        <img class={i % 2 ? 'blob-alt gi-photo' : 'blob gi-photo'} src={giImgs[i]} alt="" loading="lazy" width="420" height="360" />
       </div>
     </section>
   ))}

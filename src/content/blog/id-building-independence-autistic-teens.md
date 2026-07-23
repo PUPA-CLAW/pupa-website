@@ -6,7 +6,6 @@ lang: id
 slug: "building-independence-autistic-teens-id"
 image: "/images/a6701958.jpg"
 description: "Kemandirian adalah salah satu tujuan jangka panjang yang paling umum dimiliki keluarga bagi remaja autistik. Banyak orang tua berharap anak mereka tumbuh menjadi lebih percaya diri dan mandiri."
-imageAlt: "Peserta dan mentor bekerja bersama di meja di PUPA Center"
 ---
 
 Kemandirian adalah salah satu tujuan jangka panjang yang paling umum dimiliki keluarga bagi remaja autistik. Banyak orang tua berharap anak mereka pada akhirnya menjadi lebih percaya diri, bertanggung jawab, dan mampu mengelola berbagai aspek kehidupan sehari-hari secara mandiri. Namun, kemandirian bukanlah sesuatu yang berkembang secara otomatis seiring bertambahnya usia. Kemandirian sering kali dibangun secara bertahap melalui latihan yang konsisten, dukungan, dan pengalaman nyata.

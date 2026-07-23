@@ -6,8 +6,6 @@ lang: id
 slug: "structured-routines-autistic-young-adults-id"
 image: "/images/a6701722.jpg"
 description: "Rutinitas terstruktur berperan penting dalam mendukung banyak individu autistik dan neurodivergen. Rutinitas yang dapat diprediksi membantu mengurangi kecemasan dan memperkuat kemandirian."
-imageAlt: "Peserta melakukan aktivitas terstruktur di meja"
-seoTitle: "Rutinitas Terstruktur bagi Dewasa Muda Autistik"
 ---
 
 Rutinitas terstruktur berperan penting dalam mendukung banyak dewasa muda autistik dan neurodivergen. Rutinitas yang dapat diprediksi dapat membantu mengurangi kecemasan, meningkatkan partisipasi, memperkuat kemandirian, dan menciptakan rasa stabilitas yang lebih besar dalam kehidupan sehari-hari.

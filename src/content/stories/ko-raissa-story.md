@@ -6,7 +6,6 @@ lang: ko
 slug: "raissa-ko"
 image: "/images/raissa-story.jpg"
 description: "Raissa가 처음 PUPA 센터에 왔을 때, 그녀의 여정은 Transition Class에서 시작되었습니다. 그때부터 이미 그녀에게는 남다른 예술적 재능이 또렷했습니다. 특히 도자기 공예에서요."
-imageAlt: "PUPA 센터의 Raissa"
 ---
 
 Raissa가 처음 PUPA 센터에 왔을 때, 그녀의 여정은 Transition Class에서 시작되었습니다. 그때부터 이미 그녀에게는 남다른 예술적 재능이 또렷했습니다. 특히 도자기 공예에서요. 십대 시절부터 Raissa는 도자기를 배우고 연습하는 데 마음을 쏟으며, 자신의 창의력을 아름다운 수공예 작품으로 빚어 왔습니다. 시간이 흐르며 여러 지역 바자회에서 자랑스럽게 작품을 선보이고 판매하며, 자신의 열정을 사람들과 나누어 왔습니다.

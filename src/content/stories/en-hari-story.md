@@ -6,7 +6,6 @@ lang: en
 slug: "hari-story"
 image: "/images/afm-9358.jpg"
 description: "Hari’s journey at PUPA Center began with a strong commitment to building his independence and prepare for the world of work. Over the course of three years in PUPA Center’s job pre"
-imageAlt: "Hari at PUPA Center"
 ---
 
 Hari’s journey at PUPA Center began with a strong commitment to building his independence and prepare for the world of work. Over the course of three years in PUPA Center’s job preparation training program, Hari actively participated in structured learning experiences designed to help him develop practical skills, confidence, and self-understanding. Throughout this period, Hari demonstrated steady progress while engaging in various work simulations that introduced him to real workplace responsibilities. He gained hands-on experience through activities such as snack packaging production and mask strap manufacturing, where he practiced task organization, attention to detail, teamwork, and productivity skills.

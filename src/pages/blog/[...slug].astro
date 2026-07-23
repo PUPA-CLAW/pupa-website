@@ -16,6 +16,6 @@ const __alt = (l: 'en' | 'id' | 'ko') => {
 const altUrls = { en: __alt('en'), id: __alt('id'), ko: __alt('ko') };
 const { Content } = await render(post);
 ---
-<ArticleLayout lang="en" routeKey="blog" altUrls={altUrls} title={post.data.title} seoTitle={post.data.seoTitle} description={post.data.description ?? ''} date={post.data.date} image={post.data.image} imageAlt={post.data.imageAlt} backHref="/blog/" backLabel="All parent resources">
+<ArticleLayout lang="en" routeKey="blog" altUrls={altUrls} title={post.data.title} description={post.data.description ?? ''} date={post.data.date} image={post.data.image} backHref="/blog/" backLabel="All parent resources">
   <Content />
 </ArticleLayout>

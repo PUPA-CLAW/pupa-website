@@ -6,8 +6,6 @@ lang: en
 slug: "neurodivergent-adulthood-transition-indonesia"
 image: "/images/pupa-group-9707.jpg"
 description: "The transition to adulthood can be a challenging period for many families of autistic and neurodivergent young adults in Indonesia. After formal education ends, parents often begin"
-imageAlt: "Participants and staff of PUPA Center in a group photo"
-seoTitle: "Neurodivergent Adulthood Transition in Indonesia"
 ---
 
 The transition to adulthood can be a challenging period for many families of autistic and neurodivergent young adults in Indonesia. After formal education ends, parents often begin searching for opportunities that can support independence, community participation, and long-term development.

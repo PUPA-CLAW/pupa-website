@@ -6,7 +6,6 @@ lang: en
 slug: "owen-story"
 image: "/images/afm-8982.jpg"
 description: "Owen’s journey at PUPA Center began when he joined the work-readiness program, where participants are supported in preparing for employment through structured training, skill devel"
-imageAlt: "Owen at PUPA Center"
 ---
 
 Owen’s journey at PUPA Center began when he joined the work-readiness program, where participants are supported in preparing for employment through structured training, skill development, and real-world exposure. Throughout the program, Owen actively engaged in various workshops focused on job preparation, professional behavior, and workplace expectations. During this time, he demonstrated strong dedication to developing both his technical abilities and personal growth.

@@ -6,41 +6,17 @@ interface Props {
   lang: Lang;
   routeKey: string;
   title: string;
-  seoTitle?: string;     // shorter title for the <title> tag; on-page h1 keeps the full title
   description: string;
   date?: Date;
   altUrls?: { en: string; id: string; ko: string };
   image?: string;
-  imageAlt?: string;     // descriptive alt for the hero photo
   backHref: string;
   backLabel: string;
 }
-const { lang, routeKey, title, seoTitle, description, date, image, imageAlt, backHref, backLabel, altUrls } = Astro.props;
+const { lang, routeKey, title, description, date, image, backHref, backLabel, altUrls } = Astro.props;
 const fmtDate = date?.toLocaleDateString(lang === 'id' ? 'id-ID' : lang === 'ko' ? 'ko-KR' : 'en-US', { year: 'numeric', month: 'long' });
-
-// Article structured data (BlogPosting) — helps search engines and AI
-// assistants recognize each post/story as a citable article.
-const site = Astro.site?.toString().replace(/\/$/, '') ?? 'https://www.pupacenter.org';
-const pageUrl = site + (altUrls?.[lang] ?? Astro.url.pathname);
-const articleLd = {
-  '@context': 'https://schema.org',
-  '@type': 'BlogPosting',
-  headline: title,
-  description,
-  inLanguage: lang === 'id' ? 'id-ID' : lang === 'ko' ? 'ko-KR' : 'en-US',
-  ...(date ? { datePublished: date.toISOString().slice(0, 10) } : {}),
-  ...(image ? { image: site + image } : {}),
-  mainEntityOfPage: { '@type': 'WebPage', '@id': pageUrl },
-  author: { '@type': 'Organization', name: 'PUPA Center', url: site },
-  publisher: {
-    '@type': 'Organization',
-    name: 'PUPA Center',
-    logo: { '@type': 'ImageObject', url: site + '/images/brand/pupa-logo.png' },
-  },
-};
 ---
-<Layout lang={lang} routeKey={routeKey} altUrls={altUrls} title={`${seoTitle ?? title} | PUPA Center`} description={description}>
-  <script type="application/ld+json" set:html={JSON.stringify(articleLd)} />
+<Layout lang={lang} routeKey={routeKey} altUrls={altUrls} title={`${title} | PUPA Center`} description={description}>
   <article class="article">
     <header class="article-head">
       <div class="wrap narrow">
@@ -51,7 +27,7 @@ const articleLd = {
     </header>
     {image && (
       <div class="wrap narrow">
-        <img class="hero-img" src={image} alt={imageAlt ?? ''} loading="lazy" />
+        <img class="hero-img" src={image} alt="" loading="lazy" />
       </div>
     )}
     <div class="wrap narrow article-body">

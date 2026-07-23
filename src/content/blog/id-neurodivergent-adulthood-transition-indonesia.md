@@ -6,8 +6,6 @@ lang: id
 slug: "neurodivergent-adulthood-transition-indonesia-id"
 image: "/images/pupa-group-9707.jpg"
 description: "Transisi menuju kedewasaan dapat menjadi periode yang menantang bagi banyak keluarga dewasa muda autistik dan neurodivergen di Indonesia, terutama setelah pendidikan formal berakhir."
-imageAlt: "Peserta dan staf PUPA Center dalam foto bersama"
-seoTitle: "Transisi Kedewasaan Neurodivergen di Indonesia"
 ---
 
 Transisi menuju kedewasaan dapat menjadi periode yang menantang bagi banyak keluarga dewasa muda autistik dan neurodivergen di Indonesia. Setelah pendidikan formal berakhir, orang tua sering mulai mencari kesempatan yang dapat mendukung kemandirian, partisipasi komunitas, dan perkembangan jangka panjang.

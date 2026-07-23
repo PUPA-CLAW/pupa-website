@@ -81,7 +81,7 @@ export const ui = {
     'nav.programs.workshops': 'Workshop Kami',
     'nav.enrollment': 'Pendaftaran',
     'nav.enrollment.how': 'Cara Mendaftar',
-    'nav.enrollment.faq': 'Pertanyaan yang Sering Diajukan',
+    'nav.enrollment.faq': 'Pertanyaan Yang Sering Diajukan',
     'nav.enrollment.visit': 'Jadwalkan Kunjungan',
     'nav.involved': 'Ambil Bagian',
     'nav.involved.volunteer': 'Menjadi Relawan',
