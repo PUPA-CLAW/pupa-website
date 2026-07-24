@@ -9,7 +9,7 @@ description: ""
 
 Advokasi diri adalah kemampuan memahami diri sendiri — kekuatan, kebutuhan, dan preferensi — lalu menyuarakannya kepada orang lain. Bagi dewasa muda autistik dan neurodivergen, ini salah satu fondasi terpenting menuju kehidupan dewasa yang bermakna.
 
-Penelitian tentang transisi menuju kedewasaan secara konsisten menemukan bahwa determinasi diri — membuat pilihan, menetapkan tujuan, dan mengarahkan hidup sendiri — berkaitan erat dengan hasil kehidupan dewasa yang lebih baik, termasuk dalam pekerjaan dan kemandirian.
+Penelitian tentang [transisi menuju kedewasaan](/id/artikel/neurodivergent-adulthood-transition-indonesia-id) secara konsisten menemukan bahwa determinasi diri — membuat pilihan, menetapkan tujuan, dan mengarahkan hidup sendiri — berkaitan erat dengan hasil kehidupan dewasa yang lebih baik, termasuk dalam pekerjaan dan kemandirian.
 
 Namun advokasi diri tidak muncul dengan sendirinya. Ia tumbuh dari ribuan kesempatan kecil untuk memilih, mencoba, dan didengarkan.
 
@@ -27,9 +27,9 @@ Bantu ia mengenali dirinya dengan bahasa yang positif. Memahami "saya bekerja pa
 
 Hargai kata "tidak." Advokasi diri juga berarti boleh menolak. Dewasa muda yang pendapatnya dihargai di rumah akan lebih percaya diri bersuara di luar rumah — dan lebih mampu menjaga dirinya dari situasi yang tidak aman.
 
-Di PUPA, kemampuan menyuarakan diri dilatih di sepanjang perjalanan participant — dan menjadi semakin penting di tahap Access, saat dewasa muda bersiap memasuki dunia kerja: menyampaikan preferensi kerja, meminta penyesuaian yang dibutuhkan, dan berkomunikasi dengan rekan kerja.
+Di PUPA, kemampuan menyuarakan diri dilatih di sepanjang perjalanan participant — dan menjadi semakin penting di [tahap Access](/id/program/#access), saat dewasa muda bersiap [memasuki dunia kerja](/id/artikel/vocational-readiness-neurodivergent-young-adults-id): menyampaikan preferensi kerja, meminta penyesuaian yang dibutuhkan, dan berkomunikasi dengan rekan kerja.
 
-Pada akhirnya, advokasi diri adalah soal martabat. Setiap orang berhak didengar dalam urusan hidupnya sendiri. Dengan kesempatan yang konsisten dan orang-orang yang mau mendengarkan, dewasa muda autistik dan neurodivergen dapat tumbuh menjadi pribadi yang mengenal dirinya dan mampu menyuarakannya — fondasi kemandirian yang sesungguhnya.
+Pada akhirnya, advokasi diri adalah soal martabat. Setiap orang berhak didengar dalam urusan hidupnya sendiri. Dengan kesempatan yang konsisten dan orang-orang yang mau mendengarkan, dewasa muda autistik dan neurodivergen dapat tumbuh menjadi pribadi yang mengenal dirinya dan mampu menyuarakannya — [fondasi kemandirian yang sesungguhnya](/id/artikel/building-independence-autistic-teens-id).
 
 ### Referensi
 

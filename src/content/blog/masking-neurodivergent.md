@@ -25,11 +25,11 @@ Camouflaging is also one reason many neurodivergent people — especially women 
 
 If camouflaging grows from feeling unsafe to be oneself, the remedy points in a clear direction: safety. And the first place to build it is home.
 
-A home without masks is not a home without rules. It is a home where stimming is not scolded, eye contact is not forced, the need to withdraw after social events is respected, and the sentence "I'm tired of pretending today" is met with a hug, not a lecture. The research on burnout and camouflaging shows that spaces like these are where recovery becomes possible.
+A home without masks is not a home without rules. It is a home where stimming is not scolded, eye contact is not forced, the need to withdraw after social events is respected, and the sentence "I'm tired of pretending today" is met with a hug, not a lecture. The research on burnout and camouflaging shows that spaces like these are where [recovery becomes possible](/blog/emotional-regulation-neurodivergent-young-adults).
 
 Families can also help by changing the question. Instead of "why can't you behave like you did in front of the guests?", try "what tired you out the most today?". The first question asks for the mask to go back on; the second gives permission to take it off.
 
-At PUPA, this principle shapes everyday practice: participants are not asked to appear neurotypical, but supported to understand themselves and voice their needs. Simply being among peers who do not need to pretend to one another — that alone restores.
+At PUPA, this principle shapes everyday practice: participants are not asked to appear neurotypical, but supported to understand themselves and [voice their needs](/blog/self-advocacy-neurodivergent-young-adults). Simply being among peers who do not need to pretend to one another — that alone restores.
 
 ## Toward an accepting April
 

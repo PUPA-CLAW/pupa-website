@@ -17,7 +17,7 @@ International research consistently shows that anxiety and emotional distress ar
 
 The encouraging news: emotional regulation is a skill that can keep growing well into adulthood. There is much families can do at home.
 
-First, protect predictability. Clear schedules, preparation before changes, and unhurried transitions lower the everyday baseline load.
+First, [protect predictability](/blog/executive-function-neurodivergent-young-adults). Clear schedules, preparation before changes, and unhurried transitions lower the everyday baseline load.
 
 Second, learn the early signs. Every person has their own signals — going quieter, more repetitive movement, a change in tone of voice. Noticing these early creates room for a pause before the load peaks.
 
@@ -27,11 +27,11 @@ Fourth, help put feelings into words. Some neurodivergent young adults need supp
 
 Fifth, be a calm presence. Regulation often begins with co-regulation: another person who stays steady and does not judge. A low voice, few words, and patience usually help far more than long advice.
 
-At PUPA Mandiri, emotional regulation is one of the foundations participants build step by step — recognizing feelings, understanding triggers, and developing calming strategies they can use in daily life.
+At [PUPA Mandiri](/programs/#mandiri), emotional regulation is one of the foundations participants build step by step — recognizing feelings, understanding triggers, and developing calming strategies they can use in daily life.
 
 After a hard moment has passed, avoid punishment or demands for explanation. What helps more is restoring the connection, and later — in a calm moment — reflecting together on what might help next time.
 
-Every person's journey is different. But with understanding around them, routines that support them, and consistent practice, autistic and neurodivergent young adults can come to know themselves more deeply and meet the world with greater confidence and calm.
+Every person's journey is different. But with understanding around them, [routines that support them](/blog/structured-routines-autistic-young-adults), and consistent practice, autistic and neurodivergent young adults can come to know themselves more deeply and meet the world with greater confidence and calm.
 
 ### References
 

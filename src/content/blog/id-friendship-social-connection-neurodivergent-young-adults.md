@@ -7,7 +7,7 @@ slug: "friendship-social-connection-neurodivergent-young-adults-id"
 description: ""
 ---
 
-Setelah masa sekolah berakhir, banyak keluarga menyadari sesuatu yang jarang dibicarakan: kesempatan bertemu teman ikut berakhir bersama bel sekolah terakhir. Bagi dewasa muda autistik dan neurodivergen, hilangnya struktur sosial ini bisa terasa lebih besar, karena membangun pertemanan baru sering membutuhkan usaha dan energi yang tidak sedikit.
+[Setelah masa sekolah berakhir](/id/artikel/life-after-high-school-autism-id), banyak keluarga menyadari sesuatu yang jarang dibicarakan: kesempatan bertemu teman ikut berakhir bersama bel sekolah terakhir. Bagi dewasa muda autistik dan neurodivergen, hilangnya struktur sosial ini bisa terasa lebih besar, karena membangun pertemanan baru sering membutuhkan usaha dan energi yang tidak sedikit.
 
 Penelitian internasional menunjukkan bahwa banyak dewasa muda autistik jarang bertemu teman di luar kegiatan yang terorganisir. Kesepian itu nyata dan dapat memengaruhi kesejahteraan — namun ia bukan sesuatu yang tak terhindarkan.
 
@@ -19,9 +19,9 @@ Pemahaman ini mengubah peran keluarga dan masyarakat. Alih-alih selalu menuntut 
 
 Apa yang bisa dilakukan keluarga di rumah? Mulailah dari minat, bukan dari target sosial. Kegiatan yang memang disukai — kelas memasak, komunitas hobi, kegiatan keagamaan, atau kegiatan sukarela — memberi alasan alami untuk bertemu orang yang sama secara rutin. Pertemanan lebih mudah tumbuh dari perjumpaan yang berulang dan tidak dipaksakan.
 
-Hargai juga kebutuhan akan waktu sendiri. Menyendiri untuk memulihkan energi bukan tanda kegagalan sosial. Yang penting adalah keseimbangan: apakah ia tetap punya kesempatan untuk terhubung saat ia menginginkannya.
+Hargai juga kebutuhan akan waktu sendiri. Menyendiri untuk [memulihkan energi](/id/artikel/emotional-regulation-neurodivergent-young-adults-id) bukan tanda kegagalan sosial. Yang penting adalah keseimbangan: apakah ia tetap punya kesempatan untuk terhubung saat ia menginginkannya.
 
-Di PUPA Karya, partisipasi komunitas dan interaksi sosial dilatih melalui kegiatan nyata bersama sesama participant — lingkungan yang aman untuk berlatih, di antara teman-teman yang saling memahami.
+Di [PUPA Karya](/id/program/#karya), [partisipasi komunitas](/id/artikel/community-participation-neurodivergent-young-adults-id) dan interaksi sosial dilatih melalui kegiatan nyata bersama sesama participant — lingkungan yang aman untuk berlatih, di antara teman-teman yang saling memahami.
 
 Bagi masyarakat luas, artikel ini juga sebuah ajakan: koneksi adalah tanggung jawab bersama. Sapaan yang sabar, pertanyaan yang jelas, dan kesediaan memahami cara berkomunikasi yang berbeda adalah kontribusi kecil yang berarti besar.
 

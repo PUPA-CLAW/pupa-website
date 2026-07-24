@@ -25,11 +25,11 @@ Kamuflase juga menjadi salah satu alasan banyak individu neurodivergen — terut
 
 Jika kamuflase lahir dari rasa tidak aman untuk menjadi diri sendiri, maka obatnya pun jelas arahnya: rasa aman. Dan tempat pertama untuk membangunnya adalah rumah.
 
-Rumah tanpa topeng bukan berarti rumah tanpa aturan. Ia berarti rumah tempat stimming tidak ditegur, kontak mata tidak dipaksakan, kebutuhan menyendiri setelah kegiatan sosial dihormati, dan kalimat "saya lelah berpura-pura hari ini" disambut dengan pelukan, bukan ceramah. Penelitian tentang burnout dan kamuflase menunjukkan bahwa ruang-ruang seperti inilah yang memungkinkan pemulihan.
+Rumah tanpa topeng bukan berarti rumah tanpa aturan. Ia berarti rumah tempat stimming tidak ditegur, kontak mata tidak dipaksakan, kebutuhan menyendiri setelah kegiatan sosial dihormati, dan kalimat "saya lelah berpura-pura hari ini" disambut dengan pelukan, bukan ceramah. Penelitian tentang burnout dan kamuflase menunjukkan bahwa ruang-ruang seperti inilah yang [memungkinkan pemulihan](/id/artikel/emotional-regulation-neurodivergent-young-adults-id).
 
 Keluarga juga bisa membantu dengan mengubah pertanyaan. Alih-alih "kenapa kamu tidak bisa seperti tadi di depan tamu?", cobalah "apa yang membuatmu paling lelah hari ini?". Pertanyaan pertama meminta topeng dipakai lagi; pertanyaan kedua mengizinkannya dilepas.
 
-Di PUPA, prinsip ini dihidupi dalam keseharian: participant tidak dituntut tampak neurotipikal, melainkan didampingi memahami dirinya dan menyuarakan kebutuhannya. Pengalaman berada di antara teman-teman yang tidak perlu saling berpura-pura — itu sendiri sudah memulihkan.
+Di PUPA, prinsip ini dihidupi dalam keseharian: participant tidak dituntut tampak neurotipikal, melainkan didampingi memahami dirinya dan [menyuarakan kebutuhannya](/id/artikel/self-advocacy-neurodivergent-young-adults-id). Pengalaman berada di antara teman-teman yang tidak perlu saling berpura-pura — itu sendiri sudah memulihkan.
 
 ## Menuju April yang menerima
 

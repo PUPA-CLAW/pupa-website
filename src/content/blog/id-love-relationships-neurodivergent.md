@@ -31,7 +31,7 @@ Ketiga, gunakan cara belajar yang konkret. Skenario nyata, contoh kalimat, memba
 
 Keempat, bicarakan juga patah hati. Ditolak, salah paham, atau putus adalah bagian dari belajar mencinta. Dewasa muda yang tahu bahwa patah hati boleh dirasakan dan bisa dibicarakan akan pulih lebih sehat.
 
-Di PUPA, percakapan tentang relasi tidak berdiri sendiri; ia bagian dari keterampilan hidup (life skills) yang lebih luas — memahami diri, membaca situasi sosial, dan menyuarakan kebutuhan — yang dilatih bertahap sesuai kesiapan setiap participant.
+Di PUPA, percakapan tentang relasi tidak berdiri sendiri; ia bagian dari [keterampilan hidup (life skills)](/id/artikel/life-skills-autistic-young-adults-id) yang lebih luas — memahami diri, [membaca situasi sosial](/id/artikel/friendship-social-connection-neurodivergent-young-adults-id), dan [menyuarakan kebutuhan](/id/artikel/self-advocacy-neurodivergent-young-adults-id) — yang dilatih bertahap sesuai kesiapan setiap participant.
 
 ## Hak untuk mencinta
 

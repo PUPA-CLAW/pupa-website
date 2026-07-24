@@ -15,9 +15,9 @@ Memandang momen-momen ini sebagai sinyal, bukan masalah perilaku, mengubah cara 
 
 Penelitian internasional secara konsisten menunjukkan bahwa kecemasan dan tekanan emosional lebih sering dialami orang dewasa autistik dibandingkan populasi umum. Ini bukan kelemahan pribadi, melainkan cerminan dunia yang sering kali belum dirancang untuk cara kerja pikiran dan indra mereka.
 
-Kabar baiknya, regulasi emosi adalah keterampilan yang dapat terus bertumbuh hingga usia dewasa. Ada banyak hal yang bisa dilakukan keluarga di rumah.
+Kabar baiknya, regulasi emosi adalah [keterampilan](/id/artikel/life-skills-autistic-young-adults-id) yang dapat terus bertumbuh hingga usia dewasa. Ada banyak hal yang bisa dilakukan keluarga di rumah.
 
-Pertama, jaga prediktabilitas. Jadwal yang jelas, persiapan sebelum perubahan, dan transisi yang tidak terburu-buru menurunkan beban dasar sehari-hari.
+Pertama, [jaga prediktabilitas](/id/artikel/executive-function-neurodivergent-young-adults-id). Jadwal yang jelas, persiapan sebelum perubahan, dan transisi yang tidak terburu-buru menurunkan beban dasar sehari-hari.
 
 Kedua, kenali tanda-tanda awal. Setiap individu punya sinyalnya sendiri — menjadi lebih pendiam, gerakan berulang yang meningkat, atau nada suara yang berubah. Mengenalinya lebih awal memberi ruang untuk jeda sebelum beban memuncak.
 
@@ -27,11 +27,11 @@ Keempat, bantu memberi nama pada perasaan. Sebagian dewasa muda neurodivergen me
 
 Kelima, hadirlah dengan tenang. Regulasi sering dimulai dari ko-regulasi: kehadiran orang lain yang tetap teduh dan tidak menghakimi. Suara yang rendah, sedikit kata, dan kesabaran biasanya jauh lebih membantu daripada nasihat panjang.
 
-Di PUPA Mandiri, regulasi emosi menjadi salah satu fondasi yang dibangun participant secara bertahap — mengenali perasaan, memahami pemicu, dan mengembangkan strategi menenangkan diri yang dapat digunakan dalam kehidupan sehari-hari.
+Di [PUPA Mandiri](/id/program/#mandiri), regulasi emosi menjadi salah satu fondasi yang dibangun participant secara bertahap — mengenali perasaan, memahami pemicu, dan mengembangkan strategi menenangkan diri yang dapat digunakan dalam kehidupan sehari-hari.
 
 Setelah momen berat berlalu, hindari hukuman atau tuntutan penjelasan. Yang lebih membantu adalah memulihkan hubungan, lalu — di waktu yang tenang — merefleksikan bersama apa yang bisa membantu di lain waktu.
 
-Perjalanan setiap orang berbeda. Namun dengan lingkungan yang memahami, rutinitas yang mendukung, dan latihan yang konsisten, dewasa muda autistik dan neurodivergen dapat semakin mengenal dirinya dan menghadapi dunia dengan lebih percaya diri dan tenang.
+Perjalanan setiap orang berbeda. Namun dengan lingkungan yang memahami, [rutinitas yang mendukung](/id/artikel/structured-routines-autistic-young-adults-id), dan latihan yang konsisten, dewasa muda autistik dan neurodivergen dapat semakin mengenal dirinya dan menghadapi dunia dengan lebih percaya diri dan tenang.
 
 ### Referensi
 

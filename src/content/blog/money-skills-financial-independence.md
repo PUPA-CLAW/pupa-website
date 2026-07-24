@@ -29,15 +29,15 @@ Make money visible. For many neurodivergent people, the concrete is easier to gr
 
 Practice digital transactions deliberately. Money is increasingly invisible — QR payments, digital wallets, transfers. That convenience needs to be trained in tandem with caution: never share a PIN or a one-time passcode (OTP) with anyone, learn to recognize scam messages posing as prizes or bills, and ask first before clicking. Clear, fixed rules — a genuine strength of many autistic people — are the best protection here.
 
-Involve them in family decisions. Comparing prices at the market, choosing the internet plan, weighing which option is cheaper — these small conversations are the real classroom of decision-making.
+Involve them in family decisions. Comparing prices at the market, choosing the internet plan, weighing which option is cheaper — these small conversations are the real [classroom of decision-making](/blog/self-advocacy-neurodivergent-young-adults).
 
 Celebrate decisions, not just savings. The goal is not to raise someone afraid to use money, but someone confident to decide — including, now and then, deciding to buy something that makes them happy.
 
 ## Independent does not mean alone
 
-One research finding deserves to be every family's compass. A study in the journal Autism (2024) on autistic emerging adulthood reminds us that the opposite of "not yet independent" is not "doing everything alone." The researchers call it interdependence — independence that stays connected: holding the wheel of your own life, with people ready to be asked for directions.
+One research finding deserves to be every family's compass. A study in the journal Autism (2024) on autistic emerging adulthood reminds us that the opposite of "not yet independent" is not "doing everything alone." The researchers call it interdependence — [independence that stays connected](/blog/building-independence-autistic-teens): holding the wheel of your own life, with people ready to be asked for directions.
 
-That is the principle lived out at PUPA as well. From PUPA Mandiri, participants practice money skills in real activities; at the Access stage, those skills meet the world of work — a first salary, an account of one's own, decisions of one's own.
+That is the principle lived out at PUPA as well. From [PUPA Mandiri](/programs/#mandiri), participants practice money skills in real activities; at [the Access stage](/programs/#access), those skills meet the world of work — a first salary, an account of one's own, decisions of one's own.
 
 Financial independence, in the end, is not about the number in an account. It is about the dignity that grows each time a person decides for themselves — rupiah by rupiah, decision by decision — knowing they never have to decide entirely alone.
 

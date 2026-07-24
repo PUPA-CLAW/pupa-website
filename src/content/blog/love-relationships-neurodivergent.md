@@ -31,7 +31,7 @@ Third, use concrete ways of learning. Real scenarios, example sentences, discuss
 
 Fourth, talk about heartbreak too. Being turned down, misreading a situation, breaking up — these are part of learning to love. A young adult who knows heartbreak is allowed to be felt, and can be talked about, recovers in a healthier way.
 
-At PUPA, conversations about relationships do not stand alone; they are part of the broader life skills participants build step by step — understanding themselves, reading social situations, and voicing their needs — always at each person's own pace and readiness.
+At PUPA, conversations about relationships do not stand alone; they are part of the broader [life skills](/blog/life-skills-autistic-young-adults) participants build step by step — understanding themselves, [reading social situations](/blog/friendship-social-connection-neurodivergent-young-adults), and [voicing their needs](/blog/self-advocacy-neurodivergent-young-adults) — always at each person's own pace and readiness.
 
 ## The right to love
 

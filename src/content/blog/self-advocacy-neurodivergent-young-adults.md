@@ -9,7 +9,7 @@ description: ""
 
 Self-advocacy is the ability to understand yourself — your strengths, needs, and preferences — and to voice them to others. For autistic and neurodivergent young adults, it is one of the most important foundations for a meaningful adult life.
 
-Research on the transition to adulthood consistently finds that self-determination — making choices, setting goals, and directing one's own life — is closely linked to better adult outcomes, including in employment and independent living.
+Research on the [transition to adulthood](/blog/neurodivergent-adulthood-transition-indonesia) consistently finds that self-determination — making choices, setting goals, and directing one's own life — is closely linked to better adult outcomes, including in employment and independent living.
 
 But self-advocacy does not appear on its own. It grows from thousands of small chances to choose, to try, and to be heard.
 
@@ -27,9 +27,9 @@ Help them know themselves in positive language. Understanding "I work best with 
 
 Respect the word "no." Self-advocacy also means being allowed to decline. A young adult whose views are respected at home will speak up with more confidence outside it — and will be better able to protect themselves in unsafe situations.
 
-At PUPA, speaking up for yourself is practiced throughout a participant's journey — and it matters most at the Access stage, when young adults prepare to enter the world of work: expressing work preferences, asking for the adjustments they need, and communicating with colleagues.
+At PUPA, speaking up for yourself is practiced throughout a participant's journey — and it matters most at [the Access stage](/programs/#access), when young adults prepare to enter the [world of work](/blog/vocational-readiness-neurodivergent-young-adults): expressing work preferences, asking for the adjustments they need, and communicating with colleagues.
 
-In the end, self-advocacy is about dignity. Everyone deserves to be heard in matters of their own life. With consistent opportunities and people willing to listen, autistic and neurodivergent young adults can grow into people who know themselves and can say so — the true foundation of independence.
+In the end, self-advocacy is about dignity. Everyone deserves to be heard in matters of their own life. With consistent opportunities and people willing to listen, autistic and neurodivergent young adults can grow into people who know themselves and can say so — the true [foundation of independence](/blog/building-independence-autistic-teens).
 
 ### References
 

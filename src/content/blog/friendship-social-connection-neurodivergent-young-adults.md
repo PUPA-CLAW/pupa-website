@@ -7,7 +7,7 @@ slug: "friendship-social-connection-neurodivergent-young-adults"
 description: ""
 ---
 
-When school ends, many families notice something rarely talked about: the chances to meet friends end with the final school bell. For autistic and neurodivergent young adults, losing this social structure can feel especially large, because building new friendships often takes real effort and energy.
+[When school ends](/blog/life-after-high-school-autism), many families notice something rarely talked about: the chances to meet friends end with the final school bell. For autistic and neurodivergent young adults, losing this social structure can feel especially large, because building new friendships often takes real effort and energy.
 
 International research shows that many autistic young adults rarely see friends outside of organized activities. The loneliness is real, and it can affect wellbeing — but it is not inevitable.
 
@@ -19,9 +19,9 @@ This understanding changes the role of families and communities. Rather than exp
 
 What can families do at home? Start from interests, not social targets. Activities a young adult already enjoys — a cooking class, a hobby community, religious activities, or volunteering — create natural reasons to meet the same people regularly. Friendship grows more easily from repeated, unforced encounters.
 
-Respect the need for alone time, too. Withdrawing to recover energy is not social failure. What matters is balance: does the young adult still have chances to connect when they want to?
+Respect the need for alone time, too. Withdrawing to [recover energy](/blog/emotional-regulation-neurodivergent-young-adults) is not social failure. What matters is balance: does the young adult still have chances to connect when they want to?
 
-At PUPA Karya, community participation and social interaction are practiced through real activities with fellow participants — a safe environment to practice, among peers who understand one another.
+At [PUPA Karya](/programs/#karya), [community participation](/blog/community-participation-neurodivergent-young-adults) and social interaction are practiced through real activities with fellow participants — a safe environment to practice, among peers who understand one another.
 
 For the wider public, this article is also an invitation: connection is a shared responsibility. A patient greeting, a clear question, and a willingness to understand a different way of communicating are small contributions that mean a great deal.
 

@@ -29,15 +29,15 @@ Buat uang terlihat. Bagi banyak individu neurodivergen, hal konkret lebih mudah 
 
 Latih transaksi digital dengan sengaja. Di Indonesia, uang semakin tak terlihat — QRIS (pembayaran dengan pindai kode), dompet digital, transfer. Kemudahan ini perlu dilatih berpasangan dengan kewaspadaan: tidak membagikan PIN dan kode OTP (kode rahasia sekali pakai) kepada siapa pun, mengenali pesan penipuan yang mengaku hadiah atau tagihan, dan bertanya dulu sebelum mengeklik. Aturan yang jelas dan pasti — justru kekuatan banyak individu autistik — adalah pelindung terbaik di sini.
 
-Libatkan dalam keputusan keluarga. Membandingkan harga di pasar, memilih paket internet, menimbang mana yang lebih hemat — percakapan kecil ini adalah kelas pengambilan keputusan yang sesungguhnya.
+Libatkan dalam keputusan keluarga. Membandingkan harga di pasar, memilih paket internet, menimbang mana yang lebih hemat — percakapan kecil ini adalah [kelas pengambilan keputusan](/id/artikel/self-advocacy-neurodivergent-young-adults-id) yang sesungguhnya.
 
 Rayakan keputusan, bukan hanya penghematan. Tujuannya bukan mencetak orang yang takut memakai uang, melainkan orang yang percaya diri memutuskan — termasuk sesekali memutuskan membeli sesuatu yang membahagiakan dirinya.
 
 ## Mandiri tidak berarti sendiri
 
-Satu temuan penelitian layak menjadi pegangan setiap keluarga. Studi di jurnal Autism (2024) tentang masa dewasa muda autistik mengingatkan bahwa lawan dari "belum mandiri" bukanlah "serba sendiri". Para peneliti menyebutnya interdependence — kemandirian yang tetap terhubung: memegang kemudi hidup sendiri, dengan orang-orang yang siap dimintai arah.
+Satu temuan penelitian layak menjadi pegangan setiap keluarga. Studi di jurnal Autism (2024) tentang masa dewasa muda autistik mengingatkan bahwa lawan dari "belum mandiri" bukanlah "serba sendiri". Para peneliti menyebutnya interdependence — [kemandirian yang tetap terhubung](/id/artikel/building-independence-autistic-teens-id): memegang kemudi hidup sendiri, dengan orang-orang yang siap dimintai arah.
 
-Prinsip itu pula yang dihidupi di PUPA. Dari PUPA Mandiri, participant berlatih keterampilan uang dalam kegiatan nyata; di tahap Access, keterampilan itu bertemu dunia kerja — gaji pertama, rekening sendiri, keputusan sendiri.
+Prinsip itu pula yang dihidupi di PUPA. Dari [PUPA Mandiri](/id/program/#mandiri), participant berlatih keterampilan uang dalam kegiatan nyata; di [tahap Access](/id/program/#access), keterampilan itu bertemu dunia kerja — gaji pertama, rekening sendiri, keputusan sendiri.
 
 Kemandirian finansial, pada akhirnya, bukan tentang angka di rekening. Ia tentang martabat yang tumbuh setiap kali seseorang memutuskan sendiri — rupiah demi rupiah, keputusan demi keputusan — dan tahu bahwa ia tidak pernah harus memutuskannya sendirian.
 

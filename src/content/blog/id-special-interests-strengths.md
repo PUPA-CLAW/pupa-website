@@ -27,11 +27,11 @@ Beberapa cara praktis bisa dicoba di rumah.
 
 Masuki dunianya lebih dulu. Tanyakan, dengarkan, minta diajari. Bagi banyak individu autistik, berbagi minat adalah bentuk keakraban yang paling tulus — dan pintu masuk terbaik untuk percakapan lain.
 
-Gunakan minat sebagai jangkar belajar. Berhitung lewat jadwal kereta, membaca lewat ensiklopedia dinosaurus, bahasa Inggris lewat gim favorit. Keterampilan baru menempel paling kuat pada minat yang sudah menyala.
+Gunakan minat sebagai jangkar belajar. Berhitung lewat jadwal kereta, membaca lewat ensiklopedia dinosaurus, bahasa Inggris lewat gim favorit. [Keterampilan baru](/id/artikel/life-skills-autistic-young-adults-id) menempel paling kuat pada minat yang sudah menyala.
 
-Bangun jembatannya. Carikan komunitas, kelas, atau lomba yang mempertemukannya dengan orang-orang seminat. Persahabatan sering tumbuh lebih mudah di sana daripada di acara sosial biasa.
+Bangun jembatannya. Carikan komunitas, kelas, atau lomba yang mempertemukannya dengan orang-orang seminat. [Persahabatan sering tumbuh](/id/artikel/friendship-social-connection-neurodivergent-young-adults-id) lebih mudah di sana daripada di acara sosial biasa.
 
-Arahkan perlahan ke karya. Gambar menjadi portofolio. Hafalan rute menjadi ketelitian data. Kecintaan pada masakan menjadi keterampilan dapur. Di PUPA Karya, proses inilah yang ditekuni: minat setiap participant menjadi titik awal untuk membangun keterampilan berkarya dan kesiapan kerja (work readiness) — selangkah demi selangkah, dengan bangga.
+Arahkan perlahan ke karya. Gambar menjadi portofolio. Hafalan rute menjadi ketelitian data. Kecintaan pada masakan menjadi keterampilan dapur. Di [PUPA Karya](/id/program/#karya), proses inilah yang ditekuni: minat setiap participant menjadi titik awal untuk membangun keterampilan berkarya dan [kesiapan kerja (work readiness)](/id/artikel/vocational-readiness-neurodivergent-young-adults-id) — selangkah demi selangkah, dengan bangga.
 
 ## Api yang dijaga
 

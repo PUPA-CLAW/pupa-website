@@ -15,7 +15,7 @@ What we rarely notice: that is the moment many families choose to go home. Not b
 
 In recent years, research on sensory environments has grown rapidly — and its conclusion is consistent: how much neurodivergent people can participate in public life is determined largely by the design of the environment, not merely by the individual's abilities.
 
-A study in Autism in Adulthood (2025) mapped autistic adults' sensory and relaxation preferences to design calming spaces that genuinely work. Research in Australia (2026) on sensory rooms in public buildings found two things at once: users value these facilities highly, and — this is the part that lands — many autistic people have long chosen to conceal their discomfort in public rather than inconvenience anyone. Meanwhile, researchers published practical guidelines in 2024 for "sensory havens" at public events: a quiet corner, soft lighting, surfaces that absorb sound.
+A study in Autism in Adulthood (2025) mapped autistic adults' sensory and relaxation preferences to design calming spaces that genuinely work. Research in Australia (2026) on sensory rooms in public buildings found two things at once: users value these facilities highly, and — this is the part that lands — many autistic people have long chosen to [conceal their discomfort](/blog/masking-neurodivergent) in public rather than inconvenience anyone. Meanwhile, researchers published practical guidelines in 2024 for "sensory havens" at public events: a quiet corner, soft lighting, surfaces that absorb sound.
 
 The good news is that the world has started to move. In many countries, quiet hours at supermarkets — lights dimmed, music off, unhurried queues — and calm rooms at airports and stadiums are slowly becoming ordinary.
 
@@ -33,7 +33,7 @@ Equip your staff. It starts with a single understanding: a visitor covering thei
 
 The same principles apply at home and at family events: share plans early, keep a place to step away, and don't read "stepping away for a moment" as rudeness.
 
-At PUPA, participants practice navigating public spaces step by step — learning their sensory limits, voicing their needs, building strategies. But practice is only half the bridge. The other half must be built from society's side: spaces willing to adapt.
+At PUPA, participants practice [navigating public spaces](/blog/community-participation-neurodivergent-young-adults) step by step — learning their sensory limits, [voicing their needs](/blog/self-advocacy-neurodivergent-young-adults), building strategies. But practice is only half the bridge. The other half must be built from society's side: spaces willing to adapt.
 
 ## An invitation for April
 

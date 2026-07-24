@@ -27,11 +27,11 @@ A few practical ways to begin at home.
 
 Enter their world first. Ask, listen, let them teach you. For many autistic people, sharing an interest is the most sincere form of closeness — and the best doorway into every other conversation.
 
-Use the interest as an anchor for learning. Arithmetic through train timetables, reading through the dinosaur encyclopedia, English through a favorite game. New skills stick best to an interest that is already burning.
+Use the interest as an anchor for learning. Arithmetic through train timetables, reading through the dinosaur encyclopedia, English through a favorite game. [New skills](/blog/life-skills-autistic-young-adults) stick best to an interest that is already burning.
 
-Build the bridge. Find the community, class, or competition that connects them with people who share the passion. Friendships often grow more easily there than at ordinary social events.
+Build the bridge. Find the community, class, or competition that connects them with people who share the passion. [Friendships often grow](/blog/friendship-social-connection-neurodivergent-young-adults) more easily there than at ordinary social events.
 
-Guide it gently toward craft. Drawings become a portfolio. Memorized routes become data precision. A love of cooking becomes kitchen skill. At PUPA Karya, this is precisely the work: each participant's interest becomes the starting point for building craft skills and work readiness — step by step, with pride.
+Guide it gently toward craft. Drawings become a portfolio. Memorized routes become data precision. A love of cooking becomes kitchen skill. At [PUPA Karya](/programs/#karya), this is precisely the work: each participant's interest becomes the starting point for building craft skills and [work readiness](/blog/vocational-readiness-neurodivergent-young-adults) — step by step, with pride.
 
 ## A flame worth guarding
 
